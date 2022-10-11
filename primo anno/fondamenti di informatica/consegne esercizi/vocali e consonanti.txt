@@ -1,0 +1,4 @@
+in: stringa di max 100 caratteri
+out: n vocali e n consonanti
+
+(l'utente inserisce solo caratteri minuscoli)
