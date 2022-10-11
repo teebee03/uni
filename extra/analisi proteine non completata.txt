@@ -1,0 +1,15 @@
+costo al kg wurstel smart: 2.78
+proteine per 100g: 12g
+costo per 100g di proteine: 2.32
+
+costo al kg proteine whey bulk: 20.15 (5kg)
+proteine per 100g: 77g
+costo per 100g di proteine: 2.62
+kcal per 100g: 371
+
+costo al kg proteine vegane bulk: 17.12 (2.5kg)
+proteine per 100g: 66g
+costo per 100g di proteine: 2.59
+kcal per 100g: 380
+
+tra parentesi la quantità per pacco necessario da acquistare per avere il prezzo al kg indicato
