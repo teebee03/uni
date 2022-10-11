@@ -1,0 +1,3 @@
+chiediamo all'utente quanti interi vuole mettere (max 100)
+
+e visualizziamo quello che appare più volte (se pari consideriamo il minore)
