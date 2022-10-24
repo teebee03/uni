@@ -1,2 +1,0 @@
-in: stringa di 100 caratteri
-out: 1 se palindroma 0 se no

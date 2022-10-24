@@ -1,5 +1,0 @@
-in: max 100 caratteri che sono una frase in italiano (terminata da *) 
-trova il carattere più frequente e visualizza la frase in cui ha sostituito il carattere più frequente con un asterisco
-
-l'utente usa solo lettere minuscole, punnteggiatura, spazi
-a parità di frequenza il sostutiuto è quello che viene per ultimo nell'alfabeto
