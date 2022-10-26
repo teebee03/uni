@@ -1,0 +1,7 @@
+- Convergenza successioni monotone e limitate in R
+- Esistenza estremo superiore/inferiore
+- Teorema di Bolzano-Weierstrass sui punti di accumulazione
+
+- Esistenza di massimi e minimi di funzioni continue
+- Teorema degli zeri
+- Corollario del Teorema degli zeri (Teorema dei punti intermedi)
