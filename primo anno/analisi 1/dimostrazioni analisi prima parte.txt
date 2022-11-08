@@ -1,7 +1,17 @@
-- Convergenza successioni monotone e limitate in R
-- Esistenza estremo superiore/inferiore
-- Teorema di Bolzano-Weierstrass sui punti di accumulazione
+- Convergenza successioni monotone e limitate in R - pag 93
+- Esistenza estremo superiore/inferiore - pag 22
+- Teorema di Bolzano-Weierstrass sui punti di accumulazione - https://it.wikipedia.org/wiki/Teorema_di_Bolzano-Weierstrass#Dimostrazione_per_induzione_nel_caso_n_=_1
 
-- Esistenza di massimi e minimi di funzioni continue
+- Esistenza di massimi e minimi di funzioni continue 
 - Teorema degli zeri
 - Corollario del Teorema degli zeri (Teorema dei punti intermedi)
+
+
+1. Convergenza di successioni monotone limitate. - pag 93
+2. Esistenza di SupA, InfA per insiemi A   R limitati. - pag 22
+3. Proprieta' di Bolzano-Weierstass: esistenza di punti accumulazione per insiemi limitati e infiniti. -  https://it.wikipedia.org/wiki/Teorema_di_Bolzano-Weierstrass#Dimostrazione_per_induzione_nel_caso_n_=_1
+
+4. Teorema di Weierstrass: esistenza di estremi per funzioni continue su intervalli chiusi e limitati. - pag 138
+5. Teorema degli Zeri - pag 137
+
+6. Teorema dei Valori Intermedi. - pag 140
