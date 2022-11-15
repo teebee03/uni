@@ -19,7 +19,7 @@ int min_mul(int in)
 {
 	int mul,temp;
 	
-	
+	x
 	while(temp/%in!=0&&temp<MAX_INT)
 	{
 		temp
