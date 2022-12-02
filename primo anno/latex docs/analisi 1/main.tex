@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=0.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\section{derivate di funzioni elementari}
+
+\begin{align*}
+\end{align*}
+
+\section{polinomi di taylor di funzioni elementari}
+
+\begin{align*}
+e^x &=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots+\frac{x^n}{n!}+o(x^n)\\
+\sin x&= x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+\cdots+(-1)^n\frac{x^{2n+1}}{(2n+1)!}+o\left(x^{2n+1}\right)\\
+\cos x&= 1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+\cdots+(-1)^n\frac{x^{2n}}{(2n)!}+o\left(x^{2n}\right)\\
+\sinh x &= \text{uguale al seno ma con tutti i termini positivi}\\
+\cosh x &= \text{uguale al coseno ma con tutti i termini positivi}\\
+\ln(1+x) &=x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\cdots+(-1)^{n-1}\frac{x^n}{n}+o(x^n)\\
+(1+x)^\alpha &=1+\alpha x+\frac{\alpha (\alpha -1)}{2!}x^2+\frac{\alpha(\alpha-1)(\alpha-2)}{3!}+\cdots+\frac{\alpha(\alpha-1)(\alpha-2)\cdots(\alpha-(n-1))}{n!}x^n+o(x^n)\\
+\frac{1}{1-x} &= 1+x+x^2+x^3+\cdots+x^n+o(x^n)\\
+\tan x &= x+\frac{x^3}{3}+\frac{2}{15}x^5+\frac{17}{315}x^7+o(x^8)\\
+\tanh x &= \text{uguale al tan ma dal secondo termine, uno ogni due ha segno meno}\\
+\arctan x &= x-\frac{x^3}{3}+\frac{x^5}{5}-\frac{x^7}{7}+\cdots+(-1)^n\frac{x^{2n+1}}{2n+1}+o\left(x^{2n+1}\right)
+\end{align*}
+
+\section{Serie numeriche}
+{\large Definizione di serie}\\\\
+Data una successione \(\{a_n\}^\infty_{n=0} \subset \mathbb{R}\)\\
+Definiamo un'altra successione: la succ. delle somme parziali \(\{S_n\}^\infty_{n=0} \subset \mathbb{R}\)\\\\
+\(n\ge0\)\\
+\[S_n:=\sum^N_{n=0}a_n=a_0+a_1+a_2+\cdots+a_n\]\\\\
+\begin{enumerate}
+    \item Se la successione \(\{S_n\}^\infty_{n=0}\) ha limite si diche che la serie definita dai coefficienti \(\{a_n\}^\infty_{n=0}\) CONVERGE
+    \item Se la successione \(\{S_n\}^\infty_{n=0}\) converge a \(\pm\infty\), si dice che la serie DIVERGE
+    \item Se \(\{S_n\}^\infty_{n=0}\) non ammette limite si dice che la serie è INDETERMINATA 
+\end{enumerate}
+Si usa il simbolo \(\sum^\infty_{n=0}a_n\)\\\\
+Osservazione: il carattere di una serie non è alterato se si trascurano un numero finito di termini\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+{\Large Proprietà delle serie}\\\\
+\begin{enumerate}
+    \item Linearità: \(\sum_n(\alpha a_n+\beta b_n)= \alpha\sum_n a_n + \beta\sum_n b_n\)           con \(\alpha,\beta \in \mathbb{R}\)
+    \begin{itemize}
+        \item Se due delle serie sopra convergono anche la terza converge
+        \item Se \(\sum_n a_n \) converge e \(\sum_n b_n \) non converge allora la serie \(\sum_n(\alpha a_n+\beta b_n)\) non converge
+    \end{itemize}
+    \item Confronto: Se \(0 \le a_n \le b_n \forall n\), allora
+    \begin{itemize}
+        \item Se \(\sum_n b_n \) converge anche \(\sum_n a_n \) converge e \(\sum_n a_n \le \sum_n a_n\)
+        \item Se \(\sum_n a_n \) diverge a \(+\infty\) anche la serie \(\sum_n b_n \) diverge a \(+\infty\) 
+    \end{itemize}
+    \item Confronto asintotico\\\\
+    \(0\le a_n\) , \(0\le b_n\) , \(a_n \sim b_n\) per \(n\rightarrow +\infty\)\\\\\\
+    Allora \(\sum_n a_n\) converge \(\iff \sum_n b_n\) converge\\\\
+    e \(\sum_n a_n\) diverge \(\iff \sum_n b_n\) diverge
+    \item Condizione necessaria affinchè \(\sum_n a_n\) converge è che\\\\
+    \(\lim_n a_n =0\)
+    \item Confronto integrale\\\\
+    Sia data \(\sum_n a_n \) a termini positivi e una funzione \\\\
+    \(f:[a,+\infty)\rightarrow [a,+\infty)\) integrabile\\\\
+    Se \(a_n \sin f_{(n)}\) per \(n\rightarrow +\infty\) allora \(\sum_n a_n \) converge\\\\
+    \item Criterio della radice\\\\
+    \(0\le a_n\) e supponiamo che \\
+    \(\exists\) \( l \lim_n  \sqrt[n]{a_n}\) e \([0,+\infty]\) allora\\
+    \begin{itemize}
+        \item se \(0<l<1\) la serie \(\sum_n\) converge
+        \item se \(l>1\) la serie \(\sum_n\) diverge
+        \item se \(l=1\) non si può dire nulla sul carattere della serie
+    \end{itemize}
+    \item Criterio del rapporto\\\\
+    \(0\le a_n\) , \(\exists l:=\lim_n \frac{a_n+1}{a_n} \in [0,+\infty]\)\\
+    \begin{itemize}
+        \item Se \(0<l<1\) \(\Rightarrow\)  \(\sum_n a_n \) la serie converge
+        \item Se \(l>1\) \(\Rightarrow\)  \(\sum_n a_n \) la serie diverge
+        \item Se \(l=1\) non si applica il criterio
+    \end{itemize}
+\end{enumerate} 
+{\large Osservazione}\\\\
+Per le serie a termini non negativi (\(a_n\ge 0 \forall n\)) le somme parziali \(S_n:=\sum^N_{n=0}\) costituiscono una successione \(\{S_n\}_{N\ge0}\) \(\subset \mathbb{R}\) monotona crescente che ha limite finito o \(+\infty\): quindi tali serie non possono essere indeterminate
+
+
+
+
+\end{document}
