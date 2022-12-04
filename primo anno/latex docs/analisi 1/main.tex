@@ -11,7 +11,7 @@
 \begin{align*}
 \end{align*}
 
-\section{polinomi di taylor di funzioni elementari}
+\section{Sviluppi di maclaurin di funzioni elementari}
 
 \begin{align*}
 e^x &=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots+\frac{x^n}{n!}+o(x^n)\\
@@ -79,7 +79,24 @@ Osservazione: il carattere di una serie non è alterato se si trascurano un nume
     \end{itemize}
 \end{enumerate} 
 {\large Osservazione}\\\\
-Per le serie a termini non negativi (\(a_n\ge 0 \forall n\)) le somme parziali \(S_n:=\sum^N_{n=0}\) costituiscono una successione \(\{S_n\}_{N\ge0}\) \(\subset \mathbb{R}\) monotona crescente che ha limite finito o \(+\infty\): quindi tali serie non possono essere indeterminate
+Per le serie a termini non negativi (\(a_n\ge 0 \forall n\)) le somme parziali \(S_n:=\sum^N_{n=0}\) costituiscono una successione \(\{S_n\}_{N\ge0}\) \(\subset \mathbb{R}\) monotona crescente che ha limite finito o \(+\infty\): quindi tali serie non possono essere indeterminate\\\\\\
+\subsection{Serie a termini di segno variabile}
+{\large Convergenza assoluta}\\\\
+La serie \(\sum_n a_n\) è detta assolutamente convergente se la serie  \(\sum_n \mid a_n \mid\) converge\\\\
+{\large Convergenza assoluta \(\implies\) convergenza semplice}\\\\
+Se \(\sum_n a_n\) converge assolutamente allora converge semplicemente\\\\
+\(\mid \sum_n a_n\mid\le \sum_n \mid a_n \mid\)\\\\\\
+{\large Criterio di leibnitz}\\\\
+Consideriamo la serie \(\sum_{n=0}^{\infty}(-1)^n\cdot a_n\) dove
+\begin{enumerate}
+	\item \(a_n\ge 0\)
+	\item \(\lim_{n\rightarrow \infty} a_n = 0\)
+	\item \(\{a_n\}\) è definitivamente decrescente
+\end{enumerate}
+Allora \(\sum_{n=0}^{\infty} (-1)^n \cdot a_n\) converge semplicemente
+
+
+
 
 
 
