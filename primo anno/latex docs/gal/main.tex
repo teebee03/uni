@@ -406,7 +406,7 @@ Due rette nello spazio sono ortogonali se
 \(r=ax+by+cz=0\)\\\\
 \(D(P_0,r)=\frac{\mid a_{x_0}+b_{y_0}+c\mid}{\sqrt{a^2+b^2}}\)\\\\\\\\\\\\
 {\large Distanza tra un punto e un piano nello spazio}\\\\
-\(\alpha=ax+by+cz+d=0\)\\\\
+\(ax+by+cz+d=0\)\\\\
 \(D(P_0,\alpha)=\frac{\mid a_{x_0}+b_{y_0}+c_{z_0}+d\mid}{\sqrt{a^2+b^2+c^2}}\)\\\\\\
 {\large Distanza tra due piani paralleli}\\\\
 \(\alpha_1=ax+by+cz=d_1\)\\
@@ -419,6 +419,57 @@ Due rette nello spazio sono ortogonali se
 \(r=P_0+tv\)\\\\
 \(D(P,r)=\frac{\|\vec{P_0P}\wedge v\|}{\|v\|}\)\\\\\\
 
+\section{Forme quadratiche}
+Esempio di forma quadratica in \(\mathbb{R}^3\): \(ax^2+by^2+cz^2+dxy+exz+fyz\)\\\\
+Una forma quadratica si può scrivere come:\\
+\(q(X)= X^TSX\) dove S è una matrice simmetrica e unica(matrice di gram)\\\\
+La matrice di gram di crea con i coefficienti della forma quadratica (divisi per 2 se in uno spazio che ha le stesse variabili 2 volte)\\\\
+{\large Segnatura di una matrice simmetrica S}
+\begin{itemize}
+    \item r: numero di autovalori positivi di S
+    \item s: numero di autovalori negativi di S
+\end{itemize}
+(r,s): segnatura di S\\
+La segnatura di una forma quadratica è la segnatura della sua matrice di gram\\\\
+{\large Teorema di cartesio}
+\begin{itemize}
+    \item numero di variazioni di segno in un polinomio = numero massimo di radici positive
+    \item se ci sono solo radici reali il numero di variazioni è il numero di radici contato con la loro molteplicità
+\end{itemize}
+{\large Applicazioni della segnatura}
+\begin{itemize}
+    \item se S è simmetrica allora il polinomio caratteristico ha solo radici reali, quindi il numero di autovalori positivi è uguale al numero di variazioni del polinomio caratteristico
+    \item il numero di autovalori nulli è uguale alla nullità
+    \item il numero di autovalori negativi è uguale a \(n-null(S)-\#\text{autovalori positivi}\)
+\end{itemize}
+///\\\\\\
+La segnatura di una forma quadratica è (r,s) dove
+\begin{itemize}
+    \item r è il numero di variazioni del polinomio caratteristico della matrice di gram S di q(X)
+    \item s = rk(S)-r
+\end{itemize}
+{\large Definizioni}\\\\
+Sia q una forma quadratica di \(\mathbb{R}^n\)
 
+\begin{itemize}
+    \item Se \(q(x)=0 \iff x=0 \) allora q è nondegenere
+    \item semidefinita positiva se \(q(x)\ge 0\)  \(\forall x\in \mathbb{R}^n\)
+    \item semidefinita negativa se \(q(x)\le 0\)  \(\forall x\in \mathbb{R}^n\)
+    \item definita positiva se \(q(x)> 0\)  \(\forall x\in \mathbb{R}^n\)
+    \item definita negativa se \(q(x)< 0\)  \(\forall x\in \mathbb{R}^n\)
+    \item indefinita se non è ne semidefinita positiva ne semidefinita negativa
+\end{itemize}
+{\large Segnatura e valori di q(X)}
+\begin{itemize}
+    \item q è semidefinita positiva \(\iff\) ha segnatura (r,0)
+    \item q è definita positiva su \(\mathbb{R}^n\) \(\iff\) ha segnatura (n,0)
+    \item q è semidefinita negativa \(\iff\) ha segnatura (0,s)
+    \item q è definita negativa su \(\mathbb{R}^n\) \(\iff\) ha segnatura (0,n)
+    \item q è indefinita \(\iff\) la segnatura è (r,s) con r \(\ne\) 0 e s \(\ne\) 0  
+\end{itemize}
+{\large Determinante, traccia e autovalori}\\\\
+Con S matrice diagonalizzabile\\\\
+\(det(S)= \lambda_1\lambda_2\cdots\lambda_n\)\\
+\(tr(S)= \lambda_1+\lambda_2+\cdots+\lambda_n\)
 
 \end{document}
