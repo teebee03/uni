@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.28)  6 DEC 2022 17:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  6 DEC 2022 19:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2022-11-01>
+LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2022-11-02>
 (c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -19,8 +19,8 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count190
 \c@figure=\count191
 \c@table=\count192
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
 \bibindent=\dimen140
 )
 (c:/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty
@@ -56,7 +56,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
 (c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip49
+\@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
 (c:/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -116,8 +116,8 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \totwidth@=\dimen156
 \lineht@=\dimen157
 \@envbody=\toks23
-\multlinegap=\skip50
-\multlinetaggap=\skip51
+\multlinegap=\skip51
+\multlinetaggap=\skip52
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -454,13 +454,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--91
 
 [2] [3] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 2356 strings out of 474971
- 34753 string characters out of 5780120
- 395415 words of memory out of 5000000
- 23875 multiletter control sequences out of 15000+600000
+ 2356 strings out of 474968
+ 34753 string characters out of 5780081
+ 395438 words of memory out of 5000000
+ 23878 multiletter control sequences out of 15000+600000
  476850 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,10n,62p,302b,190s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,10n,62p,302b,194s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-s
 uper-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
 pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/t
