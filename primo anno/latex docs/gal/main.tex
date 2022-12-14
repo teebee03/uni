@@ -475,5 +475,50 @@ Con S matrice diagonalizzabile\\\\
 \(det(S)= \lambda_1\lambda_2\cdots\lambda_n\)\\
 \(tr(S)= \lambda_1+\lambda_2+\cdots+\lambda_n\)\\\\
 
+{\large Segnatura di una forma quadratica nel piano}\\\\
+Sia \(q(x)=ax^2+bxy+cy^2\) una forma quadratica e S la sua matrice di gram\\\\
+\(det(S)= ac-\frac{b^2}{4}=\lambda_1\lambda_2\)\\
+\(tr(S)=a+c=\lambda_1+\lambda_2\)\\\\
+La segnatura di q(x,y) è 
+\begin{itemize}
+	\item (2,0) se \(det(S)>0\) e \(a>0\)
+	\item (0,2) se \(det(S)>0\) e \(a<0\)
+	\item (1,1) se \(det(S)<0\)
+	\item (1,0) se \(det(S)=0\) e \(a+c>0\)
+	\item (0,1) se \(det(S)=0\) e \(a+c<0\)
+\end{itemize}
+///\\\
+{\large Isometrie}\\\\\\
+Un'isometria da \(\mathbb{R}^n\) a \(\mathbb{R}^n\) è una funzione che rispetta le distanze\\\\
+\(d(F(P),F(Q))=d(F,Q)\)\\\\
+Un'isometria lineare in \(\mathbb{R}^n\) è una trasformazione lineare T tale che\\
+\(T_x\cdot T_y = x\cdot y\)\\\\
+Un'isometria lineare preserva la norma \(\|T_x\|=\|x\|\)\\\\
+Un'isometria lineare preserva gli angoli \(\langle T_x T_y \rangle = \langle xy \rangle\)\\\\
+La trasformazione lineare T è un'isometria lineare \(\iff\) la sua matrice è ortogonale\\\\\\
+{\large Rototraslazioni}\\\\
+La composta di due isometrie F e G è ancora un'isometria\\
+\(d(F\circ G(P),F\circ G(Q))=d(P,Q)\)\\\\
+Una rototraslazione è un'isometria lineare seguita da una traslazione. Siccome composta di due isometrie una rototraslazione è un'isometria.\\\\
+Sia \(R=T_v \circ T\) con \(T_v\) traslazione e \(T\) isometria lineare\\
+Sia A la matrice di T nella base canonica abbiamo che\\
+\(R(X)= AX+v\)\\\\
+Siccome T è isometria lineare A è ortogonale\\
+l'isometria lineare T è la parte lineare di R\\\\
+{\large Matrice di una rototraslazione}\\\\
+Se \(R=T_v \circ T\) con \(T_v\) è una rototraslazione con parte lineare T e \(M_0\) è la matrice di T allora la matrice associata ad R è \\\\
+M=\(\left( \begin{array}{cc}
+	M_0 & v \\
+	0 & 1 \\
+\end{array}\right) \)\\
+R(X)=M\(\left( \begin{array}{c}
+	X\\
+	1\\
+\end{array}\right) \)\\\\\\
+L'inversa di una rototraslazione è una rototraslazione e la sua matrice si ottiene invertendo la matrice della rototraslazione di partenza\\
+
+
+
+
 
 \end{document}
