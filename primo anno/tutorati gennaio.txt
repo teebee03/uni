@@ -1,0 +1,15 @@
+analisi
+
+-16 turati
+-16 zaro(anche in presenza)
+
+gal
+
+-19 zaro(anche presenza)
+-20 pacco
+
+codici:
+frigeri: 10267818
+turati:  10494232
+zaro:    
+pacco: 
