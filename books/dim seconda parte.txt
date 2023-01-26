@@ -1,0 +1,34 @@
+1. Continuità delle funzioni derivabili
+2. Lemma di Fermat
+3. Teorema di Lagrange
+4. Teorema sulla caratterizzazione delle funzioni monotone
+5. Teorema di de l'Hospital
+6. Formula di Taylor con il resto secondo Peano
+7. Primo Teorema Fondamentale del Calcolo
+8. Secondo Teorema Fondamentale del Calcolo
+9. Teoremi di integrazione per parti e per sostituzione
+10. Serie a termini positivi: Criterio del Rapporto e della Radice
+11. Criterio di Leibniz per serie a termini di segno alterno
+
+Dove sono
+
+1.  p.170
+2.  p.184
+3.  p.185
+4.  p.187 (test di monotonia)
+5.  p.198
+6.  p.225
+7.  p.278
+8.  p.318
+9.  p.288 (per parti) p.281 (per sostituzione)
+10. p.248-249
+11. p.253
+
+2 - lagrange
+3 - primo teorema del calcolo
+2 - fermat
+1 - condizione sufficiente per la convergenza di una serie
+1 - criterio del rapporto
+1 - secondo teorema del calcolo
+1 - test di monotonia (solo crescenti)
+
