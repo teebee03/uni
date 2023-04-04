@@ -11,16 +11,60 @@
 
 \begin{document}
 
-\section{cinematica del punto materiale}
-\large{Moto rettilineo uniformemente accellerato (o uniforme)}
+\section{Calcolo vettoriale}
+
+\[(\overline{a} \times \overline{b}) = \] 
+\[
+\begin{vmatrix}
+	\hat{u}x & \hat{u}y & \hat{u}z \\
+	ax       & ay       & az       \\
+	bx       & by       & bz       \\ 
+\end{vmatrix}
+\]
+\[
+= \hat{u}x(aybz-byaz) -\hat{u}y(axbz-bxaz) +\hat{u}z(axby-bxay) 
+\]\\
+\[
+\overline{a} \perp \overline{b} \iff \overline{a} \cdot \overline{b}
+\]
+
+\section{Cinematica del punto materiale}
+\large{Moto rettilineo uniformemente accelerato (o uniforme)}
 \[x=x_0+v_0(t-t_0)+\frac{1}{2}a(t-t_0)^2\]
 \[v=v_0+a(t-t_0)\]
 \[a=cost\]\\\\
-\large{moro circolare}
+\large{Moto circolare}
 \[a_t=v'=s''\]
 \[a_n=\frac{v^2}{\rho}\]
 
+posizione: \[\overline{r}(t) = x(t)\hat{u}(x) + y(t)\hat{u}(t)\]
+traiettoria: \[\overline{r} = r(t)\]   \[y = y(x)\]
+legge oraria: \[s = s(t)\]
+\\
+\large{Velocità}
+\[\overline{v}(t) = \frac{d}{dt}\overline{r}(t)\]
+\[\overline{v}(t) = \frac{d}{dt}x(t) + \frac{d}{dt}y(t)\]
+Componenti intrinseche: \[\overline{v}_s(t) = v_s(t)\hat{u}(t)\]
+\[|\overline{v}_s(t)| = |v_s(t)|\]\\
+\large{Accelerazione}
+\[\overline{a}(t) = \frac{d}{dt}\overline{v}(t)\]
+\[\overline{a}(t) = \frac{d}{dt}v_x(t)\hat{u}x + \frac{d}{dt}v_y(t)\hat{u}y\]
+Componenti intrinseche: \[\overline{a}(t) = a(t)\hat{u}_t + a(t)\hat{u}_n\]
+\[|\overline{a}_t| = \frac{d}{dt}v_s(t) \text{     } |\overline{a}_n| = \frac{v_s^2}{\rho}\]\\\\\\
+\large{Metodo risolutivo generale per problemi di cinematica}
+\begin{enumerate}
+	\item Sistema di riferimento 
+	\item Condizioni iniziali \(x_0, v_0, a_0, t_0 ...\)
+	\item Equazione del moto (se nota)
+	\item Risolvere il problema
+\end{enumerate}
+\large{Moto parabolico}
+
+
 \section{Dinamica del punto materiale}
+
+
+
 
 
 

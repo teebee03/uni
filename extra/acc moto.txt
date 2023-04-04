@@ -1,1 +1,4 @@
 distanza rettilineo: 157,8 m
+
+test da 0
+
