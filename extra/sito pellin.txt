@@ -1,0 +1,3 @@
+-upload immagini (dal venditore)
+-allegare informazione da parte degli utenti registrati
+-poter modificare la scheda dei prodotti (con richieste di informazioni)
