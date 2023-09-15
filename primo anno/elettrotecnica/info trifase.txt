@@ -1,0 +1,27 @@
+TRIANGOLO
+
+Il = sqrt(3)If
+Vl = Vf
+
+potenza: 
+
+P=3 Vl If cos(phi)
+Q=3 Vl If sin(phi)
+
+
+STELLA
+
+Il = If
+Vl = sqrt(3)Vf
+
+potenza: 
+
+P=3 Vf If cos(phi)
+Q=3 Vf If sin(phi)
+
+
+Ztriangolo = 3 Zstella
+
+cosphi=P/S 
+ritardo  -> carico induttivo
+anticipo -> carico capacitivo

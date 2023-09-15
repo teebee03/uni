@@ -1,0 +1,12 @@
+4 aprile - op amp, doppi bipoli
+13 aprile - circuiti del 1 ordine
+28 aprile - regime alternato sinusoidale
+2 maggio - potenza, funzioni di rete circuiti del primo ordine con gen sinusiodali
+9 maggio - potenze, rifasamento, max trasf potenza, risonanza, circuiti 1 ordine con gen sinusoidali
+16 maggio - circuiti con transitorio
+19 maggio - induzione EM
+26 maggio - sistemi trifase
+30 maggio - circuiti magnetici
+1 giugno - ripasso
+
+

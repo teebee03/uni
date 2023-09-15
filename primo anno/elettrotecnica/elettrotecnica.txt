@@ -1,0 +1,32 @@
+formule da segnarsi
+
+- partitore di corrente e tensione
+- vedere potenza (nella parte con solo resistori)
+- rappresentazioni TH e NR
+- tabella doppi bipoli
+- formule per passaggio da una matrice R a matrice G e altre matrici (per doppi bipoli)
+- equivalenti thevenin con trasformatori ideali
+- caratteristiche op amp
+- soluzione equazione var di stato per componenti dinamici
+- conversione impedenze capacitive e induttive
+- tabella fasori
+- formula calcolo potenza in RAS
+- formula cos phi
+- schemi z induttiva a capacitiva
+- formula rifasamento
+- richiami adattamento
+- definizione di risonanza e condizione (1/sqrt(L1C1))
+- formula forza elettromotrice
+- formule per passare da potenza complessa a attiva e reattiva con l'angolo phi
+- passaggio da triangolo a stella e viceversa
+- passaggio da tensione di linea a tensione di fase (per stella e triangolo)
+- terna diretta e terna inversa
+- forrmule richiami circuiti magnetici
+- calcolo induttanza circuiti magnetici a partire dal flusso concatenato
+- formula per trovare il campo magnetico H
+- equazioni flussi concatenati 
+
+
+fare es 1 giugno
+
+vedere induttori mutualmente accoppiati (esercitazione 10 del 16 maggio fino all'es 3)
