@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage[a4paper,margin=1.2cm]{geometry}
+\usepackage{multicol}
+\graphicspath{ {./img/} }
+
+\DeclareMathOperator{\ima}{Im}
+
+
+\begin{document}
+	
+		
+		\section{Proprietà relazioni}
+		{\Large\[\text{Proprietà di una relazione binaria  } R\subseteq A \times A\]}
+		\\\\
+		{\large Seriale}\\\\
+		\(\forall a \in A \  \exists b \in A (a,b) \in R\)\\\\
+		Grafo: ogni vetice ha una freccia uscente\\
+		Matrice: ogni riga ha almeno un "1"\\\\
+		{\large Riflessiva}\\\\
+		\(\forall a \in A \  (a,a) \in R\)\\\\
+		Grafo: ogni vetice ha un cappio\\
+		Matrice: sulla diagonale ho tutti "1"\\\\
+		{\large Simmetrica}\\\\
+		\(\forall a,b \in A \  (a,b) \in R \Rightarrow (b,a)\in R\)\\\\
+		Grafo: Ogni freccia in una direzione ne ha una della direzione opposta\\
+		Matrice: \(Mr=Mr^T\)\\\\
+		{\large Antisimmetrica}\\\\
+		\(\forall a,b \in A \  se\ (a,b) \in R \ e\  (b,a)\in R \Rightarrow a=b\)\\\\
+		Grafo: Eccetto i cappi, per ogni freccia non ce ne deve essere una uguale ma nella direzione opposta\\
+		Matrice: eccetto la diagonale, se in pos (i,j) c'è un 1, allora in posizione (j,i) ci deve essere 0\\\\
+		{\large Transitiva}\\\\
+		\(\forall a,b,c \in A \  (a,b) \in R e\ (b,c)\in R \Rightarrow (a,c)\in R\)\\\\
+		Grafo: se a è collegato a b e b è collegato a c anche a deve essere collegato a c \\\\\\\\
+		
+		{\large Osservazioni}
+		\begin{itemize}
+			\item seriale \(\nRightarrow\) riflessiva
+			\item antisimmetrica \(\nRightarrow\) non simmetrica
+			\item transitiva + simmetrica \(\nRightarrow\) riflessiva
+			\item riflessiva \(\Rightarrow\) seriale
+			\item transitiva + simmetrica + seriale \(\Rightarrow\) riflessiva
+		\end{itemize}
+		\ \\\\
+		
+		{\Large Relazioni di equivalenza}\\\\
+		{\large Una relazione si dice di equivalenza se è riflessiva, transitiva, simmetrica}\\\\\\
+	
+		{\Large Relazioni d'ordine}\\\\
+		{\large Una relazione si dice d'ordine se è riflessiva, transitiva, antisimmetrica}\\\\\\\\
+		
+		{\Large Elementi estremali}\\\\
+		\begin{itemize}
+			\item Massimo: \(se \ \forall \ x \in A \ a\leq x\)
+			\item Minimo: \(se \ \forall \ x \in A \ a\geq x\)
+			\item Minimale: \(\forall \ x \in A \ se\ x \leq a \Rightarrow x=a\)
+			\item Massimale: \(\forall \ x \in A \ se\ x \geq a \Rightarrow x=a\)
+		\end{itemize}
+	 	\ \\
+	 	{\large Oss: Un minimo è minimale, un massimo è massimale}\\\\
+	 	
+	 	Fare da maggiorante in poi
+		
+		
+		
+		
+		
+		
+\end{document}
