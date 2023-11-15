@@ -59,9 +59,64 @@
 			\item Massimale: \(\forall \ x \in A \ se\ x \geq a \Rightarrow x=a\)
 		\end{itemize}
 	 	\ \\
-	 	{\large Oss: Un minimo è minimale, un massimo è massimale}\\\\
+	 	Oss: Un minimo è minimale, un massimo è massimale (minimali e massimali esistono in relazioni d'ordine)\\\\
+	 	{\large Maggiorante/minorante, sup/inf}\\
+	 	Un elemento m si dice
+	 	\begin{itemize}
+	 		\item Maggiorante di B se \(\forall b \in B \  b \leq m\)
+	 		\item Minorante di B se \(\forall b \in B \  b \geq m\)
+	 		\item Estremo sup di B se è il minimo dei maggioranti (se esiste)
+	 		\item Estremo inf di B se è il massimo dei minoranti (se esiste)
+ 		\end{itemize}
+ 		
+	 	\section{Logica proposizionale}
 	 	
-	 	Fare da maggiorante in poi
+	 	{\large Sintassi}
+	 	\begin{itemize}
+	 		\item Lettere enunciative: \( A_1, A_2, ... , A_n\) 
+	 		\item Connettivi: \(\neg, \land, \lor, \implies, \iff \)
+	 		\item Simboli ausiliari: \( (\ )\ ; \)
+	 	\end{itemize}
+ 		\
+ 		{\large Formula ben formata}
+ 		\begin{enumerate}
+ 			\item Ogni lettera enunciativa è una f.b.f.
+ 			\item Se A, B sono sono f.b.f. allora \( (A\implies B),(A \iff B) , (A \land B), (A\lor B), (\neg A) \) sono f.b.f.
+ 			\item Nient'altro è una f.b.f.
+ 		\end{enumerate}
+ 		
+ 		{\large Priorità connettivi: \(\neg, \land, \lor, \implies, \iff \)}\\\\
+ 		Significato connettivi
+ 		\begin{itemize}
+ 			\item \( (A\implies B) \) Sempre vero se A=0, Se A=1 vero solo se anche B=1
+ 			\item \( (A\iff B) \) Vero se A=B
+ 		\end{itemize}
+ 		\
+ 		
+ 		\begin{itemize}
+ 			\item Una f.b.f. A si dice soddisfacibile se esiste almeno una interpretazione che è modello di A
+ 			\item Una f.b.f. A per cui ogni interpretazione è un modello si dice tautologia
+ 			\item Una f.b.f. che non ammette modelli si dice insoddisfacibile 
+ 			\item Una f.b.f. B che ha gli stessi modelli di A si dice conseguenza semantica di A
+ 		\end{itemize}
+ 		
+ 		{\large Risoluzione logica proposizionale}
+ 		
+ 		\begin{itemize}
+ 			\item Letterali: Una lettera enunciativa \((A)\) o la sua negata \((\neg A)\)
+ 			\item Clausola: Insieme di letterali (disgiunzione di letterali) \( (\{\neg A,B,C\},\{B,C,D\}) \)
+ 		\end{itemize}
+ 		
+ 		\begin{enumerate}
+ 			\item Portare in forma normale congiuntiva es: \( (A\lor B \lor \neg C) \land (B \lor D \lor \neg A)\) (or tra lettere e and tra gruppi)
+ 			\item Convertire a letterali e clausole es: \( \{A,B,\neg C\},\{B,D,\neg A\}\) (ogni parentesi diventa una clausola con i propri letterali dentro)
+ 			\item L'obiettivo è raggiungere la clausola vuota, abbinado una clausola con un'altra ed eliminando IL letterale che in una è normale e nell'altra è negato
+ 		\end{enumerate}
+ 		
+ 		
+ 		procedere con logica del primo ordine (forse meglio guardare prima esercitazione)
+	 	
+	 	
 		
 		
 		
