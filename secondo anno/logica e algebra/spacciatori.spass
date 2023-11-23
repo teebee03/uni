@@ -1,0 +1,9 @@
+forall([x],implies(and(E(x),not(V(x))),exists([y],and(D(y),P(y,x)))))
+
+exists([x],and(S(x),E(x),forall([y],implies(P(y,x),S(y)))))
+
+not(exists([x],and(S(x),V(x))))
+
+conj
+
+exists([x],and(D(x),S(x)))

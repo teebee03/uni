@@ -1,0 +1,86 @@
+begin_problem(Pelletier54).
+
+list_of_descriptions.
+name({*Pelletier's Problem No. 54*}).
+author({*Christoph Weidenbach*}).
+status(unsatisfiable).
+description({*Problem taken in revised form from the "Pelletier Collection", Journal of Automated
+	Reasoning, Vol. 2, No. 2, pages 191-216*}).
+end_of_list.
+
+list_of_symbols.
+	functions[(a,0),(b,0),(c,0)].
+	predicates[(H,2), (K,2), (R,2), (L,1)].
+end_of_list.
+
+list_of_formulae(axioms).
+
+	formula(
+		exists([x],and(L(x),K(x,a)))
+	).
+
+	formula(
+		and(L(a),L(b),L(c))
+	).
+
+	formula(	
+		forall([x],implies(L(x),or(equal(x,a),equal(x,b),equal(x,c))))
+	).
+
+	formula(
+		forall([x,y],implies(K(x,y),H(x,y)))
+	).
+
+	formula(
+		forall([x,y],implies(K(x,y),not(R(x,y))))
+	).
+
+	formula(
+		forall([x],implies(H(a,x),not(H(c,x))))
+	).
+
+	formula(
+		forall([x],implies(not(equal(x,b)),H(a,x)))
+	).
+
+	formula(
+		not(H(a,b))
+	).
+
+	formula(
+		forall([x],implies(not(R(x,a)),H(b,x)))
+	).
+
+	formula(
+		forall([x],implies(H(a,x),H(b,x)))
+	).
+
+	formula(
+		forall([x], exists([y], not(H(x,y))))
+	).
+		
+	formula(	
+		not(equal(a,b))
+	).
+	
+
+end_of_list.
+
+list_of_formulae(conjectures).
+
+	formula(
+		K(a,a)
+	).
+
+end_of_list.
+% this is a comment. We like comments ;-)
+
+
+list_of_settings(SPASS).
+{*
+set_flag(PGiven,1).
+set_flag(PProblem,1).
+*}
+end_of_list.
+
+end_problem.
