@@ -2,77 +2,96 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
-\usepackage[a4paper,margin=1.2cm]{geometry}
+\usepackage[a4paper,margin=0.9cm]{geometry}
 \usepackage{multicol}
+\usepackage{sectsty}
 \graphicspath{ {./img/} }
 
 \DeclareMathOperator{\ima}{Im}
 
 
 \begin{document}
-	
+		\allsectionsfont{\small}
+		\scriptsize
 		
+		\begin{multicols*}{3}
 		\section{Proprietà relazioni}
-		{\Large\[\text{Proprietà di una relazione binaria  } R\subseteq A \times A\]}
-		\\\\
-		{\large Seriale}\\\\
-		\(\forall a \in A \  \exists b \in A (a,b) \in R\)\\\\
+		
+		{\large Seriale}\\
+		\(\forall a \in A \  \exists b \in A (a,b) \in R\)\\
 		Grafo: ogni vetice ha una freccia uscente\\
 		Matrice: ogni riga ha almeno un "1"\\\\
-		{\large Riflessiva}\\\\
-		\(\forall a \in A \  (a,a) \in R\)\\\\
+		{\large Riflessiva}\\
+		\(\forall a \in A \  (a,a) \in R\)\\
 		Grafo: ogni vetice ha un cappio\\
 		Matrice: sulla diagonale ho tutti "1"\\\\
-		{\large Simmetrica}\\\\
-		\(\forall a,b \in A \  (a,b) \in R \Rightarrow (b,a)\in R\)\\\\
+		{\large Simmetrica}\\
+		\(\forall a,b \in A \  (a,b) \in R \Rightarrow (b,a)\in R\)\\
 		Grafo: Ogni freccia in una direzione ne ha una della direzione opposta\\
 		Matrice: \(Mr=Mr^T\)\\\\
-		{\large Antisimmetrica}\\\\
-		\(\forall a,b \in A \  se\ (a,b) \in R \ e\  (b,a)\in R \Rightarrow a=b\)\\\\
-		Grafo: Eccetto i cappi, per ogni freccia non ce ne deve essere una uguale ma nella direzione opposta\\
+		{\large Antisimmetrica}\\
+		\(\forall a,b \in A \  se\ (a,b) \in R \ e\  (b,a)\in R \Rightarrow a=b\)\\
+		Grafo: Non ci devono essere doppie freccie\\
 		Matrice: eccetto la diagonale, se in pos (i,j) c'è un 1, allora in posizione (j,i) ci deve essere 0\\\\
-		{\large Transitiva}\\\\
-		\(\forall a,b,c \in A \  (a,b) \in R e\ (b,c)\in R \Rightarrow (a,c)\in R\)\\\\
-		Grafo: se a è collegato a b e b è collegato a c anche a deve essere collegato a c \\\\\\\\
+		{\large Transitiva}\\
+		\(\forall a,b,c \in A \  (a,b) \in R e\ (b,c)\in R \Rightarrow (a,c)\in R\)\\
+		Grafo: se a è collegato a b e b è collegato a c anche a deve essere collegato a c \\
+		Matrice: \(Mr^2\subseteq Mr\)\\
 		
 		{\large Osservazioni}
 		\begin{itemize}
+			\setlength\itemsep{0.1mm}
 			\item seriale \(\nRightarrow\) riflessiva
 			\item antisimmetrica \(\nRightarrow\) non simmetrica
 			\item transitiva + simmetrica \(\nRightarrow\) riflessiva
 			\item riflessiva \(\Rightarrow\) seriale
 			\item transitiva + simmetrica + seriale \(\Rightarrow\) riflessiva
 		\end{itemize}
-		\ \\\\
+		
 		
 		{\Large Relazioni di equivalenza}\\\\
-		{\large Una relazione si dice di equivalenza se è riflessiva, transitiva, simmetrica}\\\\\\
+		Una relazione si dice di equivalenza se è riflessiva, transitiva, simmetrica (tutti i possibili collegamenti in ogni componente connessa nel grafo)\\\\
 	
 		{\Large Relazioni d'ordine}\\\\
-		{\large Una relazione si dice d'ordine se è riflessiva, transitiva, antisimmetrica}\\\\\\\\
+		Una relazione si dice d'ordine se è riflessiva, transitiva, antisimmetrica (per esistere una ch d'ordine la relazione deve essere antisimmetrica, se facendo la chiusura riflessiva e transitiva rimane antisimmetrica ora è una ch d'ordine)\\\\
 		
-		{\Large Elementi estremali}\\\\
+		{\Large Elementi estremali}
 		\begin{itemize}
+			\setlength\itemsep{0.1mm}
 			\item Massimo: \(se \ \forall \ x \in A \ a\leq x\)
 			\item Minimo: \(se \ \forall \ x \in A \ a\geq x\)
 			\item Minimale: \(\forall \ x \in A \ se\ x \leq a \Rightarrow x=a\)
 			\item Massimale: \(\forall \ x \in A \ se\ x \geq a \Rightarrow x=a\)
 		\end{itemize}
-	 	\ \\
+	 
 	 	Oss: Un minimo è minimale, un massimo è massimale (minimali e massimali esistono in relazioni d'ordine)\\\\
 	 	{\large Maggiorante/minorante, sup/inf}\\
 	 	Un elemento m si dice
 	 	\begin{itemize}
+	 		\setlength\itemsep{0.1mm}
 	 		\item Maggiorante di B se \(\forall b \in B \  b \leq m\)
 	 		\item Minorante di B se \(\forall b \in B \  b \geq m\)
 	 		\item Estremo sup di B se è il minimo dei maggioranti (se esiste)
 	 		\item Estremo inf di B se è il massimo dei minoranti (se esiste)
  		\end{itemize}
  		
+ 		\subsection{funzioni in relazioni}
+ 		\textbf{Proprietà della funzionalità :}\\
+ 		Grafo: un elemento punta solo ad un altro (possono esserci varie funzioni da una relazione, ma la relazione deve essere per forza seriale)
+ 		Matrice: per avere una funz devo avere un 1 per riga \\\\
+ 		\textbf{Funzione iniettiva (ha inversa destra):}\\
+ 		Matrice: in ogni colonna c'è al più un 1
+ 		\textbf{Funzione suriettiva (ha inversa sinistra):}\\
+ 		Matrice: in ogni colonna c'è almeno un 1\\\\
+ 		
+ 		
+ 		
+ 		
 	 	\section{Logica proposizionale}
 	 	
 	 	{\large Sintassi}
 	 	\begin{itemize}
+	 		\setlength\itemsep{0.1mm}
 	 		\item Lettere enunciative: \( A_1, A_2, ... , A_n\) 
 	 		\item Connettivi: \(\neg, \land, \lor, \implies, \iff \)
 	 		\item Simboli ausiliari: \( (\ )\ ; \)
@@ -88,12 +107,25 @@
  		{\large Priorità connettivi: \(\neg, \land, \lor, \implies, \iff \)}\\\\
  		Significato connettivi
  		\begin{itemize}
+ 			\setlength\itemsep{0.1mm}
  			\item \( (A\implies B) \) Sempre vero se A=0, Se A=1 vero solo se anche B=1
  			\item \( (A\iff B) \) Vero se A=B
+ 			\item  \( (A\implies B) = \neg A \lor B\)
+ 			\item \( (A\iff B) = (A\implies B)\land(B\implies A) \) 
  		\end{itemize}
- 		\
+ 		\subsection{equivalenze}
+ 		\begin{itemize}
+ 			\setlength\itemsep{0.1mm}
+ 			\item \(A\implies B = \neg B \implies \neg A\)
+ 			\item \((\neg A \land A)\lor B = B\)
+ 			\item \(A \land (A \lor B) = A\)
+ 			\item \(A \lor (A \land B) = A\)
+ 			\item \(A \land (B \lor C) = (A \land B) \lor (A \land C)\)
+ 			\item \(A \lor (B \land C) = (A \lor B) \land (A \lor C)\)
+ 		\end{itemize}
  		
  		\begin{itemize}
+ 			\setlength\itemsep{0.1mm}
  			\item Una f.b.f. A si dice soddisfacibile se esiste almeno una interpretazione che è modello di A
  			\item Una f.b.f. A per cui ogni interpretazione è un modello si dice tautologia
  			\item Una f.b.f. che non ammette modelli si dice insoddisfacibile 
@@ -103,21 +135,52 @@
  		{\large Risoluzione logica proposizionale}
  		
  		\begin{itemize}
+ 			\setlength\itemsep{0.1mm}
  			\item Letterali: Una lettera enunciativa \((A)\) o la sua negata \((\neg A)\)
  			\item Clausola: Insieme di letterali (disgiunzione di letterali) \( (\{\neg A,B,C\},\{B,C,D\}) \)
  		\end{itemize}
  		
  		\begin{enumerate}
+ 			\setlength\itemsep{0.1mm}
  			\item Portare in forma normale congiuntiva es: \( (A\lor B \lor \neg C) \land (B \lor D \lor \neg A)\) (or tra lettere e and tra gruppi)
  			\item Convertire a letterali e clausole es: \( \{A,B,\neg C\},\{B,D,\neg A\}\) (ogni parentesi diventa una clausola con i propri letterali dentro)
  			\item L'obiettivo è raggiungere la clausola vuota, abbinado una clausola con un'altra ed eliminando IL letterale che in una è normale e nell'altra è negato
  		\end{enumerate}
+ 	 	
+ 	 	\section{Logica del primo ordine}
+ 	 	
+ 		\subsection{sintassi}
+ 		\begin{itemize}
+ 			\setlength\itemsep{0.1mm}
+ 			\item Lettere predicative: \(D(x,y) = 0/1\) falso o vero (es uguaglianza)
+ 			\item Lettere funzionali: \(P(x,y) = x\cdot y\) risultato della funzione (es moltiplicazione)
+ 			\item variabili/ costanti (es x,y/a,b)
+ 			\item connettivi soliti
+ 			\item quantificatori: \(\exists, \forall\)
+ 		\end{itemize}
+ 		\textbf{Per chiudere una formula del primo ordine si quantifica ogni variabile libera con il \(\forall\)}\\
+ 		\textbf{Forma normale prenessa}\\
+ 		Sposto tutti i quantificatori in testa (dopo aver chiuso la formula)\\\\
+ 		\textbf{Forma di skolem}\\
+ 		- la formula non deve più contenere \(\exists\)\\
+ 		- sostituisco le variabili precedute da \(\exists\) con tante lettere funzionali quanti \(\forall\) ci sono prima del \(\exists\) che devo togliere (le variabili che uso sono quelle dei \(\forall\) precedenti al \(\exists\) che ho tolto)\\
+ 		\subsection{equivalenze}
+ 		\begin{itemize}
+ 			\setlength\itemsep{0.1mm}
+ 			\item \(\neg \forall x A(x) = \exists x\neg A(x)\)
+ 			\item \(\neg \exists x A(x) = \forall x\neg A(x)\)
+ 			\item \(\forall A(x) \land B = \forall y (A(y) \land B(y))\) 
+ 			\item (vale anche per \(\exists\) e anche per \(\lor\)) (estraendo un quantificatore da \(\lor\) o \(\land\) non lo cambio) (si rinomina la variabile per sicurezza)
+ 			\item \(\forall x A(x) \implies B = \exists y (A(y) \implies B)\)
+ 			\item \(\forall x B \implies A(X) = \forall y (B \implies A(y))\) 
+ 			\item estraendo un quantificatore da un \(\implies\) si cambia se lo si estrae dal primo termine, non si cambia se lo si estrae dal secondo termine
+ 		\end{itemize}
+ 		\subsection{Forma a clausole}
+ 		\(\forall x_1,..., \forall x_n ((L_1\lor L_2 \lor L_3)\land (...) \land  ...)\)
  		
- 		
- 		procedere con logica del primo ordine (forse meglio guardare prima esercitazione)
 	 	
 	 	
-		
+		\end{multicols*}
 		
 		
 		

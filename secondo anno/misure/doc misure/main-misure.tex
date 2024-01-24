@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage[a4paper,margin=1.2cm]{geometry}
+\usepackage{multicol}
+\graphicspath{ {./img/} }
+
+\DeclareMathOperator{\ima}{Im}
+
+
+\begin{document}
+	
+		
+	 	\section{Doppia rampa}
+	 	\(V_x \cdot T_{up} = |Vr| \cdot T_{down}\)
+	 	\begin{itemize}
+	 		\item Tup e Tdown = tempo di salita e discesa rampa
+	 		\item Vr = tensione di riferimento interna
+	 		\item Vx = tensione da misurare
+	 	\end{itemize}
+ 		\
+ 		\(Numero cicli = \frac{T_{down}}{T_{clock}}\)\\\\
+ 		\(T_{up} = T_{clock} \cdot N_{up} \)\\\\
+ 		\(T_{down} = T_{clock} \cdot N_{down} \)\\\\
+ 		\(\Delta V = \frac{|Vr|}{N_{up}}\)\\\\\\
+ 		Per eliminare i disturbi il tempo di integrazione (Tup) deve essere un multiplo intero dei periodi dei disturbi\\\\
+ 		
+ 		l'incertezza dello strumento è legato alla capacità di conteggio (Nup e Ndown) e a Vr\\\\
+ 		\(u(Vx) = \sqrt{u_r^2(N)+u_r^2(Vr)}\)\\\\
+ 		\(u_r(N) = \frac{u(N)}{N}\)\\\\
+ 		\(u(N) = \frac{1}{\sqrt{12}}\)\\\\\\
+ 		
+ 		{\large Progettazione doppia rampa}
+ 		
+ 		\begin{itemize}
+ 			\item trovare Tup (in base ai disturbi da sopprimere)
+ 			\item trovare Nlivelli (tramite Tup) (Ndown sarà calcolato con Ndownmax usando Vx = portata)
+ 			\item trovare frequanza di clock usando la risoluzione
+ 		\end{itemize}
+ 		\(\Delta V \cdot T_{up} = |Vr| \cdot T_{clock}\)\\\\
+ 		Per trovare la costante di tempo dell'integratore (RC) (sapendo Vo = minimo valore all'uscita dall'integratore)\\\\
+ 		\(Vo = -Vx \cdot \frac{T_{up}}{RC}\)
+ 		Tempo di conversione = Tup + Tdown dove Tup costante e Tdown variabile\\\\\\
+ 		
+ 		\section{Voltmetro SAR (approssimazioni successive)}
+ 		
+ 		\(\Delta V = \frac{D_{adc}}{2^N}\)\\\\
+ 		Con Dadc = dinamica, N = numero di bit, e deltaV = risoluzione dimensionale (risoluzione adimensionale = nbit oppure \(1/2^n\))\\\\\\
+ 		
+ 		incertezza di quantizzazione = \(\frac{\Delta V}{\sqrt{12}}\)\\\\\\\\\\\\
+ 		 		
+ 		Numero di Bit equivalenti\\\\
+ 		
+ 		\(n_e = n-\frac{1}{2}log_2(1+\frac{\sigma^2_c}{\sigma^2_q})\)\\\\
+ 		(sigma n = varianza dei rumori = varianza dei rumori esterni + varianza dei rumori interni)\\\\
+ 		(sigma q = varianza di quantizzazione)\\\\
+ 		\(\sigma_{N,int}^2 = V_{N,eff}^2\)\\
+ 		\(\sigma_{q}^2 = \frac{\Delta V^2}{12}\)\\
+ 		
+ 		
+ 		
+ 		
+ 		\section{Oscilloscopi}
+ 		
+ 		\begin{itemize}
+ 			\item Fino a 1Khz si usa chopped oltre alternated (visualizzazione multitraccia)
+ 			\item ugabuga
+ 		\end{itemize}
+ 		\
+ 	
+ 	 	\(t_{salita} MISURATO = \sqrt{t^2_{updevice}+t^2_{uposcilloscopio}}\)\\\\
+ 		\(t_{uposcilloscopio} = \frac{0,35}{bandaosc}\)\\\\
+ 		
+		
+\end{document}
