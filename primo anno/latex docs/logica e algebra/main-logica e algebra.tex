@@ -5,10 +5,11 @@
 \usepackage[a4paper,margin=0.9cm]{geometry}
 \usepackage{multicol}
 \usepackage{sectsty}
+
 \graphicspath{ {./img/} }
 
 \DeclareMathOperator{\ima}{Im}
-
+\newcommand\tab[1][0,5cm]{\hspace*{#1}}
 
 \begin{document}
 		\allsectionsfont{\small}
@@ -17,28 +18,28 @@
 		\begin{multicols*}{3}
 		\section{Proprietà relazioni}
 		
-		{\large Seriale}\\
+		\subsection{seriale}
 		\(\forall a \in A \  \exists b \in A (a,b) \in R\)\\
 		Grafo: ogni vetice ha una freccia uscente\\
-		Matrice: ogni riga ha almeno un "1"\\\\
-		{\large Riflessiva}\\
+		Matrice: ogni riga ha almeno un "1"
+		\subsection{riflessiva}
 		\(\forall a \in A \  (a,a) \in R\)\\
 		Grafo: ogni vetice ha un cappio\\
-		Matrice: sulla diagonale ho tutti "1"\\\\
-		{\large Simmetrica}\\
+		Matrice: sulla diagonale ho tutti "1"
+		\subsection{simmetrica}
 		\(\forall a,b \in A \  (a,b) \in R \Rightarrow (b,a)\in R\)\\
 		Grafo: Ogni freccia in una direzione ne ha una della direzione opposta\\
-		Matrice: \(Mr=Mr^T\)\\\\
-		{\large Antisimmetrica}\\
+		Matrice: \(Mr=Mr^T\)
+		\subsection{antisimmetrica}
 		\(\forall a,b \in A \  se\ (a,b) \in R \ e\  (b,a)\in R \Rightarrow a=b\)\\
 		Grafo: Non ci devono essere doppie freccie\\
-		Matrice: eccetto la diagonale, se in pos (i,j) c'è un 1, allora in posizione (j,i) ci deve essere 0\\\\
-		{\large Transitiva}\\
+		Matrice: eccetto la diagonale, se in pos (i,j) c'è un 1, allora in posizione (j,i) ci deve essere 0
+		\subsection{transitiva}
 		\(\forall a,b,c \in A \  (a,b) \in R e\ (b,c)\in R \Rightarrow (a,c)\in R\)\\
 		Grafo: se a è collegato a b e b è collegato a c anche a deve essere collegato a c \\
 		Matrice: \(Mr^2\subseteq Mr\)\\
 		
-		{\large Osservazioni}
+		\textbf{Osservazioni}
 		\begin{itemize}
 			\setlength\itemsep{0.1mm}
 			\item seriale \(\nRightarrow\) riflessiva
@@ -49,13 +50,13 @@
 		\end{itemize}
 		
 		
-		{\Large Relazioni di equivalenza}\\\\
-		Una relazione si dice di equivalenza se è riflessiva, transitiva, simmetrica (tutti i possibili collegamenti in ogni componente connessa nel grafo)\\\\
+		\subsection{Relazioni di equivalenza}
+		Una relazione si dice di equivalenza se è riflessiva, transitiva, simmetrica (tutti i possibili collegamenti in ogni componente connessa nel grafo)
 	
-		{\Large Relazioni d'ordine}\\\\
-		Una relazione si dice d'ordine se è riflessiva, transitiva, antisimmetrica (per esistere una ch d'ordine la relazione deve essere antisimmetrica, se facendo la chiusura riflessiva e transitiva rimane antisimmetrica ora è una ch d'ordine)\\\\
+		\subsection{Relazioni d'ordine}
+		Una relazione si dice d'ordine se è riflessiva, transitiva, antisimmetrica (per esistere una ch d'ordine la relazione deve essere antisimmetrica, se facendo la chiusura riflessiva e transitiva rimane antisimmetrica ora è una ch d'ordine)
 		
-		{\Large Elementi estremali}
+		\subsection{elementi estremali}
 		\begin{itemize}
 			\setlength\itemsep{0.1mm}
 			\item Massimo: \(se \ \forall \ x \in A \ a\leq x\)
@@ -64,8 +65,8 @@
 			\item Massimale: \(\forall \ x \in A \ se\ x \geq a \Rightarrow x=a\)
 		\end{itemize}
 	 
-	 	Oss: Un minimo è minimale, un massimo è massimale (minimali e massimali esistono in relazioni d'ordine)\\\\
-	 	{\large Maggiorante/minorante, sup/inf}\\
+	 	Oss: Un minimo è minimale, un massimo è massimale (minimali e massimali esistono in relazioni d'ordine)
+	 	\subsection{Maggiorante/minorante, sup/inf}
 	 	Un elemento m si dice
 	 	\begin{itemize}
 	 		\setlength\itemsep{0.1mm}
@@ -89,23 +90,23 @@
  		
 	 	\section{Logica proposizionale}
 	 	
-	 	{\large Sintassi}
+	 	\subsection{sintassi}
 	 	\begin{itemize}
 	 		\setlength\itemsep{0.1mm}
 	 		\item Lettere enunciative: \( A_1, A_2, ... , A_n\) 
 	 		\item Connettivi: \(\neg, \land, \lor, \implies, \iff \)
 	 		\item Simboli ausiliari: \( (\ )\ ; \)
 	 	\end{itemize}
- 		\
- 		{\large Formula ben formata}
+ 		
+ 		\subsection{formula ben formata}
  		\begin{enumerate}
  			\item Ogni lettera enunciativa è una f.b.f.
  			\item Se A, B sono sono f.b.f. allora \( (A\implies B),(A \iff B) , (A \land B), (A\lor B), (\neg A) \) sono f.b.f.
  			\item Nient'altro è una f.b.f.
  		\end{enumerate}
  		
- 		{\large Priorità connettivi: \(\neg, \land, \lor, \implies, \iff \)}\\\\
- 		Significato connettivi
+ 		\textbf{ Priorità connettivi: \(\neg, \land, \lor, \implies, \iff \)}\\
+ 		\textbf{Significato connettivi}
  		\begin{itemize}
  			\setlength\itemsep{0.1mm}
  			\item \( (A\implies B) \) Sempre vero se A=0, Se A=1 vero solo se anche B=1
@@ -132,7 +133,7 @@
  			\item Una f.b.f. B che ha gli stessi modelli di A si dice conseguenza semantica di A
  		\end{itemize}
  		
- 		{\large Risoluzione logica proposizionale}
+ 		\subsection{risoluzione logica proposizionale}
  		
  		\begin{itemize}
  			\setlength\itemsep{0.1mm}
@@ -182,20 +183,77 @@
  		\begin{itemize}
  			\setlength\itemsep{0.1mm}
  			\item semigruppi \(\rightarrow\) proprietà associativa
- 			\item monoidi \(\rightarrow\) semigruppi + elemento neutro
+ 			\item monoidi \(\rightarrow\) semigruppi + elemento neutro unico
  			\item gruppo \(\rightarrow\) monoide + inverso
  			\item gruppo abelliano \(\rightarrow\) gruppo + commutatività
  			\item anello (A,+,\(\cdot\)) dove A(+) gruppo abelliano e A(\(\cdot\)) semigruppo e vale la proprietà distributiva \(x\cdot(y+z) = (x\cdot y )+(x\cdot z)\)
  			\item corpo \(\rightarrow\) anello + gli elementi != 0 sono invertibili + elemento neutro
  			\item campo \(\rightarrow\) corpo + commut rispetto a \(\cdot\)
- 			 
  		\end{itemize}
-	 	
-	 	
+ 		\subsection{sottostrutture}
+ 		\begin{itemize}
+ 			\setlength\itemsep{0.1mm}
+ 			\item \((H,\cdot)\) sottosemigruppo di \((S,\cdot)\) sse \(\forall a,b \in H\) il risultato della moltiplicazione è ancora interno a H 
+ 			\item \((H,\cdot, e)\) sottomonoide di \((M,\cdot, e)\) (con e elemento neutro unico) sse è un sottosemigruppo e \(e \in H\)
+ 			\item  \((H,\cdot, e, ^{-1})\) sottogruppo di \((G,\cdot, e, ^{-1})\) sse: H è chiuso rispetto alla moltiplicazione e all'inverso
+ 			\item \((H,+, \cdot)\) sottoanello di \((A,+, \cdot)\) se \((H,+)\) sottogruppo di \((A,+)\) e \((H,\cdot)\) sottosemigruppo di \((A,\cdot)\)
+ 			\item \((H,+, \cdot)\) sottocampo/ sottocorpo di \((A,+, \cdot)\) se è un sottoanello e \((H \backslash \{0\}, \cdot)\) è sottogruppo di \((A \backslash \{0\}, \cdot)\)
+ 		\end{itemize}
+ 	 	\subsection{congruenza}
+ 	 	Data una struttura algebrica \((A,\Omega)\) una relazione \(\rho \subseteq AxA\) si dice compatibile per \(* \in \Omega\) se:\\
+ 	 	\(\forall a_1,b_2,b_1,b_2\)\\ \(a_1 \rho b_1 \)e \(a_2 \rho b_2 \implies a_1 * a_2 \rho b_1 * b_2\)\\
+ 	 	se \(\rho\) è compatibile con tutte le operazioni di \(\Omega\) di chiama congruenza
+ 	 	\subsection{struttura quoziente}
+ 	 	Con \((A, \Omega)\) struttura algebrica e \(\rho\) congruenza allora per ogni operazione * possiamo definire una operazione binaria interna \(A/\rho\) definita da:\\
+ 	 	\(*_\rho: A/\rho X A/\rho \implies A/\rho\)\\
+ 	 	\([a]_\rho *_\rho [b]_\rho := [a*b]_\rho \)
+ 	 	\subsection{omorfismi}
+ 	 	Date due strutture algebriche \(A_1, \Omega_1\),\(A_2, \Omega_2\) una funzione \(F: A_1 \rightarrow A_2\) preserva tutte le operazioni tra \(\Omega_1, \Omega_2\) si chiama omomorfismo:
+ 	 	\begin{itemize}
+ 	 		\setlength\itemsep{0.1mm}
+ 	 		\item f è iniettiva \(\rightarrow\) monomorfismo
+ 	 		\item f è suriettiva \(\rightarrow\) epimorfismo
+ 	 		\item f è biunivoca \(\rightarrow\) isomorfismo
+ 	 	\end{itemize}
+  		\textbf{criterio per gruppi}\\
+  		Dati \((G,*),(H,\cdot)\) gruppi e \(f:G\rightarrow H\) omomorfismo \(\iff\) \(\forall g_1,g_2\)\\
+  		\(f(g_1*g_2) = f(g_1) * f(g_2)\)\\\\
+  		\textbf{criterio per anelli}\\
+  		Dati \((A,+,\cdot)\), \((B,\oplus,\odot)\) anelli e \(\gamma: A \rightarrow B\) omomorfismo \(\iff\)\\
+  		- \(\forall a,b \in A\) - \(\gamma(a+b)= \gamma(a)\oplus\gamma(b)\)\\
+ 	 	- \(\forall a,b \in A\) - \(\gamma(a\cdot b)= \gamma(a)\odot\gamma(b)\)\\ 	
 		\end{multicols*}
+	
+	
+		\begin{multicols*}{3}
+			
+			
+		\section{SPASS}
+		\subsection{struttura di un programma spass}
+		list\_of\_symbols.\\
+		\tab functions[(n\_funz,arità),...,(cost,0)].\\
+		\tab predicates[(n\_predicato,arità),...].\\
+		end\_of\_list.\\\\
+		list\_of\_formulae(axioms).\\
+		\tab formula(...).
+		end\_of\_list.\\\\
+		list\_of\_formulae(conjectures).\\
+		\tab congettura\_da\_verificare(...).
+		end\_of\_list.\\\\
+		\subsection{sintassi}
+		\begin{itemize}
+			\setlength\itemsep{0.1mm}
+			\item \(\land\) = and(), \(\lor\) = or(), \(\neg\) = not()
+			\item \(\implies\) = implies(), \(\iff\) = equiv()
+			\item \(\forall\) = forall([x],...)
+			\item \(\exists\) = exists([x],...)
+		\end{itemize}
+		\textbf{spass lavora solo su formule chiuse}\\\\
+		\textbf{funzioni:}
+		ad esempio moltiplicazione (le costanti sono funzioni di arità 0)\\
+		\textbf{predicati:}
+		ad esempio uccide, è presente, è incantato, commercia\\
 		
 		
-		
-		
-		
+		\end{multicols*}
 \end{document}
