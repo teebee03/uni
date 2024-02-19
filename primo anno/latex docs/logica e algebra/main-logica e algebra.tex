@@ -178,81 +178,125 @@
  		\end{itemize}
  		\subsection{Forma a clausole}
  		\(\forall x_1,..., \forall x_n ((L_1\lor L_2 \lor L_3)\land (...) \land  ...)\)
- 		\section{algebra}
- 		\subsection{strutture algebriche}
+ 		\section{SPASS}
+ 		\subsection{struttura di un programma spass}
+ 		list\_of\_symbols.\\
+ 		\tab functions[(n\_funz,arità),...,(cost,0)].\\
+ 		\tab predicates[(n\_predicato,arità),...].\\
+ 		end\_of\_list.\\\\
+ 		list\_of\_formulae(axioms).\\
+ 		\tab formula(...).
+ 		end\_of\_list.\\\\
+ 		list\_of\_formulae(conjectures).\\
+ 		\tab congettura\_da\_verificare(...).
+ 		end\_of\_list.
+ 		\subsection{sintassi}
  		\begin{itemize}
  			\setlength\itemsep{0.1mm}
- 			\item semigruppi \(\rightarrow\) proprietà associativa
- 			\item monoidi \(\rightarrow\) semigruppi + elemento neutro unico
- 			\item gruppo \(\rightarrow\) monoide + inverso
- 			\item gruppo abelliano \(\rightarrow\) gruppo + commutatività
- 			\item anello (A,+,\(\cdot\)) dove A(+) gruppo abelliano e A(\(\cdot\)) semigruppo e vale la proprietà distributiva \(x\cdot(y+z) = (x\cdot y )+(x\cdot z)\)
- 			\item corpo \(\rightarrow\) anello + gli elementi != 0 sono invertibili + elemento neutro
- 			\item campo \(\rightarrow\) corpo + commut rispetto a \(\cdot\)
+ 			\item \(\land\) = and(), \(\lor\) = or(), \(\neg\) = not()
+ 			\item \(\implies\) = implies(), \(\iff\) = equiv()
+ 			\item \(\forall\) = forall([x],...)
+ 			\item \(\exists\) = exists([x],...)
  		\end{itemize}
- 		\subsection{sottostrutture}
- 		\begin{itemize}
- 			\setlength\itemsep{0.1mm}
- 			\item \((H,\cdot)\) sottosemigruppo di \((S,\cdot)\) sse \(\forall a,b \in H\) il risultato della moltiplicazione è ancora interno a H 
- 			\item \((H,\cdot, e)\) sottomonoide di \((M,\cdot, e)\) (con e elemento neutro unico) sse è un sottosemigruppo e \(e \in H\)
- 			\item  \((H,\cdot, e, ^{-1})\) sottogruppo di \((G,\cdot, e, ^{-1})\) sse: H è chiuso rispetto alla moltiplicazione e all'inverso
- 			\item \((H,+, \cdot)\) sottoanello di \((A,+, \cdot)\) se \((H,+)\) sottogruppo di \((A,+)\) e \((H,\cdot)\) sottosemigruppo di \((A,\cdot)\)
- 			\item \((H,+, \cdot)\) sottocampo/ sottocorpo di \((A,+, \cdot)\) se è un sottoanello e \((H \backslash \{0\}, \cdot)\) è sottogruppo di \((A \backslash \{0\}, \cdot)\)
- 		\end{itemize}
- 	 	\subsection{congruenza}
- 	 	Data una struttura algebrica \((A,\Omega)\) una relazione \(\rho \subseteq AxA\) si dice compatibile per \(* \in \Omega\) se:\\
- 	 	\(\forall a_1,b_2,b_1,b_2\)\\ \(a_1 \rho b_1 \)e \(a_2 \rho b_2 \implies a_1 * a_2 \rho b_1 * b_2\)\\
- 	 	se \(\rho\) è compatibile con tutte le operazioni di \(\Omega\) di chiama congruenza
- 	 	\subsection{struttura quoziente}
- 	 	Con \((A, \Omega)\) struttura algebrica e \(\rho\) congruenza allora per ogni operazione * possiamo definire una operazione binaria interna \(A/\rho\) definita da:\\
- 	 	\(*_\rho: A/\rho X A/\rho \implies A/\rho\)\\
- 	 	\([a]_\rho *_\rho [b]_\rho := [a*b]_\rho \)
- 	 	\subsection{omorfismi}
- 	 	Date due strutture algebriche \(A_1, \Omega_1\),\(A_2, \Omega_2\) una funzione \(F: A_1 \rightarrow A_2\) preserva tutte le operazioni tra \(\Omega_1, \Omega_2\) si chiama omomorfismo:
- 	 	\begin{itemize}
- 	 		\setlength\itemsep{0.1mm}
- 	 		\item f è iniettiva \(\rightarrow\) monomorfismo
- 	 		\item f è suriettiva \(\rightarrow\) epimorfismo
- 	 		\item f è biunivoca \(\rightarrow\) isomorfismo
- 	 	\end{itemize}
-  		\textbf{criterio per gruppi}\\
-  		Dati \((G,*),(H,\cdot)\) gruppi e \(f:G\rightarrow H\) omomorfismo \(\iff\) \(\forall g_1,g_2\)\\
-  		\(f(g_1*g_2) = f(g_1) * f(g_2)\)\\\\
-  		\textbf{criterio per anelli}\\
-  		Dati \((A,+,\cdot)\), \((B,\oplus,\odot)\) anelli e \(\gamma: A \rightarrow B\) omomorfismo \(\iff\)\\
-  		- \(\forall a,b \in A\) - \(\gamma(a+b)= \gamma(a)\oplus\gamma(b)\)\\
- 	 	- \(\forall a,b \in A\) - \(\gamma(a\cdot b)= \gamma(a)\odot\gamma(b)\)\\ 	
+ 		\textbf{spass lavora solo su formule chiuse}\\\\
+ 		\textbf{funzioni:}
+ 		ad esempio moltiplicazione (le costanti sono funzioni di arità 0)\\
+ 		\textbf{predicati:}
+ 		ad esempio uccide, è presente, è incantato, commercia\\
 		\end{multicols*}
 	
 	
 		\begin{multicols*}{3}
 			
 			
-		\section{SPASS}
-		\subsection{struttura di un programma spass}
-		list\_of\_symbols.\\
-		\tab functions[(n\_funz,arità),...,(cost,0)].\\
-		\tab predicates[(n\_predicato,arità),...].\\
-		end\_of\_list.\\\\
-		list\_of\_formulae(axioms).\\
-		\tab formula(...).
-		end\_of\_list.\\\\
-		list\_of\_formulae(conjectures).\\
-		\tab congettura\_da\_verificare(...).
-		end\_of\_list.\\\\
-		\subsection{sintassi}
+		\section{Algebra}
+		\subsection{Strutture algebriche}
 		\begin{itemize}
-			\setlength\itemsep{0.1mm}
-			\item \(\land\) = and(), \(\lor\) = or(), \(\neg\) = not()
-			\item \(\implies\) = implies(), \(\iff\) = equiv()
-			\item \(\forall\) = forall([x],...)
-			\item \(\exists\) = exists([x],...)
+			\item Le strutture algebriche sono una coppia (A,\(\Omega\)) Dove \(\Omega={\omega_1,...,\omega_K}\) è un insieme di operazioni interne all'insieme A
 		\end{itemize}
-		\textbf{spass lavora solo su formule chiuse}\\\\
-		\textbf{funzioni:}
-		ad esempio moltiplicazione (le costanti sono funzioni di arità 0)\\
-		\textbf{predicati:}
-		ad esempio uccide, è presente, è incantato, commercia\\
+		\textbf{tipi di strutture algebriche}
+		\begin{itemize}
+			\item \textbf{semigruppo} (A,\(\cdot\)) Dove \(\cdot\) è un'operazione binaria che soddisfa la proprietà associativa (se l'operazione è commutativa il semigruppo si dice semigruppo commutativo)
+			\item \textbf{Monoide} (M,*,e) Dove (M,*) è un semigruppo e e\(\in\)M è un elemento neutro (unico) all'operazione *
+			\item \textbf{Gruppo} (G,*,e,\(^{-1}\)) Dove (G,*,e) è un monoide ed esiste l'inverso \(\forall g\in G \)  \(\exists  h\in G \) tale che g*h=h*g=e (h è l'inverso destro e sinistro di g)
+			\item \textbf{Anello} (A,+,\(\cdot\)) Dove (A,+) è un gruppo commutativo con elementro neutro 0, e (A,\(\cdot\)) è un semigruppo
+			\item \textbf{Corpo e campo} Un corpo è un anello (A,+,\(\cdot\),1) con identità tale che (A\textbackslash \{0\},\(\cdot\)) è un gruppo, se questo gruppo è commutativo si parla di campo
+		\end{itemize}
+		\textbf{Zero di un sermigruppo (S,\(\cdot\)) (elemento assorbente)}\\
+		è un elemento \(z\in S \) tale che \(\forall s \in S\)\\
+		\(s\cdot z = z \cdot s = z\)\\
+		\textbf{Divisori dello zero}\\
+		In un anello (A,+,\(\cdot\)) due elementi a,b a\(\neq\)0,b\(\neq\)0 si dicono divisori dello zero se a\(\cdot\)b=0\\
+		In un anello privo di divisori dello zero valgono le leggi di cancellazione a sinistra e destra\\
+		\textbf{Osservazione}\\
+		Se il semigruppo moltiplicativo (A\textbackslash \{0\},\(\cdot\)) è un gruppo \(\implies\) l'anello non ha divisori dello zero\\
+		
+		\textbf{Quaternioni}:corpo che non è un campo\\
+		Definiti da: \(H=\{a\cdot i+b\cdot j+c\cdot k+d \:\:\:\: a,b,c,d\in \Re \}\)
+		
+		\subsection{Sottostrutture}
+		Data (A,\(\Omega\)) struttura algebrica e H\(\subseteq\)A, (H,\(\Omega\)) è una sottostruttura algebrica se tutte le operazioni di omega "si restringono" ad H:\\
+		\(*\in \Omega \:\:\: \forall h_1,h_2\in H \:\:\: h_1*h_2\in H\)\\
+		Quindi tutte le operazioni \(\Omega\) sono chiuse in H\\
+		\begin{enumerate}
+			\item (H,\(\cdot\)) è sottosemigruppo di un semigruppo (S,\(\cdot\)) (H\(\subseteq\) S) \(\iff\) \(\forall a,b \in H \:\:\: a\cdot b\in H \\ \cdot : H\times H \rightarrow H\)
+			\item (H,\(\cdot\),e) è sottomonoide del monoide (M,\(\cdot\),e) \(\iff\) è un sottosemigruppo \(\land \:\: e \in H\)
+			\item (H,\(\cdot\),e, \(^{-1}\)) è un sottogruppo del gruppo (G,\(\cdot\),e, \(^{-1}\)) \(\iff\)\\ \(\forall a,b \in H \:\:\: a\cdot b \in H\) \\
+			\(\forall a \in H \:\:\: a^{-1} \in H\)\\\\
+			\textbf{Criterio per gruppi:}\\ (H,\(\cdot\)) è sottogruppo \(\iff\) \\
+			\(\forall a,b \in H \:\:\: a\cdot b^{-1} \in H\)
+			\item (H,+,\(\cdot\)) è un sottoanello di (A,+,\(\cdot\)) \(\iff\):\\
+			(H,+) è un sottogruppo di (A,+)\\
+			(H,\(\cdot\)) è un sottosemigruppo di  (A,\(\cdot\))
+			\item (H,+,\(\cdot\)) sottocampo/sottocorpo di (A,+,\(\cdot\)) se è un sottoanello e (H \textbackslash \{0\},\(\cdot\)) è un sottogruppo di (A \textbackslash \{0\},\(\cdot\))
+		\end{enumerate} 
+		
+		\textbf{Strategia: uso i criteri delle sottostrutture tramite strutture note}\\\\
+		Strutture note:
+		\begin{itemize}
+			\item Campi:\( (\mathbb{Z}/5,+,\cdot),(\mathbb{Z},+,\cdot),(\mathbb{Q},+,\cdot),(\mathbb{R},+,\cdot),(\mathbb{C},+,\cdot)\)
+			\item Anelli: \((\mathbb{R}[x],+,\cdot)\) (polinomi in x), \((\mathbb{M}_{nn}(\mathbb{R}),+,\cdot)\) (matrici quadrate), \((\mathbb{Z}/5,+,\cdot)\) (classi di equivalenza per numeri non primi (anelli con divisori deello zero))
+			\item Gruppi: \((GL_n(\mathbb{R}),+)\) (matrici con determinante \(\neq\) 0)
+			\item Monoidi: \((\mathbb{N},+,0)\) 
+		\end{itemize} 
+		\subsection{Congruenza/strutture quoziente/omomorfismi}
+		Data una struttura algebrica (A,\(\Omega\)) una relazione \(\rho \subseteq A\times A\) di equivalenza si dice \textbf{compatibile} per * \(\in \Omega\) se: \\
+		\(\forall a_1,a_2,b_1,b_2 \:\:\:\:\: a_1 \rho b_1 = a_2\rho b_2 \implies (a_1*a_2)\rho (b_1*b_2) \)\\
+		Se \(\rho\) è compatibile con tutte le operazioni di \(\Omega\) si chiama \textbf{congruenza}\\
+		
+		
+		Data (A,\(\Omega\)) struttura e \(\rho \subseteq A\times A\) congruenza allora per ogni operazione *\(\in \Omega\) possiamo definire una nuova operazione interna A\textbackslash\(\rho\)\\
+		\(*_{\rho} : A \setminus \rho \times A \setminus \rho \rightarrow A \setminus \rho\)\\
+		Definita da \([a]_\rho *_\rho [b]_\rho := [a*b]_\rho\)\\
+		Nuova struttura algebrica: \((A\setminus \rho ,\Omega_\rho)\) dove \(\Omega_\rho = \{*_\rho \:\:\: *\in \Omega\}\)\\
+		
+		\textbf{Omomorfismo}\\
+		Un omomorfismo è una funzione \(f\) che preserva tutte le operazioni \(\Omega_1 \) e \(\Omega_2 \) tra le strutture \((A_1, \Omega_1)\) e \((A_2, \Omega_2)\)\\
+		Tipi di omomorfismo in base a \(f\):
+		\begin{itemize}
+			\item \(f\) iniettiva \(\rightarrow\) monomorfismo
+			\item \(f\) suriettiva \(\rightarrow\) epimorfismo
+			\item \(f\) biunivoca \(\rightarrow\) isomorfismo			
+		\end{itemize}
+		\textbf{Criterio per gruppi}\\
+		Dati (G,*) e (H,\(\cdot\)) gruppi \(f:G\rightarrow H\) è un omomorfismo \(\iff\) \(\forall g_1,g_2 \:\:\:\: f(g_1,g_2) = f(g_1) \cdot f(g_2)\)
+		\textbf{Criterio per anelli}\\
+		Dati (A,+,\(\cdot\)) e (B,\(\oplus\),\(\odot\)) anelli \(\phi : A\rightarrow B\) è un omomorfismo se:\\
+		\(\forall a,b \in A \:\:\:\: \varphi(a+b) = \varphi(a) \oplus \varphi (b) \)\\
+		\(\forall a,b \in A \:\:\:\: \varphi(a\cdot b) = \varphi(a) \odot \varphi (b) \)\\
+		\subsection{Sottogruppi normali(gruppi)/ ideali(anelli)}
+		Un sottogruppo H di un gruppo (G,*) si dice normale se:\\
+		\(\forall g \in G, \forall h \in H \:\:\:\:\: g^{-1} *h*g \in H \:\:\: (\iff \forall g\in G \:\:\: g^{-1}*h*g \subseteq H)\)\\
+		Osservazione: se G è commutativo \(\implies\) tutti i sottogruppi sono normali
+		\(g^{-1}*h*g=g^{-1}*g*h=h*e_G=h\in H \:\:\: \forall h \in h \:\: \forall g \in G \)\\
+		Proposizione: se \(\rho\) è una congruenza del gruppo (G,*) allora \([e_G]_\rho\) è un sottogruppo normale\\\\
+		Un \textbf{ideale} I di un anello (A,+,\(\cdot\)) è un sottoanello di A che soddisfa l'assorbimento \(\forall a \in A\):\\
+		Destra: I\(\cdot\)A = \(\{x\cdot a: x\in I\}\subseteq\) I\\
+		Sinistra: I\(\cdot\)A = \(\{a \cdot x: x \in  I\} \subseteq\) I\\
+		
+		
+		
+		
 		
 		
 		\end{multicols*}
