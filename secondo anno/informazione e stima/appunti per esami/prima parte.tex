@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage[a4paper,margin=0.9cm]{geometry}
+\usepackage{multicol}
+\usepackage{sectsty}
+
+\graphicspath{ {./img/} }
+
+\DeclareMathOperator{\ima}{Im}
+\newcommand\tab[1][0,5cm]{\hspace*{#1}}
+
+\begin{document}
+	\allsectionsfont{\small}
+	\scriptsize
+	
+	\begin{multicols*}{3}
+		\section{Assiomi}
+		\textbf{Assiomi di kolmogorov:}	
+		\begin{enumerate}
+			\setlength\itemsep{0.1mm}
+			\item Non negatività: \(P(A)>0\)
+			\item Normalizzazione: \(P(\Omega)=1\)
+			\item Additività: se ho 2 eventi disgiunti \(A\) e \(B\): (\(P(A\cap B)=0\)). Allora \(P(A\cup B)= P(A)+P(B)\)
+		\end{enumerate}
+		\subsection{Teorema delle probabilità totali:}
+		Ho n eventi disgiunti: \(A_1,A_2,A_3...\)\\
+		\[P(\bigcup_{i=1}^{n}A_i)= \sum_{i=1}^{n}P(A_i)\]\\
+		Se \(P(A\cap B)\neq 0\) allora \(P(A\cup B)= P(A)+P(B)-P(A\cap B)\) (e varie combinazioni se ci sono più di 2 eventi analizzati)
+		\subsection{Leggi di probabilità uniformi}
+		\textbf{Legge uniforme discreta}\\	
+		\(P(A)= \frac{\#\text{casi favorevoli ad}A}{\#\text{casi totali}} = \frac{|A|}{|\Omega|}\)\\
+		\textbf{Legge uniforme continua}\\
+		\(P(A)=\frac{\text{area}(A)}{\text{area}(\Omega)}\) \(\forall A\subseteq \Omega\)\\
+		
+		\section{Probabilità condizionate}
+		\textbf{Definizione di probabilità condizionata:}
+		\(P(A|B)=\frac{P(A\cap B)}{P(B)}\)\\
+		Altra definizione di intersezione: \(P(A\cap B)= P(B)\cdot P(A|B) = P(A)\cdot P(B|A)\)\\\\
+		\textbf{Regola moltiplicativa:}
+		\(P(A\cap B \cap C)= P(A)\cdot P(B|A) \cdot P(C|A\cap B)\)\\
+		\subsection{Teorema delle probabilità totali}
+		Se ho \(A_1,A_2,A_3\) disgiunti che formano una partizione di \(\Omega\):\\
+		\(P(B)= P(A_1)\cdot P(B|A_1)+ P(A_2)\cdot P(B|A_2)+ P(A_3)\cdot P(B|A_3)\)
+		\subsection{Regola di Bayes}
+		\[P(A|B)= \frac{P(B|A)\cdot P(A))}{P(B)}\]\\
+		\textbf{Indipendenza}\\
+		Se \(A \perp B\) allora \(P(B|A) = P(B) , P(A|B)= P(A)\)\\
+		Due eventi si dicono indipendenti se: \(P(A\cap B)= P(A)\cdot P(B)\)\\
+		\section{Calcolo combinatorio}
+		\subsection{Permutazioni}
+		In quanti modi posso ordinare questi n elementi distinti?\\
+		casi tot \(=  n(n-1)(n-2)...=n!\)
+		\subsection{Combinazioni}
+		Calcolare il numero di sottoinsiemi con \(k\) elementi, partendo da un insieme con n elementi distinti. \(0\leq k \leq n\)\\
+		\# sequenze ordinate di \(k\) elementi \(= \frac{n!}{(n-k)!k!}\)\\
+		\(C_{n,k}= \binom{n}{k}\)\\\\
+		\textbf{Probabilità binomiale}\\
+		Date n prove indipendenti, probabilità di successo della singola prova \(P(\text{successo})= p\), la prob. di avere k successi su n prove è: \(p^k \cdot (1-p)^{n-k} \cdot \binom{n}{k}\)
+		\subsection{Coefficiente multinomiale (partizioni)}
+		Ho uno spazio di probabilità uniforme ed eseguo \(n\) prove indipendenti (es. estrazioni con reinserimento), voglio calcolare quante sequenze con \(k_i\) estrazioni di tipo \(i\) ci sono.\\
+		\# totale di scelte \(= \frac{n!}{k_1!k_2!k_3!k_4!} = \binom{n}{k_1,k_2,k_3,k_4}\)
+		
+		
+		
+		
+		
+		
+		
+		
+	\end{multicols*}
+\end{document}
