@@ -32,7 +32,7 @@
 		\textbf{Legge uniforme discreta}\\	
 		\(P(A)= \frac{\#\text{casi favorevoli ad}A}{\#\text{casi totali}} = \frac{|A|}{|\Omega|}\)\\
 		\textbf{Legge uniforme continua}\\
-		\(P(A)=\frac{\text{area}(A)}{\text{area}(\Omega)}\) \(\forall A\subseteq \Omega\)\\
+		\(P(A)=\frac{\text{area}(A)}{\text{area}(\Omega)}\) \(\forall A\subseteq \Omega\)
 		
 		\section{Probabilità condizionate}
 		\textbf{Definizione di probabilità condizionata:}
@@ -47,21 +47,120 @@
 		\[P(A|B)= \frac{P(B|A)\cdot P(A))}{P(B)}\]\\
 		\textbf{Indipendenza}\\
 		Se \(A \perp B\) allora \(P(B|A) = P(B) , P(A|B)= P(A)\)\\
-		Due eventi si dicono indipendenti se: \(P(A\cap B)= P(A)\cdot P(B)\)\\
+		Due eventi si dicono indipendenti se: \(P(A\cap B)= P(A)\cdot P(B)\)
 		\section{Calcolo combinatorio}
 		\subsection{Permutazioni}
 		In quanti modi posso ordinare questi n elementi distinti?\\
 		casi tot \(=  n(n-1)(n-2)...=n!\)
 		\subsection{Combinazioni}
 		Calcolare il numero di sottoinsiemi con \(k\) elementi, partendo da un insieme con n elementi distinti. \(0\leq k \leq n\)\\
-		\# sequenze ordinate di \(k\) elementi \(= \frac{n!}{(n-k)!k!}\)\\
+		\#sequenze ordinate di \(k\) elementi \(= \frac{n!}{(n-k)!k!}\)\\
 		\(C_{n,k}= \binom{n}{k}\)\\\\
 		\textbf{Probabilità binomiale}\\
 		Date n prove indipendenti, probabilità di successo della singola prova \(P(\text{successo})= p\), la prob. di avere k successi su n prove è: \(p^k \cdot (1-p)^{n-k} \cdot \binom{n}{k}\)
 		\subsection{Coefficiente multinomiale (partizioni)}
 		Ho uno spazio di probabilità uniforme ed eseguo \(n\) prove indipendenti (es. estrazioni con reinserimento), voglio calcolare quante sequenze con \(k_i\) estrazioni di tipo \(i\) ci sono.\\
-		\# totale di scelte \(= \frac{n!}{k_1!k_2!k_3!k_4!} = \binom{n}{k_1,k_2,k_3,k_4}\)
+		\#totale di scelte \(= \frac{n!}{k_1!k_2!k_3!k_4!} = \binom{n}{k_1,k_2,k_3,k_4}\)
 		
+		\section{Variabili aleatorie discrete}
+		\subsection{Variabile aleatoria geometrica}
+		La v.a. geometrica risponde al problema: facendo esperimenti ripetuti, qual'è la probabilità di ottenere il primo successo alla k-esima prova.\\ 
+		\begin{equation*}
+			X \sim
+			\left\{
+				\begin{alignedat}{2}
+					(1-p)^{k-1}  & \qquad k=1,2,3,...\\
+					0            & \qquad \text{altrimenti}
+				\end{alignedat}
+			\right.
+		\end{equation*}
+		\(X \sim Geom(p)\) Dove \(p\) è la probabilità di successo nella singola prova.\\
+		\textbf{Legge di perdita di memoria}\\
+		\(p_{x-t|X>t}(k) = p_x (k) \implies E[X-t|X>t] = E[X]\) (Vale solo per v.a. \(Geom\))
+		
+		\subsection{Variabile aleatoria binomiale}
+		La v.a. binomiale risponde al problema: facendo esperimenti ripetuti qual'è la probabilità di ottenere esattamente k successi?.\\ 
+		\begin{equation*}
+			X \sim
+			\left\{
+			\begin{alignedat}{2}
+				\binom{n}{k}\cdot p^k \cdot (1-p)^{n-k}  & \qquad k=1,2,3,...\\
+				0            & \qquad \text{altrimenti}
+			\end{alignedat}
+			\right.
+		\end{equation*}
+		\(X \sim Bin(n,p)\) Dove \(p\) è la probabilità di successo nella singola prova ed n è il numero di prove.\\
+		\(E[X] = np\), \(Var[X] = np(1-p)\)\\
+		\(Var[X]< \frac{n}{4}\)
+		
+		\subsection{Variabile aleatoria Bernoulliana}
+		La v.a. bernoulliana è una distribuzione di probabilità su due soli valori: 0 e 1\\ 
+		\begin{equation*}
+			X \sim
+			\left\{
+			\begin{alignedat}{2}
+				p  & \qquad 1\\
+				1-p  & \qquad 0\\
+				0            & \qquad \text{altrimenti}
+			\end{alignedat}
+			\right.
+		\end{equation*}
+		\(X \sim Bern(p)\) Dove \(p\) è la probabilità di successo.\\
+		\(E[X] = p\), \(Var[X] = p(1-p)\)
+		
+		
+		
+		\subsection{Valore atteso}
+		\[E[X]= \sum_{x\in \mathbb{R}}^{} x \cdot p_x(x)\]
+		Moltiplico sommo il prodotto di ogni realizzazione con il suo peso ovvero la sua probabilità.\\
+		\textbf{Legge dello statistico inconsapevole}\\
+		Data v.a. \(Y= g(X)\), \(Y\) è una v.a.\\
+		\(E[Y]= E[g(x)]\)\\\\
+		Nel caso lineare:\\
+		\(E[\alpha X + \beta] = \alpha E[X] + \beta\)\\
+		\textbf{Valore atteso condizionato}\\
+		\(E[X|B]= \sum_{x\in \mathbb{R}}^{} x \cdot p_{X|B} (x) \)\\
+		\textbf{Legge dell'aspettativa totale}\\
+		Con \(A_1,A_2,...,A_n\) partizioni di \(\Omega\)\\
+		\(E[X] = \sum_{i_1}^{n} P(A_1) \cdot E[X|A_i]\)
+		
+		\subsection{Varianza}
+		\[Var[X] = E[(X-E[X])^2] = E[X^2]- E[X]^2\]
+		La varianza è il momento di ordine 2.\\
+		\textbf{Proprietà varianza}\\
+		\(Var[X] \geq 0 \qquad \forall \ \text{v.a.} \ X\)\\
+		\(Var[\alpha X + \beta] = \alpha^2 \cdot Var[X]\)\\
+		\textbf{Scarto quadratico medio}\\
+		\(\sigma = \sqrt{Var[X]}\)\\
+		\section{V.a. discrete multiple}
+		\subsection{Legge di probabilità congiunta}
+		Ho 2 v.a. \(X\) e \(Y\), \(P({X=x}\cap{Y=y}) = p_{X,Y} (x,y) \)\\\\
+		Per trovare la legge marginale di X: \(p_x (x) = \sum_{y}^{} p_{X,Y} (x,y)\)\\
+		\textbf{Legge di probabilità condizionata}
+		\(p_{X|Y} (x|y) = \frac{p_{X,Y} (x,y)}{\sum_{t}^{} p_{X,Y} (t,y)} = \frac{p_{X,Y} (x,y)}{p_Y (y)}\)\\
+		\textbf{Regola moltiplicativa}\\
+		\(p_{X,Y} (x,y) = p_{X|Y} (x|y) \cdot p_Y (y) = p_{Y|X} (y|x) \cdot p_X (x)\)\\
+		\subsection{Variabili aleatorie indipendenti}
+		Due v.a. \(X\) e \(Y\) sono dette indipendenti \((X\perp Y)\) \(\iff\) \(p_{X,Y} (x,y) = p_X (x)\cdot p_Y (y) \)\\
+		
+		\subsection{Valore atteso per v.a. multiple}
+		Statistica congiunta di \(X\) e \(Y\).\\
+		\(E[g(X,Y)] = \sum_{x}^{}\sum_{y}^{} g(x,y) \cdot p_{X,Y} (x,y)\)\\
+		Caso lineare: \(E[\alpha X + \beta Y + \gamma] = \alpha E[X] + \beta E[Y] + \gamma\) \\
+		Se \(X \perp Y\) allora \(E[X \cdot Y] = E[X] \cdot E[Y]\)
+		
+		\subsection{Varianza per v.a. multiple}
+		\(Var[X+Y]= Var[X] + Var[Y] +2(E[XY] -E[X]E[Y])\)\\
+		Se \(X\perp Y\) allora \(Var[X+Y] = Var[X] + Var[Y]\)\\
+		
+		
+		continuare a doc7 variabili aleatorie continue
+		
+		
+		
+		
+		
+		 
 		
 		
 		
