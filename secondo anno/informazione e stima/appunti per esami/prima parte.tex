@@ -153,8 +153,41 @@
 		\(Var[X+Y]= Var[X] + Var[Y] +2(E[XY] -E[X]E[Y])\)\\
 		Se \(X\perp Y\) allora \(Var[X+Y] = Var[X] + Var[Y]\)\\
 		
+		\section{Variabili aleatorie continue}
+		\textbf{Valore atteso e varianza}\\
+		\(E[X] = \int_{\mathbb{R}}^{} x \cdot f_x (x) dx\)\\
+		Legge dello statistico inconsapevole: \(E[g(X)] = \int_{\mathbb{R}}^{} g(x) \cdot f_x (x) dx\)\\
+		\(Var[X] = E[X^2] - E[X]^2\)
 		
-		continuare a doc7 variabili aleatorie continue
+		\subsection{V.a. uniforme continua}
+		\(X \sim \mathbb{U}[a,b] \)\\
+		\begin{equation*}
+			f_x (x) \sim
+			\left\{
+			\begin{alignedat}{2}
+				\frac{1}{b-a}  & \qquad a\leq x \leq b\\
+				0            & \qquad \text{altrimenti}
+			\end{alignedat}
+			\right.
+		\end{equation*}
+		\(E[X] = \frac{a+b}{2}\), \(Var[X] = \frac{(b-a)^2}{12}\), \(\sigma_x = \frac{b-a}{\sqrt{12}}\)\\
+		
+		\subsection{Funzione cumulativa di probabilità}
+		\(P(X\leq x) = F_x (x) = \int_{-\infty}^{x} f_x (t) dt\)\\
+		\textbf{Proprietà}
+		\begin{itemize}
+			\item \(0\leq F_x (x) \leq 1\)
+			\item \(F_x\) è una funzione non decrescente \(\forall x \in \mathbb{R}\)
+			\item \(\frac{d}{dx} F_x (x) = f_x (x)\), \(F_x\) è la funzione integrale di \(f_x\)  
+		\end{itemize}
+		\subsection{V.a. gaussiana}
+		\(X \sim Norm[E[x],Var[X]] = Norm[\mu,\sigma^2]\)\\
+		\textbf{Cumulata della gaussiana}\\
+		\(F_x(x) = P(X\leq x) = \Phi(\frac{x-\mu}{\sigma})\)
+		
+		Fare doc 8
+		
+		
 		
 		
 		
