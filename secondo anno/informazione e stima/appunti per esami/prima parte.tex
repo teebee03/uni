@@ -185,7 +185,81 @@
 		\textbf{Cumulata della gaussiana}\\
 		\(F_x(x) = P(X\leq x) = \Phi(\frac{x-\mu}{\sigma})\)
 		
-		Fare doc 8
+		\section{V.a. continue multiple}
+		\textbf{Densità di probabilità congiunta}\\
+		\(P((X,Y)\in S) = \iint_{(x,y)\in S}f_{X,Y} (x,y) dxdy \)\\ \(f_{X,Y} \) è la densità di probabilità congiunta.\\
+		\textbf{Valore atteso}\\
+		\(E[g(X,Y)] = \iint_{\mathbb{R}} g(x,y)\cdot f_{X,Y}(x,y) dxdy\) \\Con g funzione deterministica nota.\\
+		\textbf{Legge di probabilità marginale}\\
+		\(f_x(x) = \int_{\mathbb{R}}^{} f_{X,Y}(x,y) dy\)\\
+		Densità marginale di X.\\
+		\textbf{Indipendenza tra due v.a. continue}\\
+		\(X\) e \(Y\) sono dette indipendenti \(\iff\) \(f_{X,Y}(x,y) = f_X(x)\cdot f_Y(y) \qquad \forall (x,y) \in \mathbb{R}^2\)\\
+		\textbf{Densità di probabilità condizionata}\\
+		\(f_{Y|X}(y|x) = \frac{f_{X|Y} (x,y)}{f_X (x)} = \frac{f_{X,Y} (x,y)}{\int_{\mathbb{R}} f_{X,Y} (x,t) dt}\)\\
+		
+		
+		\section{Regola di bayes e funzioni di v.a.}
+		\textbf{Regola di bayes nel continuo}\\
+		\(f_{X|Y} (x|y) = \frac{f_{Y|X} (y|x)\cdot f_X(x)}{f_Y (y)}\)\\
+		Per le v.a. discrete basta cambiare la funzione continua con la probabilità.\\
+		\subsection{Calcolo della funzione di una v.a. continua}
+		Ho \(X\) v.a. con legge nota \(f_x\) e \(Y=g(X)\) con \(g\) deterministica e nota, voglio trovare \(f_y\).\\
+		\textbf{Approccio tramite la cumulata}\\
+		1- Calcolo la cumulata di \(Y\).\\
+		\(F_Y(y) = P(Y\leq y)\)\\
+		2. Calcolo \(f_Y\)\\
+		\(f_Y (y)= \frac{d}{dy} F_Y (y)\)\\\\
+		\textbf{Trasformazioni lineari di v.a.}\\
+		\(X\) è una v.a. con legge \(f_X\) nota e \(Y = aX + b\) con costanti note.\\
+		\(f_Y(y) = f_x(\frac{y-b}{a}\cdot \frac{1}{|a|})\), se \(a=0\) allora \(Y=b\)\\
+		\textbf{Trasformazione monotona di v.a.}\\
+		\(Y = g(X) \) con \(g\) deterministica nota e strettamente monotona.\\
+		\(f_Y (y) = \frac{f_X (x) }{|\frac{dg}{dx} (x)|} = \frac{f_X (g^{-1} (y))}{|\frac{dg}{dx} (g^{-1} (y))|}\)\\
+		Con \(y= g(x)\) e \(x=g^{-1}(y)\)\\
+		Nota: se \(g\) non è strettamente monotona (ad es. \(g(x)= x^2\)) la \(f_Y(y) \) sarà: "formula diretta con \(g\) decrescente" + "formula diretta con \(g\) crescente".\\
+		\section{Statistiche congiunte}
+		\textbf{Legge della somma di v.a.}\\
+		Date \(X\) e \(Y\) due v.a. discrete e \(X \perp Y\) e \(W = X+Y\)\\
+		\(P_W(w) = P(W=w) = P(X+Y = w) = \sum_x p_X (x) \cdot p_Y (w-x)\), \(\qquad y=w-x\)\\
+		La legge della somma di due v.a. \textbf{indipendenti} è la convoluzione delle leggi di probabilità.\\
+		\textbf{Calcolo della somma di convoluzione con il metodo grafico}\\
+		- Sovrapporre graficamente le 2 leggi di prob\\
+		- "Ribaltare" una delle 2 leggi (ad es. \(P_Y\))\\
+		- Traslare di \(w\) posizioni la legge che ho ribaltato (traslazione a destra se \(w > 0\))\\
+		- Moltiplicare le prob. e sommare\\
+		\textbf{Caso v.a. continue}\\
+		\(W=X+Y\), \(\quad X\perp Y\), \(\quad X\) e \(Y\) sono v.a. continue.\\
+		\(f_W(w) = \int_{-\infty}^{+ \infty} f_X (x) \cdot f_Y(w-x) dx \)\\
+		Integrale di convoluzione\\
+		\textbf{Somma di due gaussiane indipendenti}\\
+		\(W=X+Y \), \(\quad X \sim N(\mu_x,\sigma^2_x)\),\(\quad Y \sim N(\mu_y,\sigma^2_y)\), \(\quad X\perp Y\)\\
+		La forma di \(W\) è sempre gaussiana.\\
+		\(E[W] =E[X+Y]= E[X] + E[Y]= \mu_x + \mu_y\)\\
+		\(Var[W]= Var[X+Y] = Var[X]+Var[Y]= \sigma^2_x +\sigma^2_y\)\\
+		\(f_W(w)= \frac{1}{\sqrt{2\pi (\sigma^2_x +\sigma^2_y)}}\cdot e^{\frac{w^2}{2(\sigma^2_x +\sigma^2_y)}}\)\\ (questa se \(\mu\) = 0)\\
+		\subsection{Covarianza}
+		\(Cov[X,Y] = E[XY] -E[X]E[Y]\)\\\\
+		\textbf{Note:}\\
+		- \(Cov[X,X] = Var[X]\)\\
+		- Se \(E[X] = 0 \)o \(E[Y] = 0\) allora \(Cov[X,Y] = E[XY]\)\\
+		- Se \(X\perp Y\) allora \(Cov[X,Y] =0\)\\
+		- Se \(Cov[X,Y] = 0 \nRightarrow X\perp Y\)\\ 
+		\textbf{Coefficiente di correlazione lineare}\\
+		Versione adimensionale della covarianza.\\
+		\(\rho[X,Y] = \frac{Cov[X,Y]}{\sigma_x\sigma_y}= E[\frac{(X-E[X])}{\sigma_x}\cdot \frac{(Y-E[Y])}{\sigma_y}]\)\\
+		Proprietà:\\
+		- \(0\leq|\rho[X,Y]| \leq 1\)\\
+		In particolare se \(|\rho[X,Y]| = 1\) allora \(Y=aX+b\)\\
+		- \(X\perp Y \implies\rho[X,Y] = 0 \)
+		\section{Valore atteso e varianza condizionati}
+		\textbf{Legge delle aspettazioni iterate}\\
+		\(E[Y] = E[E[Y|X]]\)\\
+		\textbf{Legge della variazione totale}\\
+		\(Var[x] = E[Var[X|Y]] + Var[E[X|Y]] \)\\
+		\section{Successioni variabili aleatorie}
+		
+		
 		
 		
 		
