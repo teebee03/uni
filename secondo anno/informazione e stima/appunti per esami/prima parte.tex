@@ -258,6 +258,24 @@
 		\textbf{Legge della variazione totale}\\
 		\(Var[x] = E[Var[X|Y]] + Var[E[X|Y]] \)\\
 		\section{Successioni variabili aleatorie}
+		\subsection{Disuguaglianza di Markov}
+		Se \(X > 0\) allora \(E[X] \geq a \cdot P(X\geq a) \qquad \forall a\geq 0\)\\
+		\(P(X\geq a) \leq \frac{E[X]}{a}\)\\
+		\subsection{Disuguaglianza di chebyshev}
+		\(Var[X] \geq a \cdot P((X-E[X])^2 \geq a) \qquad \forall a\geq 0\)\\
+		Con \(k= a^2\),\(\qquad P(|X-E[X]|\geq k) \leq \frac{Var[X]}{k^2}\)\\
+		\subsection{Convergenza in probabilità}
+		Data una successione di v.a. \(\{A_k\}\) e un numero \(a\), Si dice che \(\{A_k\}\) converge ad \(a\) se:\\
+		\(\lim_{k \rightarrow \infty} P(|A_k - a| \geq \epsilon ) = 0 \qquad \forall \epsilon > 0\)\\
+		\subsection{Media campionaria e legge dei grandi numeri}
+		Date \(X_1,X_2,...,X_n\) v.a. i.i.d.\\
+		Media campionaria: \(M_n= \frac{X_1+X_2+...+X_n}{n} \)\\ è una v.a.\\
+		Dato che le varie v.a. sono i.i.d.\\ \(E[M_n] =E[X_1]=E[X]\)\\
+		\(Var[M_n] = \frac{Var[X_1]}{n} \)\\ che con \(n \rightarrow \infty \qquad\) \(Var[M_n] \rightarrow 0\)\\\\
+		\textbf{Legge (debole) dei grandi numeri}\\
+		\(M_n \longrightarrow^P E[M_n] = E[X]\)\\
+		
+		
 		
 		
 		
