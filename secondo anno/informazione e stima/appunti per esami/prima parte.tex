@@ -63,50 +63,9 @@
 		\#totale di scelte \(= \frac{n!}{k_1!k_2!k_3!k_4!} = \binom{n}{k_1,k_2,k_3,k_4}\)
 		
 		\section{Variabili aleatorie discrete}
-		\subsection{Variabile aleatoria geometrica}
-		La v.a. geometrica risponde al problema: facendo esperimenti ripetuti, qual'è la probabilità di ottenere il primo successo alla k-esima prova.\\ 
-		\begin{equation*}
-			X \sim
-			\left\{
-				\begin{alignedat}{2}
-					(1-p)^{k-1}  & \qquad k=1,2,3,...\\
-					0            & \qquad \text{altrimenti}
-				\end{alignedat}
-			\right.
-		\end{equation*}
-		\(X \sim Geom(p)\) Dove \(p\) è la probabilità di successo nella singola prova.\\
-		\textbf{Legge di perdita di memoria}\\
-		\(p_{x-t|X>t}(k) = p_x (k) \implies E[X-t|X>t] = E[X]\) (Vale solo per v.a. \(Geom\))
 		
-		\subsection{Variabile aleatoria binomiale}
-		La v.a. binomiale risponde al problema: facendo esperimenti ripetuti qual'è la probabilità di ottenere esattamente k successi?.\\ 
-		\begin{equation*}
-			X \sim
-			\left\{
-			\begin{alignedat}{2}
-				\binom{n}{k}\cdot p^k \cdot (1-p)^{n-k}  & \qquad k=1,2,3,...\\
-				0            & \qquad \text{altrimenti}
-			\end{alignedat}
-			\right.
-		\end{equation*}
-		\(X \sim Bin(n,p)\) Dove \(p\) è la probabilità di successo nella singola prova ed n è il numero di prove.\\
-		\(E[X] = np\), \(Var[X] = np(1-p)\)\\
-		\(Var[X]< \frac{n}{4}\)
 		
-		\subsection{Variabile aleatoria Bernoulliana}
-		La v.a. bernoulliana è una distribuzione di probabilità su due soli valori: 0 e 1\\ 
-		\begin{equation*}
-			X \sim
-			\left\{
-			\begin{alignedat}{2}
-				p  & \qquad 1\\
-				1-p  & \qquad 0\\
-				0            & \qquad \text{altrimenti}
-			\end{alignedat}
-			\right.
-		\end{equation*}
-		\(X \sim Bern(p)\) Dove \(p\) è la probabilità di successo.\\
-		\(E[X] = p\), \(Var[X] = p(1-p)\)
+		
 		
 		
 		
@@ -159,18 +118,7 @@
 		Legge dello statistico inconsapevole: \(E[g(X)] = \int_{\mathbb{R}}^{} g(x) \cdot f_x (x) dx\)\\
 		\(Var[X] = E[X^2] - E[X]^2\)
 		
-		\subsection{V.a. uniforme continua}
-		\(X \sim \mathbb{U}[a,b] \)\\
-		\begin{equation*}
-			f_x (x) \sim
-			\left\{
-			\begin{alignedat}{2}
-				\frac{1}{b-a}  & \qquad a\leq x \leq b\\
-				0            & \qquad \text{altrimenti}
-			\end{alignedat}
-			\right.
-		\end{equation*}
-		\(E[X] = \frac{a+b}{2}\), \(Var[X] = \frac{(b-a)^2}{12}\), \(\sigma_x = \frac{b-a}{\sqrt{12}}\)\\
+		
 		
 		\subsection{Funzione cumulativa di probabilità}
 		\(P(X\leq x) = F_x (x) = \int_{-\infty}^{x} f_x (t) dt\)\\
@@ -180,11 +128,7 @@
 			\item \(F_x\) è una funzione non decrescente \(\forall x \in \mathbb{R}\)
 			\item \(\frac{d}{dx} F_x (x) = f_x (x)\), \(F_x\) è la funzione integrale di \(f_x\)  
 		\end{itemize}
-		\subsection{V.a. gaussiana}
-		\(X \sim Norm[E[x],Var[X]] = Norm[\mu,\sigma^2]\)\\
-		\textbf{Cumulata della gaussiana}\\
-		\(F_x(x) = P(X\leq x) = \Phi(\frac{x-\mu}{\sigma})\)
-		
+				
 		\section{V.a. continue multiple}
 		\textbf{Densità di probabilità congiunta}\\
 		\(P((X,Y)\in S) = \iint_{(x,y)\in S}f_{X,Y} (x,y) dxdy \)\\ \(f_{X,Y} \) è la densità di probabilità congiunta.\\
@@ -257,16 +201,25 @@
 		\(E[Y] = E[E[Y|X]]\)\\
 		\textbf{Legge della variazione totale}\\
 		\(Var[x] = E[Var[X|Y]] + Var[E[X|Y]] \)\\
+		
+		
 		\section{Successioni variabili aleatorie}
 		\subsection{Disuguaglianza di Markov}
-		Se \(X > 0\) allora \(E[X] \geq a \cdot P(X\geq a) \qquad \forall a\geq 0\)\\
+		Se \(X > 0\) allora \(E[X] \geq a \cdot P(X\geq a) \qquad \forall a\geq 0\)\\\\
 		\(P(X\geq a) \leq \frac{E[X]}{a}\)\\
 		\subsection{Disuguaglianza di chebyshev}
-		\(Var[X] \geq a \cdot P((X-E[X])^2 \geq a) \qquad \forall a\geq 0\)\\
+		\(Var[X] \geq a \cdot P((X-E[X])^2 \geq a) \qquad \forall a\geq 0\)\\\\
 		Con \(k= a^2\),\(\qquad P(|X-E[X]|\geq k) \leq \frac{Var[X]}{k^2}\)\\
+		
+		
 		\subsection{Convergenza in probabilità}
-		Data una successione di v.a. \(\{A_k\}\) e un numero \(a\), Si dice che \(\{A_k\}\) converge ad \(a\) se:\\
-		\(\lim_{k \rightarrow \infty} P(|A_k - a| \geq \epsilon ) = 0 \qquad \forall \epsilon > 0\)\\
+		Data una successione di v.a. \(\{A_n\}\) e un numero \(a\), Si dice che \(\{A_n\}\) converge ad \(a\) se:\\
+		\(\lim_{n \rightarrow \infty} P(|A_n - a| \geq \epsilon ) = 0 \qquad \forall \epsilon > 0\)\\\\
+		\textbf{Uso markov(o chebyshev nello stesso modo) per provare la convergenza in probabilità}\\
+		Esempio com markov.\\
+		\(\lim_{n \rightarrow \infty} P(|A_n - a| \geq \epsilon ) \leq \lim_{n \rightarrow\infty}\frac{E[X_n]}{a} \)\\\\
+		Se \(\lim_{n \rightarrow\infty}E[X_n] = 0\) allora per forza converge ad a.\\
+		
 		\subsection{Media campionaria e legge dei grandi numeri}
 		Date \(X_1,X_2,...,X_n\) v.a. i.i.d.\\
 		Media campionaria: \(M_n= \frac{X_1+X_2+...+X_n}{n} \)\\ è una v.a.\\
@@ -274,6 +227,82 @@
 		\(Var[M_n] = \frac{Var[X_1]}{n} \)\\ che con \(n \rightarrow \infty \qquad\) \(Var[M_n] \rightarrow 0\)\\\\
 		\textbf{Legge (debole) dei grandi numeri}\\
 		\(M_n \longrightarrow^P E[M_n] = E[X]\)\\
+		
+		
+		
+		\section{Variabili aleatorie note}
+		
+		\subsection{V.a. uniforme continua}
+		\(X \sim \mathbb{U}[a,b] \)\\
+		\begin{equation*}
+			f_x (x) \sim
+			\left\{
+			\begin{alignedat}{2}
+				\frac{1}{b-a}  & \qquad a\leq x \leq b\\
+				0            & \qquad \text{altrimenti}
+			\end{alignedat}
+			\right.
+		\end{equation*}
+		\(E[X] = \frac{a+b}{2}\), \(Var[X] = \frac{(b-a)^2}{12}\), \(\sigma_x = \frac{b-a}{\sqrt{12}}\)\\
+		
+		\subsection{V.a. gaussiana}
+		\(X \sim Norm[E[x],Var[X]] = Norm[\mu,\sigma^2]\)\\
+		\(F_x(x) = P(X\leq x) = \Phi(\frac{x-\mu}{\sigma})\)\\
+		\(f_X(x)= \frac{1}{\sqrt{2\pi \sigma^2}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}\)\\
+		\textbf{Combinazioni lineari di gaussiane}\\
+		Se \(X_1,X_2,...X_n\) sono \(n\) v.a. gaussiane tra loro indipendenti con ciascuna valore atteso \(\mu_i\) e varianza \(\sigma^2_i\) allora la v.a. \(Y= \alpha_1X_1+\alpha_2X_2+...+\alpha_nX_n\) è una gaussiana con valore atteso \(\mu = \alpha_1\mu_1+\alpha_2\mu_2+...+\alpha_n\mu_n\) e varianza \(\sigma^2 = \alpha_1\sigma_1+ \alpha_2\sigma_2+...+\alpha_n\sigma_n\)
+		
+		
+		\subsection{V.A. esponenziale}
+		\(X\sim Exp[\lambda], \lambda > 0\)\\
+		\(f_X(x) = \lambda e^{-\lambda x} \qquad \forall x>0\)\\
+		\(F_X(x) = 1-e^{-\lambda x} \qquad \forall x>0\)\\
+		\(E[X] = \frac{1}{\lambda}, Var[X] = \frac{1}{\lambda^2}\)\\
+		\subsection{Variabile aleatoria geometrica}
+		La v.a. geometrica risponde al problema: facendo esperimenti ripetuti, qual'è la probabilità di ottenere il primo successo alla k-esima prova.\\ 
+		\begin{equation*}
+			X \sim
+			\left\{
+			\begin{alignedat}{2}
+				(1-p)^{k-1}  & \qquad k=1,2,3,...\\
+				0            & \qquad \text{altrimenti}
+			\end{alignedat}
+			\right.
+		\end{equation*}
+		\(X \sim Geom(p)\) Dove \(p\) è la probabilità di successo nella singola prova.\\
+		\(E[X] = \frac{1}{p}, Var[X] = \frac{1-p}{p^2}\)\\\\
+		\textbf{Legge di perdita di memoria}\\
+		\(p_{x-t|X>t}(k) = p_x (k) \implies E[X-t|X>t] = E[X]\) (Vale solo per v.a. \(Geom\) e \(Exp\))
+		
+		\subsection{Variabile aleatoria binomiale}
+		La v.a. binomiale risponde al problema: facendo esperimenti ripetuti qual'è la probabilità di ottenere esattamente k successi?.\\ 
+		\begin{equation*}
+			X \sim
+			\left\{
+			\begin{alignedat}{2}
+				\binom{n}{k}\cdot p^k \cdot (1-p)^{n-k}  & \qquad k=1,2,3,...\\
+				0            & \qquad \text{altrimenti}
+			\end{alignedat}
+			\right.
+		\end{equation*}
+		\(X \sim Bin(n,p)\) Dove \(p\) è la probabilità di successo nella singola prova ed n è il numero di prove.\\
+		\(E[X] = np\), \(Var[X] = np(1-p)\)\\
+		\(Var[X]< \frac{n}{4}\)
+		
+		\subsection{Variabile aleatoria Bernoulliana}
+		La v.a. bernoulliana è una distribuzione di probabilità su due soli valori: 0 e 1\\ 
+		\begin{equation*}
+			X \sim
+			\left\{
+			\begin{alignedat}{2}
+				p  & \qquad 1\\
+				1-p  & \qquad 0\\
+				0            & \qquad \text{altrimenti}
+			\end{alignedat}
+			\right.
+		\end{equation*}
+		\(X \sim Bern(p)\) Dove \(p\) è la probabilità di successo.\\
+		\(E[X] = p\), \(Var[X] = p(1-p)\)\\
 		
 		
 		
