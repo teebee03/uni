@@ -215,6 +215,10 @@
 		\subsection{Convergenza in probabilità}
 		Data una successione di v.a. \(\{A_n\}\) e un numero \(a\), Si dice che \(\{A_n\}\) converge ad \(a\) se:\\
 		\(\lim_{n \rightarrow \infty} P(|A_n - a| \geq \epsilon ) = 0 \qquad \forall \epsilon > 0\)\\\\
+		\textbf{Test generale}\\
+		\(\lim_{n \rightarrow \infty} P(|A_n - a| \geq \epsilon ) =\\ \lim_{n\rightarrow\infty}\int_{\epsilon}^{+\infty} f_{A_n}(x) dx\)\\
+		Se questo valore fa 0, c'è convergenza.\\
+		
 		\textbf{Uso markov(o chebyshev nello stesso modo) per provare la convergenza in probabilità}\\
 		Esempio com markov.\\
 		\(\lim_{n \rightarrow \infty} P(|A_n - a| \geq \epsilon ) \leq \lim_{n \rightarrow\infty}\frac{E[X_n]}{a} \)\\\\
@@ -289,6 +293,12 @@
 		\(E[X] = np\), \(Var[X] = np(1-p)\)\\
 		\(Var[X]< \frac{n}{4}\)
 		
+		\subsection{Variabile aleatoria ipergeometrica}
+		La probabilità ipergeometrica descrive l'estrazione senza reinserimento delle palline, perdenti o vincenti, da un urna.\\
+		\(X\sim Ipergeom(n,h,r)\), data un'urna contenente \(h\) palline bianche e \(n-h\) palline nere, il numero di palline bianche che vengono ottenute estraendo senza reinserimento \(r\) palline.\\
+		\(P_k=\frac{\binom{k}{h}\binom{r-h}{n-k}}{\binom{n}{r}}\)\\ 
+		\(E[X] = \frac{rh}{n}, Var[X] = \frac{r(n-r)h(n-h)}{n^2(n-1)}\)\\
+		
 		\subsection{Variabile aleatoria Bernoulliana}
 		La v.a. bernoulliana è una distribuzione di probabilità su due soli valori: 0 e 1\\ 
 		\begin{equation*}
@@ -303,6 +313,9 @@
 		\end{equation*}
 		\(X \sim Bern(p)\) Dove \(p\) è la probabilità di successo.\\
 		\(E[X] = p\), \(Var[X] = p(1-p)\)\\
+		\includegraphics[scale=0.5]{integrali1.png}\\
+		\includegraphics[scale=0.5]{integrali2.png}
+		
 		
 		
 		
