@@ -232,6 +232,46 @@
 		\textbf{Legge (debole) dei grandi numeri}\\
 		\(M_n \longrightarrow^P E[M_n] = E[X]\)\\
 		
+		\section{Teorema centrale del limite}
+		CLT: Siano \(X_i\) v.a. i.i.d. con varianza finita \(\sigma^2\) sia\\
+		\(Z_n =  \frac{X_1+X_2+...+X_n - n\mu}{\sqrt{n\sigma^2}} \) e sia \(Z\sim N(0,1)\), allora \(F_{Z_n}(c) \rightarrow^{n\rightarrow \infty} F_Z(c)=\Phi(c) \) per ogni c \(\in \mathbb{R}\)	
+		
+		\section{Processi di bernoulli}
+		Def: una sequenza di prove (v.a.) di bernoulli i.i.d.\\
+		\(X_i \sim Bern(p) \), ogni \(X_i\) è i.i.d.\\
+		\textbf{Numero di successi S in n istanti temporali}\\
+		S = numero di successi in n istanti\\
+		\(S \sim Bin(n,p)\) \\
+		\textbf{Tempi di interarrivo}\\
+		\(T_1\) = numero di prove fino al primo arrivo\\
+		\(T_1 \sim Geom(p)\)\\
+		\(T_1\) gode di perdita di memoria\\
+		\textbf{Tempo al k-esimo arrivo}\\
+		\(P(Y_k = t) \sim \\ \left\{
+		\begin{alignedat}{2}
+			p^k\cdot (1-p)^{t-k}\cdot\binom{t-1}{k-1}  & \quad k=1,2,3,...\\
+			0            & \quad \text{altrimenti}
+		\end{alignedat}
+		\right.\)\\
+		\(E[Y_k] = \frac{k}{p}\), \(Var[Y_k]= k\frac{(1-p)}{p^2}\)\\
+		\textbf{Splitting di un processo di bernoulli}\\
+		Con \(q\) la prob che un arrivo vada nel processo \(P_1\)\\
+		\(P_1 \sim BP(p\cdot q)\)\\
+		\(P_1 \sim BP(p\cdot (1-q))\)\\
+		\textbf{Merging di un processo di bernoulli}\\
+		Con \(p\) e \(q\) le probabilità dei due BP\\
+		\(P\sim BP(p+q-p\cdot q)\)\\
+		\section{Processi di poisson}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		\section{Variabili aleatorie note}
@@ -313,8 +353,8 @@
 		\end{equation*}
 		\(X \sim Bern(p)\) Dove \(p\) è la probabilità di successo.\\
 		\(E[X] = p\), \(Var[X] = p(1-p)\)\\
-		\includegraphics[scale=0.5]{integrali1.png}\\
-		\includegraphics[scale=0.5]{integrali2.png}
+		%\includegraphics[scale=0.5]{integrali1.png}\\
+		%\includegraphics[scale=0.5]{integrali2.png}
 		
 		
 		
