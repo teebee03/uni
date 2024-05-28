@@ -262,10 +262,37 @@
 		Con \(p\) e \(q\) le probabilità dei due BP\\
 		\(P\sim BP(p+q-p\cdot q)\)\\
 		\section{Processi di poisson}
-		
-		
-		
-		
+		-Processo a tempo continuo (mantiene le stesse proprietà del processo di Bernoulli es. perdita di memoria)\\
+		\textbf{Intensità media degli arrivi (per unità di tempo \(\tau\))}\\
+		\(P(k,\tau) =\)costante\\
+		\textbf{Distribuzione del numero di arrivi in un intervallo di tempo finito}\\
+		\(P(N_{[0,\tau]} = k )= 
+		\left\{
+		\begin{alignedat}{2}
+			\frac{(\lambda \tau )^k}{k!}e^{-\lambda\tau}  & \quad k=1,2,3,...\\
+			0            & \quad \text{altrimenti}
+		\end{alignedat}
+		\right.\)\\\\
+		Legge di Poisson: \(N_{[0,\tau]} \sim Poisson(\lambda\cdot\tau)\)\\
+		\(E[N_{[0,\tau]}] = \lambda\tau \)\(\qquad Var[N_{[0,\tau]}] = \lambda\tau\)\\
+		\textbf{Distribuzione del tempo al k-esimo arrivo}\\
+		\(Y_k\): tempo al k-esimo arrivo\\
+		\(f_{Y_k} = 
+		\left\{
+		\begin{alignedat}{2}
+			\frac{(\lambda t)^{k-1}}{(k-1)!}e^{-\lambda t}\lambda  & \quad t\geq 0,k>1\\
+			0            & \quad \text{altrimenti}
+		\end{alignedat}
+		\right.\)\\
+		Legge di Erlang, \(Y_k \sim Erlang-k(\lambda)\)\\
+		\(E[Y_k] = \frac{k}{\lambda}\)\\
+		\includegraphics[scale=0.2]{pb}\\\\
+		\textbf{Splitting e merging di un processo di Poisson}\\
+		- Il processo generato dal merging di due PP indipendenti è un PP con itensità \(\lambda = \lambda_1 + \lambda_2\)\\
+		- Il processo generato dallo split di un PP (Le "decisioni" di split devono essere tutte \(\perp\)) è \(PP_1(\lambda p)\) dove \(p\) è la probabilità di finire nel \(PP_1\)\\\\
+		\textbf{Incidenza casuale per processi di Poisson}\\
+		Con un \(PP\) iniziato da molto tempo la distribuzione della lunghezza dell'intervallo tra due arrivi è \(\sim Erlang-2(\lambda)\)\\
+		(approssimazione della binomiale con poissoniana?)\\
 		
 		
 		
