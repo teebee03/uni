@@ -292,11 +292,17 @@
 		- Il processo generato dallo split di un PP (Le "decisioni" di split devono essere tutte \(\perp\)) è \(PP_1(\lambda p)\) dove \(p\) è la probabilità di finire nel \(PP_1\)\\\\
 		\textbf{Incidenza casuale per processi di Poisson}\\
 		Con un \(PP\) iniziato da molto tempo la distribuzione della lunghezza dell'intervallo tra due arrivi è \(\sim Erlang-2(\lambda)\)\\
-		(approssimazione della binomiale con poissoniana?)\\
-		
-		
-		
-		
+		(approssimazione della binomiale con poissoniana?)
+		\section{Stima bayesiana}
+		\subsection{Stimatore MAP}
+		Scelgo l'ipotesi con massima probabilità a posteriori\\
+		\(\Theta_{MAP}(X) = argmax_{\theta}\  p_{\Theta | X} (\theta | x)\)\\
+		La MAP minimizza l'errore a posteriori
+		\subsection{Stima LMS}
+		\(\Theta_{LMS} (X=x) = E[\Theta | X=x]\)\\
+		L'errore quadratico medio minimo di \(\Theta_{LMS}\) è \(E[Var[\Theta | X]] \leq Var[\Theta]\)
+ 		\subsection{Stimatore lineare LMS}
+ 		\(\Theta_{LIN} (X) = E[\Theta] + \frac{Cov[X,\Theta]}{Var[X]} \cdot (X-E[X])\)\\
 		
 		
 		
