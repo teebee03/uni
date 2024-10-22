@@ -1,0 +1,15 @@
+-definizione linguaggio regolare
+-espressioni regolari
+-definizioni di semidecidibilità, decidibilità
+-MFO
+-grammatiche
+-teorema di rice
+-parte di teoria della computazione MTU
+-metodo di riduzione, esempi di problemi indecidibili
+-prossimo tde 2022_06_28
+
+
+
+parte efficienza
+
+-diversi criteri di costo
