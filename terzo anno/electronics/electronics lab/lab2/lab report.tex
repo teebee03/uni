@@ -1,0 +1,207 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage[a4paper,margin=0.9cm]{geometry}
+\usepackage{multicol}
+\usepackage{sectsty}
+
+\graphicspath{ {.} }
+
+\DeclareMathOperator{\ima}{Im}
+\newcommand\tab[1][0,5cm]{\hspace*{#1}}
+
+\begin{document}
+	%\allsectionsfont{\small}
+	%\scriptsize
+	
+	\mbox{}
+	\vspace{10cm}
+	\begin{center}
+		 \textbf{\Huge{Diode}}\\
+		 \bigskip
+		 \Large{Tommaso Bertelli}\\
+		 \bigskip
+		 \Large{CO-526-B - Electronics Lab}\\
+		 \bigskip
+		 \Large{Instructor Uwe Pagel}\\
+		 \bigskip
+		 \Large{24/11/2024}\\
+	\end{center}
+	
+	
+	\pagebreak
+	\section{Introduction - Prelab}
+		\subsection{Current/ Voltage characteristics of a diode}
+			\begin{enumerate}
+				\item Diode characteristic over a DC sweep analysis (\(I_f = f(V_f)\)).\\\\
+				\includegraphics[scale=0.35]{prelab/problem 1 - 1}\\\\
+				X axis: voltage over diode in respect to the ground, Y axis: current through the diode.\\
+				\item Same plot on a logarithmic scale:\\\\
+				\includegraphics[scale=0.35]{prelab/problem 1 - 2}\\\\
+				\pagebreak
+				\item To discover the saturation current \(I_S\) do a DC sweep from -10 volts to 0.\\
+				\includegraphics[scale=0.35]{prelab/problem 1 - 3}\\\\
+				From the plot: \(I_S\)= -2.55nA.\\
+				Using the provided \(V_T\)= 26mV and the equation \(I=I_S\ e^{(\frac{V}{nV_T})}\) (from the first plot V=500mV, I=160mA)\\
+				\(n = \frac{V}{V_T ln(\frac{I}{I_S})} = 1.07\)\\\\\\\\
+			\end{enumerate}
+			\pagebreak
+		\subsection{Halfwave rectifier}
+			\begin{enumerate}
+				\item Circuit without C1\\\\
+				\includegraphics[scale=0.35]{prelab/problem 2 - 1}\\\\
+				Blue line: \(V_{in}\), green line: \(V_L\), red line: \(I_D\)\\\\
+				\includegraphics[scale=0.5]{prelab/problem 2 - 2}
+				\includegraphics[scale=0.5]{prelab/problem 2 - 3}\\\\
+				From the cursors: Peak \(R_V\): 9.13V, peak \(I_D\): 4.15mA.\\\\
+				\item HWR with C1\\\\
+				\includegraphics[scale=0.30]{prelab/problem 2 - 4}\\\\
+				Blue line: \(V_{in}\), green line: \(V_L\), red line: \(I_D\)\\
+				\includegraphics[scale=0.35]{prelab/problem 2 - 5}
+				\includegraphics[scale=0.35]{prelab/problem 2 - 6}\\\\
+				\includegraphics[scale=0.35]{prelab/problem 2 - 7}\\\\
+				From the cursors: Peak \(R_V\): 8.07V, peak \(I_D\): 29.4mA, ripple on \(V_L\): 610mVpp\\\\
+				Using the formula: \(V_r = \frac{V_p}{fCR_L} (1- \sqrt[4]{\frac{R_i}{R_L}}) \)\\ 
+				\(V_r =\ \)582mV. 
+			\end{enumerate}
+		\subsection{Fullwave rectifier}
+			\begin{enumerate}
+				\item Circuit without C1\\\\
+				\includegraphics[scale=0.35]{prelab/problem 3 - 1}\\\\
+				Blue line: \(V_{in}\), green line: \(V_L\), red line: \(I_D\)\\\\
+				\includegraphics[scale=0.35]{prelab/problem 3 - 2}
+				\includegraphics[scale=0.35]{prelab/problem 3 - 3}\\\\
+				From the cursors: Peak \(R_V\): 8.59V, peak \(I_D\): 3.90mA.\\
+				\item FWR with C1\\\\
+				\includegraphics[scale=0.35]{prelab/problem 3 - 4}\\\\
+				Blue line: \(V_{in}\), green line: \(V_L\), red line: \(I_D\)\\\\
+				\includegraphics[scale=0.35]{prelab/problem 3 - 5}
+				\includegraphics[scale=0.35]{prelab/problem 3 - 6}\\\\
+				\includegraphics[scale=0.35]{prelab/problem 3 - 7}\\\\
+				From the cursors: Peak \(R_V\): 7.89V, peak \(I_D\): 17.87mA, ripple on \(V_L\): 263mVpp\\\\
+				Theoretical ripple (half of HWR ripple): 291mV.
+			\end{enumerate}
+		\subsection{Rectifier}
+			\begin{enumerate}
+				\item The peak load voltages without a capacitor are 9.13V and 8.59V.
+				The voltage over the load it’s smaller then the input sine amplitude because of the diode voltage drop, which is doubled in the full wave rectifier since the current passes through two diodes in series before reaching the resistor.
+				\item In both the HWR and FWR, \(I_D\) takes the shape of a sinusoid when there's no capacitor and follows the input voltage, delayed by the time it takes to reach \(VD_ON\). When a capacitor is added to the circuit the current sinusoid is shrunk from the sides, that happens because it takes longer to reach \(VD_ON\) since the capacitor is providing a positive voltage to the diode cathode while discharging and after being charged.
+				\item The RC ratio influences the ripple, the bigger C and/or R is, the smaller the ripple will be, therefore a lighter load (higher resistance) and/or a bigger capacitor will provide a higher quality DC output.\\
+			\end{enumerate}
+		\subsection{Zener diode}
+			\begin{enumerate}
+				\item Transient analysis\\\\
+				\includegraphics[scale=0.35]{prelab/problem 5 - 1}\\\\
+				Top pane: \(V_{in}\) (AC and DC), battom pane:\(V_L\)\\\\
+				\item The circuit acts as a voltage regulator and maintains a constant voltage lower than both AC and DC sources. The regulated voltage is not perfectly constant but it's a sinewave with a small ripple of 22.5mVpp (see cursor below).\\\\
+				\includegraphics[scale=0.45]{prelab/problem 5 - 2}\\\\
+			\end{enumerate}
+		\pagebreak
+		
+		\section{Experimental Set-up and Results}
+			\subsection{Diode Switching Characteristic}
+			\begin{enumerate}
+				\item Diode 1N4001\\\\
+				\includegraphics[scale=0.40]{Oscilloscope data/5.3.1.1 td/F0000TEK}\\\\
+				Measured \(t_d\): 6ns.\\\\
+				\includegraphics[scale=0.40]{Oscilloscope data/5.3.1.1 ts/F0001TEK}\\\\ 
+				Measured \(t_s\): 3.34\(\mu\)s.\\\\
+				\item Signal diode 1N4148\\\\
+				\includegraphics[scale=0.40]{Oscilloscope data/5.3.1.2 td/F0003TEK}\\\\
+				Measured \(t_d\): 3.4ns.\\\\
+				\includegraphics[scale=0.40]{Oscilloscope data/5.3.1.2 ts/F0002TEK}\\\\ 
+				Measured \(t_s\): 0.01\(\mu\)s.\\\\
+			\end{enumerate}
+			\subsection{Rectifier}
+			\begin{enumerate}
+				\item Half-wave rectifier
+					\begin{enumerate}
+						\item HWR without C1\\\\
+						\includegraphics[scale=0.40]{Oscilloscope data/5.3.2.1 a.2/F0005TEK}\\\\
+						Since the peak to peak voltage of \(V_{in}\) is 17.4V its peak voltage is 8.7V, which is the same as \(V_L\) peak, since it takes only the top part of the sinewave\\\\\pagebreak
+						\item  HWR with C1\\\\
+						\includegraphics[scale=0.40]{Oscilloscope data/5.3.2.1.b peak ripple/F0006TEK}\\\\
+						The peak voltage of \(V_{in}\) is the same as without C1, \(V_L\) peak voltage is 7.92V.
+						\item Ripple voltage measurement\\\\
+						\includegraphics[scale=0.40]{Oscilloscope data/5.3.2.1.c ripple/F0007TEK}\\\\ 
+						The peak to peak voltage of the \(V_L\) ripple is 644mV.\pagebreak
+					\end{enumerate}
+				\item Full-wave rectifier
+					\begin{enumerate}
+						\item HWR without C1\\\\
+						\includegraphics[scale=0.40]{Oscilloscope data/5.3.2.2.a no C1/F0008TEK}\\\\
+						Since \(V_L\) has an halh sinusoid shape, the peak voltage is the same as peak to peak, so peak of \(V_L\) is 8.72V.\\
+						\item HWR with C1\\\\
+						\includegraphics[scale=0.40]{Oscilloscope data/5.3.2.2.c DC coupling/F0010TEK}\\\\
+						Using C1, the peak \(V_L\) is 7.84V.\\
+						\item Ripple voltage measurement\\\\
+						\includegraphics[scale=0.40]{Oscilloscope data/5.3.2.2.b w C1 AC coupling/F0009TEK}\\\\
+						The peak to peak ripple voltage on top of \(V_L\) is 272mV.
+					\end{enumerate}	
+			\end{enumerate}
+			\subsection{Zener diode}
+				\vspace{2cm}
+				\includegraphics[scale=0.30]{Oscilloscope data/5.3.3 DC at Capacitor/F0011TEK}
+				\includegraphics[scale=0.30]{Oscilloscope data/5.3.3 AC at capacitor/F0012TEK}\\\\
+				The DC voltage at C1 is 6.88V and the peak to peak ripple voltage is 354mV.\\\\
+				\includegraphics[scale=0.30]{Oscilloscope data/5.3.3 output DC at R/F0013TEK}
+				\includegraphics[scale=0.30]{Oscilloscope data/5.3.3 output AC at R avg/F0015TEK}\\\\
+				The DC voltage at the load resistor is 5.60V and the peak to peak ripple voltage is 12.8mV.\\\\\pagebreak
+				
+			\subsection{Voltage multiplier}
+				\begin{enumerate}
+					\item \includegraphics[scale=0.40]{Oscilloscope data/5.3.4.1 A and C/F0016TEK}\\\\
+					At point A the peak to peak voltage is 19.2V and max 18.4V(channel 1), at point C the max voltage is 18.0V (channel 2).\\\\
+					\item \includegraphics[scale=0.40]{Oscilloscope data/5.3.4.1 B and U_out/F0017TEK}\\\\
+					At point B the peak to peak voltage is 19.2V and max 36.4V(channel 1) , at point \(U_{out}\) the peak voltage is 36.4V, the voltages have the same shape as the two previous points but shifted up in max value.
+					\item Ripple voltage measurement\\\\
+					\includegraphics[scale=0.40]{Oscilloscope data/5.3.4.2 ripple V/F0020TEK}\\\\
+					The peak to peak ripple voltage at \(U_{out}\) is 34.4mV.\\
+					\item The measured voltages at points C and \(U_{out}\) are respectively 17.75V and 35.495V.
+				\end{enumerate}
+				
+		\section{Evaluation}
+			\subsection{Diode Switching Characteristic}
+				\begin{enumerate}
+					\item The signal diode 1N4148 is much faster in switching off compared to the 1N4001 diode, the latter probably has a larger depletion region and is probably designed to handle more power than the former. 
+					\item The signal diode 1N4148 is best used in signal handling operations where the currents handled are minimal but high time precision is required, the 1N4001 diode is best use in less time sensitive scenarios like a rectifier circuit where higher currents must be handled.
+				\end{enumerate}
+			\subsection{Rectifier}
+				\begin{enumerate}
+					\item \includegraphics[scale=0.35]{power supply schematic}\\\\
+					To have a DC power supply we need two main components:
+						\begin{enumerate}
+							\item Transformer: used to decrease the voltage from the power line to a more manageable value with limited power loss.
+							\item Full wave rectifier: used to convert from AC to DC, the use of a capacitor is needed to limit the ripple as much as possible, in this way the DC output is of a high quality.
+						\end{enumerate}
+					\item Simulated peak to peak ripple voltages: HWR: 610mV, FWR: 263mV. Calculated peak to peak ripple voltages: HWR: 582mV, FWR: 291mV. Measured peak to peak ripple voltages: HWR: 644mV, FWR: 272mV.\\
+					The measured ripple voltages are consistently around 4\% higher than the simulated voltages. While the calculated HWR ripple is smaller then both the simulated and measured voltage, the calculated FWR ripple is highter then both the simulated and measured ripples.
+				\end{enumerate}
+			\subsection{Zener diode}
+				\begin{enumerate}
+					
+					\item  \includegraphics[scale=0.75]{zener diode}\\\\
+					Since the voltage over \(R_L\) is the same but reversed voltage over the zener diode (since the component is placed in the opposite direction compared to \(R_L\)), it has a voltage -5.60V, by looking at the component datasheet the current (flowing from point A to point B) is 5mA.
+				\end{enumerate}
+			\subsection{Voltage Multiplier}
+				\begin{enumerate}
+					\item The voltage multiplier circuit is made of rectifier circuits and positive clamper circuits
+					\item The function of the rectifier component is ton convert the positive part of the AC signal to DC, the function of the clamper component is to add a DC signal to an AC one, to increase the RMS voltage.
+					\item The multiplication factor between the input amplitude and the output voltage is 2, the theoretical output voltage should be 40V but the measured one is 36.4V, this is due to the voltage loss in the non ideal diodes.
+					\item Each element has to be selected for the max voltage the component is subjected to, which is the max voltage present in the circuit "step" where the component is inserted.
+					\item By reducing the input frequency the voltage at \(U_{out}\) will decrease and the ripple will increase by a factor of around 100.\\\\
+					\includegraphics[scale=0.35]{multiplier 10k}\\\\
+					\includegraphics[scale=0.35]{multiplier 100}
+				\end{enumerate}
+				
+				
+				
+				
+				
+				
+				
+				
+		
+				
+\end{document}
