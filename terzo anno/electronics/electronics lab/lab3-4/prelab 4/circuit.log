@@ -1,0 +1,11 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\tomma\Documents\uni\terzo anno\electronics\electronics lab\lab3-4\prelab 4\circuit.asc
+Start Time: Tue Nov 26 11:49:11 2024
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.667 seconds.
+

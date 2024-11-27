@@ -1,0 +1,649 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.25)  26 NOV 2024 11:54
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"prelab 4.tex"
+(./prelab 4.tex
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+(c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(c:/texlive/2024/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(c:/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen142
+))
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen143
+)
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count270
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count271
+\leftroot@=\count272
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count273
+\DOTSCASE@=\count274
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen144
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count275
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count276
+\dotsspace@=\muskip17
+\c@parentequation=\count277
+\dspbrk@lvl=\count278
+\tag@help=\toks20
+\row@=\count279
+\column@=\count280
+\maxfields@=\count281
+\andhelp@=\toks21
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
+\@envbody=\toks22
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks24
+)
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+(c:/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(c:/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(c:/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count282
+\Gm@cntv=\count283
+\c@Gm@tempcnt=\count284
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks25
+)
+(c:/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
+\c@tracingmulticols=\count285
+\mult@box=\box54
+\multicol@leftmargin=\dimen161
+\c@unbalance=\count286
+\c@collectmore=\count287
+\doublecol@number=\count288
+\multicoltolerance=\count289
+\multicolpretolerance=\count290
+\full@width=\dimen162
+\page@free=\dimen163
+\premulticols=\dimen164
+\postmulticols=\dimen165
+\multicolsep=\skip54
+\multicolbaselineskip=\skip55
+\partial@page=\box55
+\last@line=\box56
+\mc@boxedresult=\box57
+\maxbalancingoverflow=\dimen166
+\mult@rightbox=\box58
+\mult@grightbox=\box59
+\mult@firstbox=\box60
+\mult@gfirstbox=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\c@minrows=\count291
+\c@columnbadness=\count292
+\c@finalcolumnbadness=\count293
+\last@try=\dimen167
+\multicolovershoot=\dimen168
+\multicolundershoot=\dimen169
+\mult@nat@firstbox=\box98
+\colbreak@box=\box99
+\mc@col@check@num=\count294
+)
+(c:/texlive/2024/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count295
+\l__pdf_internal_box=\box100
+)
+(./prelab 4.aux)
+\openout1 = `"prelab 4.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+
+(c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count296
+\scratchdimen=\dimen170
+\scratchbox=\box101
+\nofMPsegments=\count297
+\nofMParguments=\count298
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count299
+\MPscratchDim=\dimen171
+\MPnumerator=\count300
+\makeMPintoPDFobject=\count301
+\everyMPtoPDFconversion=\toks27
+) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(25.6073pt, 546.29327pt, 25.6073pt)
+* v-part:(T,H,B)=(25.6073pt, 793.83224pt, 25.6073pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=546.29327pt
+* \textheight=793.83224pt
+* \oddsidemargin=-46.66269pt
+* \evensidemargin=-46.66269pt
+* \topmargin=-83.66269pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+
+[1
+
+{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<circuit 1 - no input.png, id=9, 825.68475pt x 422.7795pt>
+File: circuit 1 - no input.png Graphic file (type png)
+<use circuit 1 - no input.png>
+Package pdftex.def Info: circuit 1 - no input.png  used on input line 36.
+(pdftex.def)             Requested size: 330.26805pt x 169.1088pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
+
+
+(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
+
+
+(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<circuit 1 - tr changed.png, id=11, 799.18575pt x 425.1885pt>
+File: circuit 1 - tr changed.png Graphic file (type png)
+<use circuit 1 - tr changed.png>
+Package pdftex.def Info: circuit 1 - tr changed.png  used on input line 39.
+(pdftex.def)             Requested size: 319.66862pt x 170.07237pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
+
+ []
+
+<circuit 2 - coll voltages.png, id=12, 1141.26375pt x 552.26324pt>
+File: circuit 2 - coll voltages.png Graphic file (type png)
+<use circuit 2 - coll voltages.png>
+Package pdftex.def Info: circuit 2 - coll voltages.png  used on input line 42.
+(pdftex.def)             Requested size: 456.49742pt x 220.90138pt.
+<circuit 2 - adiff.png, id=13, 563.10374pt x 554.67226pt>
+File: circuit 2 - adiff.png Graphic file (type png)
+<use circuit 2 - adiff.png>
+Package pdftex.def Info: circuit 2 - adiff.png  used on input line 45.
+(pdftex.def)             Requested size: 337.86485pt x 332.80592pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--51
+
+ []
+
+
+
+[2 <./circuit 1 - no input.png> <./circuit 1 - tr changed.png> <./circuit 2 - c
+oll voltages.png>]
+
+[3 <./circuit 2 - adiff.png>]
+<circuit 3 - coll voltages.png, id=30, 1140.05925pt x 552.26324pt>
+File: circuit 3 - coll voltages.png Graphic file (type png)
+<use circuit 3 - coll voltages.png>
+Package pdftex.def Info: circuit 3 - coll voltages.png  used on input line 52.
+(pdftex.def)             Requested size: 456.01563pt x 220.90138pt.
+<circuit 2 - avcm.png, id=31, 561.89925pt x 554.07pt>
+File: circuit 2 - avcm.png Graphic file (type png)
+<use circuit 2 - avcm.png>
+Package pdftex.def Info: circuit 2 - avcm.png  used on input line 55.
+(pdftex.def)             Requested size: 337.14215pt x 332.44456pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--64
+
+ []
+
+
+
+[4 <./circuit 3 - coll voltages.png> <./circuit 2 - avcm.png>]
+<circuit 5.png, id=37, 996.72375pt x 467.346pt>
+File: circuit 5.png Graphic file (type png)
+<use circuit 5.png>
+Package pdftex.def Info: circuit 5.png  used on input line 65.
+(pdftex.def)             Requested size: 398.68243pt x 186.93507pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+<circuit 5 - tr changed.png, id=38, 939.51pt x 494.44725pt>
+File: circuit 5 - tr changed.png Graphic file (type png)
+<use circuit 5 - tr changed.png>
+Package pdftex.def Info: circuit 5 - tr changed.png  used on input line 71.
+(pdftex.def)             Requested size: 375.79733pt x 197.77539pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--74
+
+ []
+
+
+
+[5 <./circuit 5.png> <./circuit 5 - tr changed.png>]
+<circuit 6 - coll voltages.png, id=44, 1138.85475pt x 551.05875pt>
+File: circuit 6 - coll voltages.png Graphic file (type png)
+<use circuit 6 - coll voltages.png>
+Package pdftex.def Info: circuit 6 - coll voltages.png  used on input line 75.
+(pdftex.def)             Requested size: 455.53383pt x 220.41959pt.
+<circuit 6 - avdiff.png, id=45, 564.9105pt x 552.26324pt>
+File: circuit 6 - avdiff.png Graphic file (type png)
+<use circuit 6 - avdiff.png>
+Package pdftex.def Info: circuit 6 - avdiff.png  used on input line 78.
+(pdftex.def)             Requested size: 338.94891pt x 331.36049pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--84
+
+ []
+
+
+
+[6 <./circuit 6 - coll voltages.png> <./circuit 6 - avdiff.png>]
+<circuit 7 - coll voltages.png, id=51, 1138.85475pt x 551.05875pt>
+File: circuit 7 - coll voltages.png Graphic file (type png)
+<use circuit 7 - coll voltages.png>
+Package pdftex.def Info: circuit 7 - coll voltages.png  used on input line 85.
+(pdftex.def)             Requested size: 455.53383pt x 220.41959pt.
+<circuit 7 - avcm.png, id=52, 563.10374pt x 551.661pt>
+File: circuit 7 - avcm.png Graphic file (type png)
+<use circuit 7 - avcm.png>
+Package pdftex.def Info: circuit 7 - avcm.png  used on input line 88.
+(pdftex.def)             Requested size: 337.86485pt x 330.99915pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
+
+ []
+
+
+
+[7 <./circuit 7 - coll voltages.png> <./circuit 7 - avcm.png>] (./prelab 4.aux)
+ ***********
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 3495 strings out of 473362
+ 53061 string characters out of 5725050
+ 446844 words of memory out of 5000000
+ 26590 multiletter control sequences out of 15000+600000
+ 561593 words of font info for 50 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,5n,65p,230b,292s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
+fb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "prelab 4.pdf" (7 pages, 389616 bytes).
+PDF statistics:
+ 98 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+
