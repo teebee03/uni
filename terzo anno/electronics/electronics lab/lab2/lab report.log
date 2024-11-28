@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.28)  24 NOV 2024 18:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.28)  27 NOV 2024 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -633,18 +633,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--99
  []
 
 [7 <./prelab/problem 5 - 1.png> <./prelab/problem 5 - 2.png>]
-<Oscilloscope data/5.3.1.1 td/F0000TEK.png, id=74, 803.0pt x 481.8pt>
-File: Oscilloscope data/5.3.1.1 td/F0000TEK.png Graphic file (type png)
-<use Oscilloscope data/5.3.1.1 td/F0000TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.1.1 td/F0000TEK.png  used on inp
-ut line 106.
-(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
-<Oscilloscope data/5.3.1.1 ts/F0001TEK.png, id=75, 803.0pt x 481.8pt>
-File: Oscilloscope data/5.3.1.1 ts/F0001TEK.png Graphic file (type png)
-<use Oscilloscope data/5.3.1.1 ts/F0001TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.1.1 ts/F0001TEK.png  used on inp
-ut line 108.
-(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
+
+! LaTeX Error: File `Oscilloscope data/5.3.1.1 td/F0000TEK' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 ...0]{Oscilloscope data/5.3.1.1 td/F0000TEK}
+                                                  \\\\
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `Oscilloscope data/5.3.1.1 ts/F0001TEK' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108 ...0]{Oscilloscope data/5.3.1.1 ts/F0001TEK}
+                                                  \\\\
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--110
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 105--110
 
@@ -666,27 +692,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--110
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--110
+! LaTeX Error: File `Oscilloscope data/5.3.1.2 td/F0003TEK' not found.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 ...0]{Oscilloscope data/5.3.1.2 td/F0003TEK}
+                                                  \\\\
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--110
+! LaTeX Error: File `Oscilloscope data/5.3.1.2 ts/F0002TEK' not found.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 ...0]{Oscilloscope data/5.3.1.2 ts/F0002TEK}
+                                                  \\\\
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-<Oscilloscope data/5.3.1.2 td/F0003TEK.png, id=76, 803.0pt x 481.8pt>
-File: Oscilloscope data/5.3.1.2 td/F0003TEK.png Graphic file (type png)
-<use Oscilloscope data/5.3.1.2 td/F0003TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.1.2 td/F0003TEK.png  used on inp
-ut line 111.
-(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
-<Oscilloscope data/5.3.1.2 ts/F0002TEK.png, id=77, 803.0pt x 481.8pt>
-File: Oscilloscope data/5.3.1.2 ts/F0002TEK.png Graphic file (type png)
-<use Oscilloscope data/5.3.1.2 ts/F0002TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.1.2 ts/F0002TEK.png  used on inp
-ut line 113.
-(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 110--115
 
@@ -717,15 +749,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--115
 
  []
 
-[8 <./Oscilloscope data/5.3.1.1 td/F0000TEK.png (PNG copy)> <./Oscilloscope dat
-a/5.3.1.1 ts/F0001TEK.png (PNG copy)> <./Oscilloscope data/5.3.1.2 td/F0003TEK.
-png (PNG copy)>]
-<Oscilloscope data/5.3.2.1 a.2/F0005TEK.png, id=81, 803.0pt x 481.8pt>
-File: Oscilloscope data/5.3.2.1 a.2/F0005TEK.png Graphic file (type png)
-<use Oscilloscope data/5.3.2.1 a.2/F0005TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.2.1 a.2/F0005TEK.png  used on in
-put line 121.
-(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
+
+! LaTeX Error: File `Oscilloscope data/5.3.2.1 a.2/F0005TEK' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 ...]{Oscilloscope data/5.3.2.1 a.2/F0005TEK}
+                                                  \\\\
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 120--123
 
@@ -741,16 +778,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--123
 
  []
 
-[9 <./Oscilloscope data/5.3.1.2 ts/F0002TEK.png (PNG copy)> <./Oscilloscope dat
-a/5.3.2.1 a.2/F0005TEK.png (PNG copy)>]
-<Oscilloscope data/5.3.2.1.b peak ripple/F0006TEK.png, id=85, 803.0pt x 481.8pt
->
-File: Oscilloscope data/5.3.2.1.b peak ripple/F0006TEK.png Graphic file (type p
-ng)
-<use Oscilloscope data/5.3.2.1.b peak ripple/F0006TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.2.1.b peak ripple/F0006TEK.png  
-used on input line 124.
-(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
+[8]
+
+! LaTeX Error: File `Oscilloscope data/5.3.2.1.b peak ripple/F0006TEK' not foun
+d.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 ...cope data/5.3.2.1.b peak ripple/F0006TEK}
+                                                  \\\\
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 123--126
 
@@ -761,12 +804,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--126
 
  []
 
-<Oscilloscope data/5.3.2.1.c ripple/F0007TEK.png, id=86, 803.0pt x 481.8pt>
-File: Oscilloscope data/5.3.2.1.c ripple/F0007TEK.png Graphic file (type png)
-<use Oscilloscope data/5.3.2.1.c ripple/F0007TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.2.1.c ripple/F0007TEK.png  used 
-on input line 127.
-(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
+
+! LaTeX Error: File `Oscilloscope data/5.3.2.1.c ripple/F0007TEK' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 ...illoscope data/5.3.2.1.c ripple/F0007TEK}
+                                                  \\\\
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 126--129
 
@@ -777,14 +828,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--129
 
  []
 
-[10 <./Oscilloscope data/5.3.2.1.b peak ripple/F0006TEK.png (PNG copy)> <./Osci
-lloscope data/5.3.2.1.c ripple/F0007TEK.png (PNG copy)>]
-<Oscilloscope data/5.3.2.2.a no C1/F0008TEK.png, id=90, 803.0pt x 481.8pt>
-File: Oscilloscope data/5.3.2.2.a no C1/F0008TEK.png Graphic file (type png)
-<use Oscilloscope data/5.3.2.2.a no C1/F0008TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.2.2.a no C1/F0008TEK.png  used o
-n input line 133.
-(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
+[9]
+
+! LaTeX Error: File `Oscilloscope data/5.3.2.2.a no C1/F0008TEK' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133 ...cilloscope data/5.3.2.2.a no C1/F0008TEK}
+                                                  \\\\
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
@@ -796,18 +859,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--135
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--135
+! LaTeX Error: File `Oscilloscope data/5.3.2.2.c DC coupling/F0010TEK' not foun
+d.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136 ...cope data/5.3.2.2.c DC coupling/F0010TEK}
+                                                  \\\\
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-<Oscilloscope data/5.3.2.2.c DC coupling/F0010TEK.png, id=91, 803.0pt x 481.8pt
->
-File: Oscilloscope data/5.3.2.2.c DC coupling/F0010TEK.png Graphic file (type p
-ng)
-<use Oscilloscope data/5.3.2.2.c DC coupling/F0010TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.2.2.c DC coupling/F0010TEK.png  
-used on input line 136.
-(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 135--138
 
@@ -823,14 +888,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--138
 
  []
 
-<Oscilloscope data/5.3.2.2.b w C1 AC coupling/F0009TEK.png, id=92, 803.0pt x 48
-1.8pt>
-File: Oscilloscope data/5.3.2.2.b w C1 AC coupling/F0009TEK.png Graphic file (t
-ype png)
-<use Oscilloscope data/5.3.2.2.b w C1 AC coupling/F0009TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.2.2.b w C1 AC coupling/F0009TEK.
-png  used on input line 139.
-(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
+
+! LaTeX Error: File `Oscilloscope data/5.3.2.2.b w C1 AC coupling/F0009TEK' not
+ found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...data/5.3.2.2.b w C1 AC coupling/F0009TEK}
+                                                  \\\\
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 138--141
 
@@ -841,38 +913,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--141
 
  []
 
-<Oscilloscope data/5.3.3 DC at Capacitor/F0011TEK.png, id=93, 803.0pt x 481.8pt
->
-File: Oscilloscope data/5.3.3 DC at Capacitor/F0011TEK.png Graphic file (type p
-ng)
-<use Oscilloscope data/5.3.3 DC at Capacitor/F0011TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.3 DC at Capacitor/F0011TEK.png  
-used on input line 145.
-(pdftex.def)             Requested size: 240.90186pt x 144.5411pt.
-<Oscilloscope data/5.3.3 AC at capacitor/F0012TEK.png, id=94, 803.0pt x 481.8pt
->
-File: Oscilloscope data/5.3.3 AC at capacitor/F0012TEK.png Graphic file (type p
-ng)
-<use Oscilloscope data/5.3.3 AC at capacitor/F0012TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.3 AC at capacitor/F0012TEK.png  
-used on input line 146.
-(pdftex.def)             Requested size: 240.90186pt x 144.5411pt.
-<Oscilloscope data/5.3.3 output DC at R/F0013TEK.png, id=95, 803.0pt x 481.8pt>
 
-File: Oscilloscope data/5.3.3 output DC at R/F0013TEK.png Graphic file (type pn
-g)
-<use Oscilloscope data/5.3.3 output DC at R/F0013TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.3 output DC at R/F0013TEK.png  u
-sed on input line 148.
-(pdftex.def)             Requested size: 240.90186pt x 144.5411pt.
-<Oscilloscope data/5.3.3 output AC at R avg/F0015TEK.png, id=96, 803.0pt x 481.
-8pt>
-File: Oscilloscope data/5.3.3 output AC at R avg/F0015TEK.png Graphic file (typ
-e png)
-<use Oscilloscope data/5.3.3 output AC at R avg/F0015TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.3 output AC at R avg/F0015TEK.pn
-g  used on input line 149.
-(pdftex.def)             Requested size: 240.90186pt x 144.5411pt.
+! LaTeX Error: File `Oscilloscope data/5.3.3 DC at Capacitor/F0011TEK' not foun
+d.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 ...cope data/5.3.3 DC at Capacitor/F0011TEK}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `Oscilloscope data/5.3.3 AC at capacitor/F0012TEK' not foun
+d.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.146 ...cope data/5.3.3 AC at capacitor/F0012TEK}
+                                                  \\\\
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `Oscilloscope data/5.3.3 output DC at R/F0013TEK' not found
+.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.148 ...scope data/5.3.3 output DC at R/F0013TEK}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `Oscilloscope data/5.3.3 output AC at R avg/F0015TEK' not f
+ound.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 ...e data/5.3.3 output AC at R avg/F0015TEK}
+                                                  \\\\
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 145--151
 
@@ -893,19 +993,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--151
 
  []
 
-[11 <./Oscilloscope data/5.3.2.2.a no C1/F0008TEK.png (PNG copy)> <./Oscillosco
-pe data/5.3.2.2.c DC coupling/F0010TEK.png (PNG copy)> <./Oscilloscope data/5.3
-.2.2.b w C1 AC coupling/F0009TEK.png (PNG copy)>] [12 <./Oscilloscope data/5.3.
-3 DC at Capacitor/F0011TEK.png (PNG copy)> <./Oscilloscope data/5.3.3 AC at cap
-acitor/F0012TEK.png (PNG copy)> <./Oscilloscope data/5.3.3 output DC at R/F0013
-TEK.png (PNG copy)> <./Oscilloscope data/5.3.3 output AC at R avg/F0015TEK.png 
-(PNG copy)>]
-<Oscilloscope data/5.3.4.1 A and C/F0016TEK.png, id=103, 803.0pt x 481.8pt>
-File: Oscilloscope data/5.3.4.1 A and C/F0016TEK.png Graphic file (type png)
-<use Oscilloscope data/5.3.4.1 A and C/F0016TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.4.1 A and C/F0016TEK.png  used o
-n input line 154.
-(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
+[10]
+
+! LaTeX Error: File `Oscilloscope data/5.3.4.1 A and C/F0016TEK' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.154 ...cilloscope data/5.3.4.1 A and C/F0016TEK}
+                                                  \\\\
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
@@ -921,25 +1023,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
  []
 
-<Oscilloscope data/5.3.4.1 B and U_out/F0017TEK.png, id=104, 803.0pt x 481.8pt>
 
-File: Oscilloscope data/5.3.4.1 B and U_out/F0017TEK.png Graphic file (type png
-)
-<use Oscilloscope data/5.3.4.1 B and U_out/F0017TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.4.1 B and U_out/F0017TEK.png  us
-ed on input line 156.
-(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
+! LaTeX Error: File `Oscilloscope data/5.3.4.1 B and U_out/F0017TEK' not found.
+
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 ...oscope data/5.3.4.1 B and U_out/F0017TEK}
+                                                  \\\\
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 156--158
 
  []
 
-<Oscilloscope data/5.3.4.2 ripple V/F0020TEK.png, id=105, 803.0pt x 481.8pt>
-File: Oscilloscope data/5.3.4.2 ripple V/F0020TEK.png Graphic file (type png)
-<use Oscilloscope data/5.3.4.2 ripple V/F0020TEK.png>
-Package pdftex.def Info: Oscilloscope data/5.3.4.2 ripple V/F0020TEK.png  used 
-on input line 159.
-(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
+
+! LaTeX Error: File `Oscilloscope data/5.3.4.2 ripple V/F0020TEK' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.159 ...illoscope data/5.3.4.2 ripple V/F0020TEK}
+                                                  \\\\
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--161
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 158--161
 
@@ -950,15 +1072,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--161
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--161
-
- []
-
-[13 <./Oscilloscope data/5.3.4.1 A and C/F0016TEK.png (PNG copy)> <./Oscillosco
-pe data/5.3.4.1 B and U_out/F0017TEK.png (PNG copy)> <./Oscilloscope data/5.3.4
-.2 ripple V/F0020TEK.png (PNG copy)>]
-<power supply schematic.png, id=110, 1043.39813pt x 362.10281pt>
+<power supply schematic.png, id=83, 1043.39813pt x 362.10281pt>
 File: power supply schematic.png Graphic file (type png)
 <use power supply schematic.png>
 Package pdftex.def Info: power supply schematic.png  used on input line 172.
@@ -968,7 +1082,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--174
 
  []
 
-<zener diode.png, id=111, 247.67531pt x 186.6975pt>
+<zener diode.png, id=84, 247.67531pt x 186.6975pt>
 File: zener diode.png Graphic file (type png)
 <use zener diode.png>
 Package pdftex.def Info: zener diode.png  used on input line 184.
@@ -978,12 +1092,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
  []
 
-<multiplier 10k.png, id=112, 1429.59094pt x 638.385pt>
+[11 <./power supply schematic.png>]
+<multiplier 10k.png, id=89, 1429.59094pt x 638.385pt>
 File: multiplier 10k.png Graphic file (type png)
 <use multiplier 10k.png>
 Package pdftex.def Info: multiplier 10k.png  used on input line 194.
 (pdftex.def)             Requested size: 500.36433pt x 223.43808pt.
-<multiplier 100.png, id=113, 1427.3325pt x 639.89063pt>
+<multiplier 100.png, id=90, 1427.3325pt x 639.89063pt>
 File: multiplier 100.png Graphic file (type png)
 <use multiplier 100.png>
 Package pdftex.def Info: multiplier 100.png  used on input line 195.
@@ -998,30 +1113,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--196
 
  []
 
-[14 <./power supply schematic.png> <./zener diode.png>] [15 <./multiplier 10k.p
-ng> <./multiplier 100.png>] (./lab report.aux) ) 
+[12 <./zener diode.png> <./multiplier 10k.png>] [13 <./multiplier 100.png>]
+(./lab report.aux) ) 
 Here is how much of TeX's memory you used:
- 3874 strings out of 474971
- 68354 string characters out of 5780120
+ 4226 strings out of 474971
+ 86929 string characters out of 5780120
  407264 words of memory out of 5000000
- 25283 multiletter control sequences out of 15000+600000
+ 25623 multiletter control sequences out of 15000+600000
  472783 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,7n,62p,476b,273s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2022/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texli
-ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb>
-Output written on "lab report.pdf" (15 pages, 1105218 bytes).
+ 55i,7n,62p,476b,272s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pf
+b><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tex
+live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+>
+Output written on "lab report.pdf" (13 pages, 640596 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 144 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
