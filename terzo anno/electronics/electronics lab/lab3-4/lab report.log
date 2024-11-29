@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.28)  28 NOV 2024 16:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.28)  29 NOV 2024 16:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -478,34 +478,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--66
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-
- []
-
 <prelab 4/circuit 5 - tr changed.png, id=38, 939.51pt x 494.44725pt>
 File: prelab 4/circuit 5 - tr changed.png Graphic file (type png)
 <use prelab 4/circuit 5 - tr changed.png>
 Package pdftex.def Info: prelab 4/circuit 5 - tr changed.png  used on input lin
-e 71.
+e 70.
 (pdftex.def)             Requested size: 375.79733pt x 197.77539pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--74
+Underfull \hbox (badness 10000) in paragraph at lines 68--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--74
+Underfull \hbox (badness 10000) in paragraph at lines 68--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--74
+Underfull \hbox (badness 10000) in paragraph at lines 68--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--73
 
  []
 
@@ -514,41 +509,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--74
 File: prelab 4/circuit 6 - coll voltages.png Graphic file (type png)
 <use prelab 4/circuit 6 - coll voltages.png>
 Package pdftex.def Info: prelab 4/circuit 6 - coll voltages.png  used on input 
-line 75.
+line 74.
 (pdftex.def)             Requested size: 455.53383pt x 220.41959pt.
 <prelab 4/circuit 6 - avdiff.png, id=45, 564.9105pt x 552.26324pt>
 File: prelab 4/circuit 6 - avdiff.png Graphic file (type png)
 <use prelab 4/circuit 6 - avdiff.png>
-Package pdftex.def Info: prelab 4/circuit 6 - avdiff.png  used on input line 78
+Package pdftex.def Info: prelab 4/circuit 6 - avdiff.png  used on input line 77
 .
 (pdftex.def)             Requested size: 338.94891pt x 331.36049pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--84
+Underfull \hbox (badness 10000) in paragraph at lines 73--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--84
+Underfull \hbox (badness 10000) in paragraph at lines 73--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--84
+Underfull \hbox (badness 10000) in paragraph at lines 73--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--84
+Underfull \hbox (badness 10000) in paragraph at lines 73--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--84
+Underfull \hbox (badness 10000) in paragraph at lines 73--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--84
+Underfull \hbox (badness 10000) in paragraph at lines 73--83
 
  []
 
@@ -558,460 +553,461 @@ g>]
 File: prelab 4/circuit 7 - coll voltages.png Graphic file (type png)
 <use prelab 4/circuit 7 - coll voltages.png>
 Package pdftex.def Info: prelab 4/circuit 7 - coll voltages.png  used on input 
-line 85.
+line 84.
 (pdftex.def)             Requested size: 455.53383pt x 220.41959pt.
 <prelab 4/circuit 7 - avcm.png, id=52, 563.10374pt x 551.661pt>
 File: prelab 4/circuit 7 - avcm.png Graphic file (type png)
 <use prelab 4/circuit 7 - avcm.png>
-Package pdftex.def Info: prelab 4/circuit 7 - avcm.png  used on input line 88.
+Package pdftex.def Info: prelab 4/circuit 7 - avcm.png  used on input line 87.
 (pdftex.def)             Requested size: 337.86485pt x 330.99915pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--93
+Underfull \hbox (badness 10000) in paragraph at lines 83--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--93
+Underfull \hbox (badness 10000) in paragraph at lines 83--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--93
+Underfull \hbox (badness 10000) in paragraph at lines 83--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--93
+Underfull \hbox (badness 10000) in paragraph at lines 83--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--93
+Underfull \hbox (badness 10000) in paragraph at lines 83--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--93
+Underfull \hbox (badness 10000) in paragraph at lines 83--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--93
+Underfull \hbox (badness 10000) in paragraph at lines 83--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--93
+Underfull \hbox (badness 10000) in paragraph at lines 83--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--95
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--95
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
 
  []
 
 [7 <./prelab 4/circuit 7 - coll voltages.png> <./prelab 4/circuit 7 - avcm.png>
-]
-<7.3.1.2 Collector Vs single/F0022TEK.png, id=59, 803.0pt x 481.8pt>
+] [8]
+<7.3.1.2 Collector Vs single/F0022TEK.png, id=63, 803.0pt x 481.8pt>
 File: 7.3.1.2 Collector Vs single/F0022TEK.png Graphic file (type png)
 <use 7.3.1.2 Collector Vs single/F0022TEK.png>
 Package pdftex.def Info: 7.3.1.2 Collector Vs single/F0022TEK.png  used on inpu
-t line 103.
+t line 110.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
-<7.3.1.3 Collector Vs common/F0000TEK.png, id=60, 803.0pt x 481.8pt>
+<7.3.1.3 Collector Vs common/F0000TEK.png, id=64, 803.0pt x 481.8pt>
 File: 7.3.1.3 Collector Vs common/F0000TEK.png Graphic file (type png)
 <use 7.3.1.3 Collector Vs common/F0000TEK.png>
 Package pdftex.def Info: 7.3.1.3 Collector Vs common/F0000TEK.png  used on inpu
-t line 105.
+t line 112.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--109
+Underfull \hbox (badness 10000) in paragraph at lines 108--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--109
+Underfull \hbox (badness 10000) in paragraph at lines 108--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--109
+Underfull \hbox (badness 10000) in paragraph at lines 108--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--109
+Underfull \hbox (badness 10000) in paragraph at lines 108--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--109
+Underfull \hbox (badness 10000) in paragraph at lines 108--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--109
+Underfull \hbox (badness 10000) in paragraph at lines 108--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--109
+Underfull \hbox (badness 10000) in paragraph at lines 108--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--109
+Underfull \hbox (badness 10000) in paragraph at lines 108--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--109
+Underfull \hbox (badness 10000) in paragraph at lines 108--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--109
+Underfull \hbox (badness 10000) in paragraph at lines 108--116
 
  []
 
-[8 <./7.3.1.2 Collector Vs single/F0022TEK.png (PNG copy)> <./7.3.1.3 Collector
- Vs common/F0000TEK.png (PNG copy)>]
-<7.3.3.2 Current source diff Collector Vs single/F0003TEK.png, id=65, 803.0pt x
+[9 <./7.3.1.2 Collector Vs single/F0022TEK.png (PNG copy)> <./7.3.1.3 Collector
+ Vs common/F0000TEK.png (PNG copy)>] [10]
+<7.3.3.2 Current source diff Collector Vs single/F0003TEK.png, id=72, 803.0pt x
  481.8pt>
 File: 7.3.3.2 Current source diff Collector Vs single/F0003TEK.png Graphic file
  (type png)
 <use 7.3.3.2 Current source diff Collector Vs single/F0003TEK.png>
 Package pdftex.def Info: 7.3.3.2 Current source diff Collector Vs single/F0003T
-EK.png  used on input line 116.
+EK.png  used on input line 132.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
-<7.3.3.3 Current source diff Collector Vs common/F0002TEK.png, id=66, 803.0pt x
+<7.3.3.3 Current source diff Collector Vs common/F0002TEK.png, id=73, 803.0pt x
  481.8pt>
 File: 7.3.3.3 Current source diff Collector Vs common/F0002TEK.png Graphic file
  (type png)
 <use 7.3.3.3 Current source diff Collector Vs common/F0002TEK.png>
 Package pdftex.def Info: 7.3.3.3 Current source diff Collector Vs common/F0002T
-EK.png  used on input line 118.
+EK.png  used on input line 134.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--123
+Underfull \hbox (badness 10000) in paragraph at lines 130--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--123
+Underfull \hbox (badness 10000) in paragraph at lines 130--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--123
+Underfull \hbox (badness 10000) in paragraph at lines 130--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--123
+Underfull \hbox (badness 10000) in paragraph at lines 130--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--123
+Underfull \hbox (badness 10000) in paragraph at lines 130--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--123
+Underfull \hbox (badness 10000) in paragraph at lines 130--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--123
+Underfull \hbox (badness 10000) in paragraph at lines 130--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--123
+Underfull \hbox (badness 10000) in paragraph at lines 130--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--123
+Underfull \hbox (badness 10000) in paragraph at lines 130--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--123
+Underfull \hbox (badness 10000) in paragraph at lines 130--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--123
+Underfull \hbox (badness 10000) in paragraph at lines 130--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--125
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
 
-[9 <./7.3.3.2 Current source diff Collector Vs single/F0003TEK.png (PNG copy)> 
-<./7.3.3.3 Current source diff Collector Vs common/F0002TEK.png (PNG copy)>]
-<prelab 3/prelab 3 ex 1 calc.jpg, id=70, 1164.60094pt x 483.30562pt>
+<prelab 3/prelab 3 ex 1 calc.jpg, id=74, 1164.60094pt x 483.30562pt>
 File: prelab 3/prelab 3 ex 1 calc.jpg Graphic file (type jpg)
 <use prelab 3/prelab 3 ex 1 calc.jpg>
-Package pdftex.def Info: prelab 3/prelab 3 ex 1 calc.jpg  used on input line 13
-2.
+Package pdftex.def Info: prelab 3/prelab 3 ex 1 calc.jpg  used on input line 14
+8.
 (pdftex.def)             Requested size: 524.06558pt x 217.48552pt.
-<prelab 3/prelab 3 ex1 circuit.png, id=71, 793.46437pt x 562.35094pt>
+<prelab 3/prelab 3 ex1 circuit.png, id=75, 793.46437pt x 562.35094pt>
 File: prelab 3/prelab 3 ex1 circuit.png Graphic file (type png)
 <use prelab 3/prelab 3 ex1 circuit.png>
 Package pdftex.def Info: prelab 3/prelab 3 ex1 circuit.png  used on input line 
-134.
+150.
 (pdftex.def)             Requested size: 476.08229pt x 337.41316pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--135
+Underfull \hbox (badness 10000) in paragraph at lines 147--151
 
  []
 
 
-Overfull \hbox (2.77234pt too wide) in paragraph at lines 131--135
+Overfull \hbox (2.77234pt too wide) in paragraph at lines 147--151
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--135
+Underfull \hbox (badness 10000) in paragraph at lines 147--151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--135
+Underfull \hbox (badness 10000) in paragraph at lines 147--151
 
  []
 
-[10 <./prelab 3/prelab 3 ex 1 calc.jpg> <./prelab 3/prelab 3 ex1 circuit.png>]
-<prelab 3/prelab 3 ex2 calc.jpg, id=76, 696.35156pt x 371.13657pt>
+[11 <./7.3.3.2 Current source diff Collector Vs single/F0003TEK.png (PNG copy)>
+ <./7.3.3.3 Current source diff Collector Vs common/F0002TEK.png (PNG copy)>]
+[12 <./prelab 3/prelab 3 ex 1 calc.jpg> <./prelab 3/prelab 3 ex1 circuit.png>]
+<prelab 3/prelab 3 ex2 calc.jpg, id=83, 696.35156pt x 371.13657pt>
 File: prelab 3/prelab 3 ex2 calc.jpg Graphic file (type jpg)
 <use prelab 3/prelab 3 ex2 calc.jpg>
-Package pdftex.def Info: prelab 3/prelab 3 ex2 calc.jpg  used on input line 140
+Package pdftex.def Info: prelab 3/prelab 3 ex2 calc.jpg  used on input line 156
 .
 (pdftex.def)             Requested size: 382.99454pt x 204.12573pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
+Underfull \hbox (badness 10000) in paragraph at lines 155--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
+Underfull \hbox (badness 10000) in paragraph at lines 155--157
 
  []
 
 File: prelab 3/prelab 3 ex1 circuit.png Graphic file (type png)
 <use prelab 3/prelab 3 ex1 circuit.png>
 Package pdftex.def Info: prelab 3/prelab 3 ex1 circuit.png  used on input line 
-142.
+158.
 (pdftex.def)             Requested size: 476.08229pt x 337.41316pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--145
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
-[11 <./prelab 3/prelab 3 ex2 calc.jpg>]
-<prelab 3/prelab 3 ex2 rl.png, id=80, 1315.16344pt x 641.39626pt>
+[13 <./prelab 3/prelab 3 ex2 calc.jpg>]
+<prelab 3/prelab 3 ex2 rl.png, id=88, 1315.16344pt x 641.39626pt>
 File: prelab 3/prelab 3 ex2 rl.png Graphic file (type png)
 <use prelab 3/prelab 3 ex2 rl.png>
-Package pdftex.def Info: prelab 3/prelab 3 ex2 rl.png  used on input line 146.
+Package pdftex.def Info: prelab 3/prelab 3 ex2 rl.png  used on input line 162.
 (pdftex.def)             Requested size: 526.05606pt x 256.55396pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--148
+Underfull \hbox (badness 10000) in paragraph at lines 161--164
 
  []
 
 
-Overfull \hbox (4.76282pt too wide) in paragraph at lines 145--148
+Overfull \hbox (4.76282pt too wide) in paragraph at lines 161--164
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--148
+Underfull \hbox (badness 10000) in paragraph at lines 161--164
 
  []
 
-<prelab 3/prelab 3 ex3 circuit.png, id=81, 972.63374pt x 571.38469pt>
+<prelab 3/prelab 3 ex3 circuit.png, id=89, 972.63374pt x 571.38469pt>
 File: prelab 3/prelab 3 ex3 circuit.png Graphic file (type png)
 <use prelab 3/prelab 3 ex3 circuit.png>
 Package pdftex.def Info: prelab 3/prelab 3 ex3 circuit.png  used on input line 
-152.
+168.
 (pdftex.def)             Requested size: 389.0466pt x 228.54982pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--156
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--156
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
-[12 <./prelab 3/prelab 3 ex2 rl.png> <./prelab 3/prelab 3 ex3 circuit.png>]
-<prelab 3/prelab 3 ex3.3 1.png, id=87, 710.655pt x 663.98062pt>
+[14 <./prelab 3/prelab 3 ex2 rl.png> <./prelab 3/prelab 3 ex3 circuit.png>]
+<prelab 3/prelab 3 ex3.3 1.png, id=95, 710.655pt x 663.98062pt>
 File: prelab 3/prelab 3 ex3.3 1.png Graphic file (type png)
 <use prelab 3/prelab 3 ex3.3 1.png>
-Package pdftex.def Info: prelab 3/prelab 3 ex3.3 1.png  used on input line 157.
+Package pdftex.def Info: prelab 3/prelab 3 ex3.3 1.png  used on input line 173.
 
-(pdftex.def)             Requested size: 284.25696pt x 265.58754pt.
-<prelab 3/prelab 3 ex3.3 2.png, id=88, 706.89093pt x 642.90187pt>
+(pdftex.def)             Requested size: 355.32663pt x 331.98949pt.
+<prelab 3/prelab 3 ex3.3 2.png, id=96, 706.89093pt x 642.90187pt>
 File: prelab 3/prelab 3 ex3.3 2.png Graphic file (type png)
 <use prelab 3/prelab 3 ex3.3 2.png>
-Package pdftex.def Info: prelab 3/prelab 3 ex3.3 2.png  used on input line 159.
+Package pdftex.def Info: prelab 3/prelab 3 ex3.3 2.png  used on input line 175.
 
-(pdftex.def)             Requested size: 282.75136pt x 257.15619pt.
+(pdftex.def)             Requested size: 353.4446pt x 321.45015pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--161
+Underfull \hbox (badness 10000) in paragraph at lines 172--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--161
+Underfull \hbox (badness 10000) in paragraph at lines 172--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--161
+Underfull \hbox (badness 10000) in paragraph at lines 172--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--161
+Underfull \hbox (badness 10000) in paragraph at lines 172--177
 
  []
 
-[13 <./prelab 3/prelab 3 ex3.3 1.png> <./prelab 3/prelab 3 ex3.3 2.png>]
-<prelab 3/prelab 3 ex3.4 1.png, id=95, 1142.76938pt x 426.09187pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--177
+
+ []
+
+[15 <./prelab 3/prelab 3 ex3.3 1.png> <./prelab 3/prelab 3 ex3.3 2.png>]
+<prelab 3/prelab 3 ex3.4 1.png, id=102, 1142.76938pt x 426.09187pt>
 File: prelab 3/prelab 3 ex3.4 1.png Graphic file (type png)
 <use prelab 3/prelab 3 ex3.4 1.png>
-Package pdftex.def Info: prelab 3/prelab 3 ex3.4 1.png  used on input line 162.
+Package pdftex.def Info: prelab 3/prelab 3 ex3.4 1.png  used on input line 178.
 
 (pdftex.def)             Requested size: 514.24147pt x 191.73956pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--164
+Underfull \hbox (badness 10000) in paragraph at lines 177--180
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--164
+Underfull \hbox (badness 10000) in paragraph at lines 177--180
 
  []
 
-[14 <./prelab 3/prelab 3 ex3.4 1.png>]
-<prelab 3/prelab 3 ex3.5 1.png, id=100, 707.64375pt x 638.385pt>
+[16 <./prelab 3/prelab 3 ex3.4 1.png>]
+<prelab 3/prelab 3 ex3.5 1.png, id=107, 707.64375pt x 638.385pt>
 File: prelab 3/prelab 3 ex3.5 1.png Graphic file (type png)
 <use prelab 3/prelab 3 ex3.5 1.png>
-Package pdftex.def Info: prelab 3/prelab 3 ex3.5 1.png  used on input line 165.
+Package pdftex.def Info: prelab 3/prelab 3 ex3.5 1.png  used on input line 181.
 
 (pdftex.def)             Requested size: 459.963pt x 414.94533pt.
-<prelab 3/prelab 3 ex3.5 2.png, id=101, 1180.41pt x 423.08063pt>
+<prelab 3/prelab 3 ex3.5 2.png, id=108, 1180.41pt x 423.08063pt>
 File: prelab 3/prelab 3 ex3.5 2.png Graphic file (type png)
 <use prelab 3/prelab 3 ex3.5 2.png>
-Package pdftex.def Info: prelab 3/prelab 3 ex3.5 2.png  used on input line 166.
+Package pdftex.def Info: prelab 3/prelab 3 ex3.5 2.png  used on input line 182.
 
 (pdftex.def)             Requested size: 531.1796pt x 190.38452pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
+Underfull \hbox (badness 10000) in paragraph at lines 180--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
+Underfull \hbox (badness 10000) in paragraph at lines 180--183
 
  []
 
 
-Overfull \hbox (9.88635pt too wide) in paragraph at lines 164--167
+Overfull \hbox (9.88635pt too wide) in paragraph at lines 180--183
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
+Underfull \hbox (badness 10000) in paragraph at lines 180--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
+Underfull \hbox (badness 10000) in paragraph at lines 180--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--171
+Underfull \hbox (badness 10000) in paragraph at lines 183--187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--171
+Underfull \hbox (badness 10000) in paragraph at lines 183--187
 
  []
 
-[15 <./prelab 3/prelab 3 ex3.5 1.png> <./prelab 3/prelab 3 ex3.5 2.png>]
+[17 <./prelab 3/prelab 3 ex3.5 1.png> <./prelab 3/prelab 3 ex3.5 2.png>]
 (./lab report.aux) ) 
 Here is how much of TeX's memory you used:
- 3703 strings out of 474971
- 62309 string characters out of 5780120
- 402264 words of memory out of 5000000
- 25147 multiletter control sequences out of 15000+600000
- 472783 words of font info for 42 fonts, out of 8000000 for 9000
+ 3706 strings out of 474971
+ 62345 string characters out of 5780120
+ 403264 words of memory out of 5000000
+ 25149 multiletter control sequences out of 15000+600000
+ 473118 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,5n,62p,306b,287s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
-b><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tex
-live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
->
-Output written on "lab report.pdf" (15 pages, 930933 bytes).
+ 55i,5n,62p,395b,287s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-sup
+er-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
+live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texl
+ive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "lab report.pdf" (17 pages, 936337 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 162 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

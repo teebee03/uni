@@ -26,7 +26,7 @@
 		\bigskip
 		\Large{Instructor Uwe Pagel}\\
 		\bigskip
-		\Large{24/11/2024}\\
+		\Large{--/11/2024}\\
 	\end{center}
 	\pagebreak
 	
@@ -66,7 +66,6 @@
 		\item \textbf{Analyses using the current source}
 		\begin{enumerate}
 			\item \textbf{DC operation point analysis}\\\\
-			
 			\(V_{BE}\) = -47.11 - (-720.74) = 767.85mV,  \(V_C\) = 5.381V, \(I_C\) = 2.099mA, \(I_E\) = 2.109mA, \(I_{RE}\) = 4.219mA. (current source)\\\\
 			\includegraphics[scale=0.4]{prelab 4/circuit 5 - tr changed}\\\\
 			By changing one transistor the \(V_{BE}\), \(V_C\), \(I_C\), \(I_E\) values are not symmetric anymore (ex.: \(V_C\)(Q1) = 5.913V, \(V_C\)(Q2) = 4.841V), therefore the circuit cannot work properly.\\\\
@@ -97,7 +96,15 @@
 	\section{Experimental Set-up and Results}
 	\subsection{Differential amplifier using a fixed emitter resistor}
 		\begin{enumerate}
-			\item COMPARE DC VALUES
+			\item 
+			Experimental DC bias values: \(V_B(T_1,T_2)\)= 5.680V, \(V_B(T_1,T_2)\)= 45.6mV, \(V_{BE}(T_1,T_2)\)= 634.1mV, \(I_{RE}\) = 1.93mA.\\
+			Some reasons for the differences between the simulated values and the measured ones could be the following:
+			\begin{enumerate}
+				\item Transistor calibration: the bjts in the simulation are identical while, on the experiment, the two bjts used are sold in multiple numbers and not calibrated to be pairs as identical as possible.
+				\item Temperature difference: the most temperature sensitive voltages (ex: \(V_{BE}\)) could be different since the ambient temperature in the lab is not monitored while the assumed temperature in the simulation is always 25°C.
+				\item Parasitic Effects: using a breadboard, there could be parasitic capacities and resistances due to the prototypical wiring and the fact that used resistors are not precise and could have induced some imbalances in the supposed symmetric circuit.  
+			\end{enumerate}
+		 	\pagebreak
 			\item \textbf{CMRR calculation}\\\\
 			Output voltage in single ended mode:\\\\
 			\includegraphics[scale=0.5]{7.3.1.2 Collector Vs single/F0022TEK}\\\\
@@ -110,7 +117,16 @@
 		\pagebreak
 	\subsection{Differential amplifier using a current source}
 	\begin{enumerate}
-		\item COMPARE DC VALUES
+		\item
+		Experimental DC bias values: \(V_B(T_1,T_2)\)= 5.612V, \(V_B(T_1,T_2)\)= 0.040V, \(V_{BE}(T_1,T_2)\)= 0.63V, \(I_{C}(T_1,T_2)\)= 2.08mA, \(I_{RE}\) = 3.92mA.\\
+		Some reasons for the differences between the simulated values and the measured ones could be the following:
+		\begin{enumerate}
+			\item Transistor calibration: the bjts in the simulation are identical while, on the experiment, the two bjts used are sold in multiple numbers and not calibrated to be pairs as identical as possible.
+			\item Temperature difference: the most temperature sensitive voltages (ex: \(V_{BE}\)) could be different since the ambient temperature in the lab is not monitored while the assumed temperature in the simulation is always 25°C.
+			\item Parasitic Effects: using a breadboard, there could be parasitic capacities and resistances due to the prototypical wiring and the fact that used resistors are not precise (ex: R1 in the current source circuit was supposed to be 530\(\Omega\) but we used a 530\(\Omega\) one) and could have induced some imbalances in the supposed symmetric circuit.  
+		\end{enumerate}
+		
+		\pagebreak
 		\item \textbf{CMRR calculation}\\\\
 		Output voltage in single ended mode:\\\\
 		\includegraphics[scale=0.5]{7.3.3.2 Current source diff Collector Vs single/F0003TEK}\\\\
@@ -154,9 +170,9 @@
 		\(I_C\) = 0.011 A, \(I_B\) = 54.7 uA\\
 		\(V_B\) = 5.87V, \(V_E\) = 5.15 V, \(V_C\) = 9.09V, \(V_BE\) = 0.12, \(V_CE\) = 3.94V\\\\\pagebreak
 		\item \textbf{Transient analysis at 50mV}\\\\
-		\includegraphics[scale=0.4]{prelab 3/prelab 3 ex3.3 1}\\\\
+		\includegraphics[scale=0.50]{prelab 3/prelab 3 ex3.3 1}\\\\
 		Green line: \(V_B\): 17.7mV peak to peak, red line: \(V_{BE}\): 15.4mV peak to peak.\\\\
-		\includegraphics[scale=0.4]{prelab 3/prelab 3 ex3.3 2}\\\\
+		\includegraphics[scale=0.50]{prelab 3/prelab 3 ex3.3 2}\\\\
 		Green line: \(V_i\): 20.5mV peak to peak, blue line: \(V_o\): 2.67V.\\\\ Gain: \(\frac{V_o}{V_i} = 130\).\pagebreak
 		\item \textbf{Harmonic distortion analysis}\\\\
 		\includegraphics[scale=0.45]{prelab 3/prelab 3 ex3.4 1}\\\\
