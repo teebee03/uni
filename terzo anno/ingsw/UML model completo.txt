@@ -1,0 +1,438 @@
+classDiagram
+direction TB
+    class FlightBoard {
+	    -isLearning: bool
+	    -numTiles: int
+	    -rockets[]: Rocket
+	    -startPos[]: StartingPos
+	    -hourglassSpace: int
+	    -rewards: EndRewards
+	    -cardDecks[][]: int
+	    +Move(in user: Player,in count: int)
+	    +AddStart(in user: Player)
+	    +StartTimer()
+	    +TimerToNext()
+	    +event(in: isLearning bool, in: type int)
+	    +DisplayRewards()
+	    +GiveRewards()
+	    +SetCardDecks(in: cardDecks[][] int)
+	    +GetCardDecks() int[][]
+    }
+
+    class StartingPos {
+	    -loc: int
+	    -user: string
+	    SetLoc(in loc: int)
+	    GetLoc() int
+	    SetUser(in user: string)
+	    GetUser() string
+    }
+
+    class Rocket {
+	    -color: enum
+	    -user: string
+	    -state: enum
+	    -pos: int
+	    +GetColor() enum
+	    +GetUser() string
+	    +SetUser(in user: string)
+	    +GetState() enum
+	    +SetState(enum)
+	    +GetPos() int
+	    +Setpos(in: int)
+    }
+
+    class RocketColor {
+	    RED(4)
+	    YELLOW(3)
+	    GREEN(2)
+	    BLUE(1)
+    }
+
+    class RocketState {
+	    WAITING(1)
+	    INGAME(2)
+	    GIVENUP(3)
+    }
+
+    class EndRewards {
+	    -finishingPos[]: int
+	    -bestShip: int
+	    -goods[]: int
+	    -losses: int
+	    GetFinishingPos() int[]
+	    SetFinishingPos(in: rewards int[])
+	    GetBestShip() int
+	    SetBestShip(in: reward int)
+	    GetGoods() int[]
+	    SetGoods(in: rewards int[])
+	    GetLosses() int
+	    SetLosses(in: reward int)
+    }
+
+    class ComponentsDeck {
+	    -cards: Component[]
+	    +Shuffle()
+	    +Draw() Component
+    }
+
+    class Sewer_Pipes {
+    }
+
+    class Plasma_Drills {
+	    -cost: int
+	    +Isclasscheckvalid()
+	    +Ability()
+    }
+
+    class HotWaterHeaters {
+	    -cost: int
+	    +Isclasscheckvalid()
+	    +Ability()
+    }
+
+    class Cabin {
+	    -Iscentral: boolean
+	    -num_human: int
+	    -num:alien: int
+	    +Ability()
+	    +AddHuman(in num: int)
+	    +Addalien(in color: String)
+	    +GetHuman() int
+	    +GetAlien() int
+	    +CheckVitals(in color: String) boolean
+    }
+
+    class Storage {
+	    -maxslot: int
+	    -slotused: int
+	    +UseSlot()
+	    +GetslotUSed() : int
+	    +Getmaxslot() : int
+    }
+
+    class StorageSpecial {
+    }
+
+    class Power_Centers {
+	    -numbattery: int
+    }
+
+    class Shields_generators {
+	    +Ability()
+    }
+
+    class Alien_Addons {
+	    colors: String
+    }
+
+    class GameInterface {
+	    -spaceships: Spaceship[]
+	    -deckAdventure: Deck
+	    -deckComponent: ComponentsDeck
+	    -flightboard: Flightboard
+	    +SetSpaceship(int player: string)
+	    +DrawAndPlace(inout d: Deck)
+	    +SeePlayerSpaceship(in target: Player) Spaceship
+	    +EndCostruction()
+	    +MoveSpaceship()
+	    +GetDrawncomponent() :+ Component
+	    +SetDrawnComponente()
+	    +createStacks()
+	    +land(planet: Planet)
+	    +loadGood(good: Good)
+	    +unloadGood(good: Good)
+	    +use(Card)
+	    +skip(Card)
+	    +moveRocket(dir: Direction, pos: num)
+	    +useBatteries(num: int)
+	    +tossdices() : List
+	    +useshield()
+	    +usedoubleEng()
+	    +usedoubleCannon()
+	    +renounceCoins()
+	    +renounceGoods()
+	    +selectCrew()
+    }
+
+    class Deck {
+	    -cards: Card[]
+	    +shuffle()
+	    +draw() : Card
+	    +isEmpty() : boolean
+	    +PlaceOnPlance()
+	    +removeCard()
+    }
+
+    class Level {
+	    RED(1)
+	    PURPLE(2)
+	    BLUE(3)
+    }
+
+    class Planets {
+	    -List planets
+	    -FlightDaysLost: int
+	    +effect()
+	    +subtractDays(player: Player, days: int)
+	    +getPlanets()
+	    +getFlightDaysLost()
+    }
+
+    class Planet {
+	    -color: Color
+	    -List goods
+	    +availableToLand()
+	    +getGoods()
+    }
+
+    class Good {
+	    RED(4)
+	    YELLOW(3)
+	    GREEN(2)
+	    BLUE(1)
+    }
+
+    class AbandonedShip {
+	    -NumPawnsLost: int
+	    -FlightDaysLost: int
+	    -NumCoins: int
+	    +effect()
+	    +subtractPawns(num: int)
+	    +subtractDays(num: int)
+	    +addCoins(num: int)
+	    +getPawns()
+	    +getFlightDays()
+	    +getCoins()
+    }
+
+    class AbandonedStation {
+	    -NumCrewMem: int
+	    -FlightDaysLost: int
+	    -NumGoods: int
+	    +effect()
+	    +subtractDays(num: int)
+	    +getNumCrew()
+	    +getFlightDaysLost()
+	    +getNumGoods()
+    }
+
+    class Smugglers {
+	    -FirePow: float
+	    -NumGoodsTaken: int
+	    -List goods
+	    +compareFirePow(firepow: float)
+	    +getMalus()
+	    +getGood()
+	    +effect(player: Player)
+	    +attackNext(player: Player)
+    }
+
+    class OpenSpace {
+	    +effect()
+	    +addFlightDays()
+    }
+
+    class MeteorSwarm {
+	    -List meteorites
+	    +effect()
+	    +destroyComp(x: int, y: int)
+    }
+
+    class Meteorite {
+	    -Dim: boolean
+	    -Direction: Direction
+    }
+
+    class Stardust {
+	    +effect()
+	    +subtractFlightDays(num: int, player: Player)
+    }
+
+    class CombatZone {
+	    -FlightDaysLost: int
+	    -NumPawnsLost: int
+	    +effect()
+	    +comparePlayerPos()
+	    +compareCrew()
+	    +compareEngPow()
+	    +compareFirePow()
+	    +subtractFlightDays(num: int, player: Player)
+	    +hitComponent(x: int, y: int)
+	    +getFlightDaysLost()
+	    +getPawns()
+    }
+
+    class CannonFire {
+	    -Dim: boolean
+	    -Direction: Direction
+    }
+
+    class Direction {
+	    UP
+	    DOWN
+	    DX
+	    SX
+    }
+
+    class StrayBigMeteors {
+	    -List meteorites
+	    +effect()
+	    +hitComponent(x: int, y: int)
+    }
+
+    class Enemies {
+	    -NumFlightDaysLost: int
+	    -FirePow: float
+	    +effect()
+	    +subtractFlightDays(num: int, player: Player)
+	    +getFlightDaysLost()
+	    +getFirePow()
+    }
+
+    class Slavers {
+	    -Coins: int
+	    -NumPawnsLost: int
+	    +effect(player: Player)
+	    +addCoins(player: Player)
+	    +getPawnsLost()
+	    +getCoins()
+    }
+
+    class Pirates {
+	    -Coins: int
+	    -List meteorites
+	    +effect(player: Player)
+	    +addCoins(player: Player)
+	    +memoriseLost()
+	    +getCoins()
+    }
+
+    class Epidemic {
+	    +effect()
+	    +removeCrew()
+    }
+
+    class Sabotage {
+	    +effect()
+	    +compareCrew()
+	    +comparePos()
+	    +hitComponent()
+    }
+
+    class Component {
+	    -partof: Spaceship
+	    -numpintop: int
+	    -numpinbottom: int
+	    -numpinleft: int
+	    -numpinright: int
+	    -see: boolean
+	    +Isposvalid(in raw: int, in col: int) : boolean
+	    +Isclasscheckvalid()
+	    +Ability()
+	    +Gettop() : int
+	    +GetBottom() : int
+	    +GetLeft() : int
+	    +GetRight() : int
+	    +SetSee(in: bool)
+    }
+
+    class abstractCard {
+	    -color: Color
+	    -player: string
+	    -level: Level
+	    +effect()
+	    +SetPlayer(in: string)
+    }
+
+    class UntitledClass {
+    }
+
+    class Spaceship {
+	    -player: string
+	    -coins: int
+	    -componentdrawn: Component
+	    -components: Components[][]
+	    -num_equiptot: int
+	    -num_alien_purple: int
+	    -num_alien_brown: int
+	    -energytot: int
+	    -firepower: float
+	    -lostComponents: int
+	    -enginepower: int
+	    +SetFire(in num: float)
+	    +SetEngine(in num: int)
+	    +GetFire() float
+	    +GetEngines() int
+	    +GetMerce() int
+	    +Getcomponent(in raw: int, in col: int) Component
+	    +GetHumans() int
+	    +GetAliens() int
+	    +GetGoodsTot() int
+	    +GetGoodsSpecialTot() int
+	    +AddHumans(in num: int)
+	    +SetHuman(in num: int)
+	    +SetPurpleAlien(in num: int)
+	    +SetBrownAlien(in num: int)
+	    +AddPurpleAlien(in num: int)
+	    +AddBrownAlien(in num: int)
+	    +SetEnergytot(in num: int)
+	    +GetEnergytot() int
+	    +SetComponent(in row: int, int col: int)
+	    +IsValid() boolean
+	    +CountExposedConnectors() int
+    }
+
+	<<enumeration>> RocketColor
+	<<enumeration>> RocketState
+	<<enumeration>> Good
+	<<enumeration>> Direction
+
+    Enemies <|-- Slavers
+    Enemies <|-- Pirates
+    Enemies <|-- Smugglers
+    Planet --* Planets
+    abstractCard <|-- AbandonedShip
+    abstractCard <|-- AbandonedStation
+    abstractCard <|-- Epidemic
+    abstractCard <|-- Sabotage
+    abstractCard <|-- StrayBigMeteors
+    abstractCard <|-- Enemies
+    abstractCard <|-- Planets
+    abstractCard <|-- CombatZone
+    abstractCard <|-- Stardust
+    abstractCard <|-- MeteorSwarm
+    abstractCard <|-- OpenSpace
+    abstractCard -- Level
+    Deck *-- abstractCard
+    Meteorite --* MeteorSwarm
+    Meteorite --* StrayBigMeteors
+    Good -- AbandonedStation
+    Good -- Planet
+    Good -- Smugglers
+    CannonFire -- CombatZone
+    CannonFire -- Pirates
+    Direction --* CannonFire
+    Direction --* Meteorite
+    Component <|-- Shields_generators
+    Component <|-- Power_Centers
+    Storage <|-- StorageSpecial
+    Component <|-- Storage
+    Component <|-- Cabin
+    Component <|-- Sewer_Pipes
+    Component <|-- HotWaterHeaters
+    Component <|-- Plasma_Drills
+    Component <|-- Alien_Addons
+    ComponentsDeck --* Component : 1,n/0,1
+    Spaceship --* Component : 1,n/0,n
+    FlightBoard --* StartingPos : 0,n
+    FlightBoard --* Rocket : 0,n
+    FlightBoard --* EndRewards : 1,1
+    Rocket --* RocketColor
+    Rocket --* RocketState
+    Spaceship --* GameInterface : 2,4/1,1
+    FlightBoard --* GameInterface : 1,1/1,1
+    Deck --* GameInterface : 1,1/1,1
+    ComponentsDeck --* GameInterface : 1,1/1,1
+    GameInterface -- UntitledClass
+
